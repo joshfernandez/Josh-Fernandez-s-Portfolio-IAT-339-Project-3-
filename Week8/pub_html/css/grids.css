@@ -10,3 +10,146 @@
   Some sections have been copied or inspired by Project 2: Richmond Dodgeball League website. Thank you to Priscilla Skylar-Lee and Heather Maskell.
   Other references will be noted at appropriate sections of this file.
 */
+
+/* GENERAL */
+
+*, *::after, *::before { /* All browsers need to have box sizing */
+	-webkit-box-sizing: border-box; /* Other browsers */
+	-moz-box-sizing: border-box; /* Mozilla Firefox */
+	box-sizing: border-box;
+
+	margin: 0;
+}
+
+.grid-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+[class^="grid-col-"] {
+	/* padding: 0 0.25rem; */
+}
+
+
+/* ELEMENT STYLE CHANGES */
+
+h1 {
+  /* margin:  */
+}
+
+section {
+  /* margin:  */
+}
+
+
+/* COLUMN WIDTHS - DIVISIONS OF 8 */
+
+[class^="grid-col-8of8"] {
+	flex-basis: 100%;
+}
+
+[class^="grid-col-7of8"] {
+	flex-basis: 87.5%;
+}
+
+[class^="grid-col-6of8"] {
+	flex-basis: 75%;
+}
+
+[class^="grid-col-5of8"] {
+	flex-basis: 62.5%;
+}
+
+[class^="grid-col-4of8"] {
+	flex-basis: 50%;
+}
+
+[class^="grid-col-3of8"] {
+	flex-basis: 37.5%;
+}
+
+[class^="grid-col-2of8"] {
+	flex-basis: 25%;
+}
+
+[class^="grid-col-1of8"] {
+	flex-basis: 12.5%;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 140rem) {
+
+	[class^="grid-col-navitem"] {
+		flex-basis: 33.33%;
+	}
+
+}
+
+@media (max-width: 108rem) {
+
+	[class^="grid-col-1of8"], [class^="grid-col-3of8"],
+	[class^="grid-col-5of8"], [class^="grid-col-7of8"] {
+		flex-basis: 25%;
+	}
+
+}
+
+@media (max-width: 90rem) {
+
+	[class^="grid-col-navitem"] {
+		flex-basis: 50%;
+	}
+
+}
+
+@media (max-width: 70rem) {
+
+  [class^="grid-col-1of8"], [class^="grid-col-3of8"],
+	[class^="grid-col-5of8"], [class^="grid-col-7of8"] {
+		flex-basis: 50%;
+	}
+
+	[class^="grid-col-4of8"] {
+		flex-basis: 100%;
+	}
+
+	[class^="grid-col-2of8"] {
+		flex-basis: 50%;
+	}
+
+}
+
+@media (max-width: 64rem) {
+
+	[class^="grid-col-header-title"], [class^="grid-col-header-navbar"],
+	[class^="grid-col-navitem"] {
+		flex-basis: 100%;
+	}
+
+}
+
+@media (max-width: 50rem) {
+
+	[class^="grid-col-"] {
+		flex-basis: 100%;
+	}
+
+	[class^="grid-col-socialmedia"], [class^="grid-col-schedule"] {
+		flex-basis: 50%;
+	}
+
+}
+
+@media (max-width: 44rem) {
+
+	[class^="grid-col-"] {
+		flex-basis: 100%;
+	}
+
+	[class^="grid-col-schedule"] {
+		flex-basis: 50%;
+	}
+
+}
