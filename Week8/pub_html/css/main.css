@@ -11,7 +11,95 @@
   Other references will be noted at appropriate sections of this file.
 */
 
+
+
+
+
+/*************
+* BASE RULES
+*************/
+
+
+/* GENERAL */
+
 body {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 1rem;
+  color: #212121;
+}
+
+section {
+  /* margin:  */
+}
+
+/* TEXT */
+
+p, ol, ul {
+  max-width: 40rem;
+  /* margin: 0 0 1rem 0; */
+  color: #212121;
+}
+
+p {
+  line-height: 1.5rem;
+  /* margin:  */
+}
+
+ol li, ul li {
+  /* margin:  */
+}
+
+
+/* HEADER */
+
+header {
+  /* margin:  */
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: #212121;
+  padding: 1rem;
+  color: white;
+}
+
+footer a, footer p {
+  color: white;
+}
+
+
+/* HEADINGS */
+
+h1, h2, h3, h4 {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Site Title */
+h1 {
+  font-size: 2.5rem;
+  /* margin:  */
+}
+
+/* Page Title */
+h2 {
+  font-size: 1.5rem;
+  /* margin:  */
+}
+
+/* Section Title */
+h3 {
+  font-size: 1.25rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #1240AB;
+  /* margin:  */
+}
+
+/* Sub-Section Title */
+h4 {
+  font-size: 1rem;
+  /* margin:  */
 }
