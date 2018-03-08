@@ -57,6 +57,19 @@ header {
 }
 
 
+/* NAVIGATION */
+
+.nav-item {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  color: rgba(18, 64, 171, 1);
+  text-decoration: none;
+}
+
+
 /* FOOTER */
 
 footer {
@@ -94,7 +107,7 @@ h2 {
 h3 {
   font-size: 1.25rem;
   padding-bottom: 0.25rem;
-  border-bottom: 1px solid #1240AB;
+  border-bottom: 1px solid rgba(18, 64, 171, 1);
   /* margin:  */
 }
 
@@ -102,4 +115,118 @@ h3 {
 h4 {
   font-size: 1rem;
   /* margin:  */
+}
+
+
+
+
+
+/*************
+* MODULES
+*************/
+
+
+/* FIGURES AND IMAGES */
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+figure {
+  /* margin:  */
+}
+
+figcaption {
+  font-style: italic;
+  /* margin:  */
+}
+
+
+/* LINKS */
+
+a {
+  font-weight: bold;
+  color: rgba(18, 64, 171, 1);
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+}
+
+a:active, a:hover, a:focus{
+  color: rgba(87, 119, 192, 1);
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+}
+
+
+/* FORMS */
+/*
+  Got help from this website to learn about form formatting: https://www.w3schools.com/css/css_form.asp
+*/
+
+form input {
+  color: black;
+  background-color: rgba(87, 119, 192, 1);
+
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-size: 1rem;
+
+  border: none;
+  padding: 0.4rem 0.5rem;
+
+  background-repeat: no-repeat;
+  display: inline-block;
+
+  transition: background-color 0.5s ease-out;
+}
+
+form input[type=text]{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #212121;
+    /* border-radius: 0px; */
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: rgba(87, 119, 192, 1);
+    transition: background-color 0.5s ease-out;
+}
+
+form input[type=text]:active,
+form input[type=text]:hover,
+form input[type=text]:focus {
+    background-color: white;
+    transition: background-color 0.5s ease-out;
+}
+
+form input[type=text]::placeholder {
+  color: #212121;
+}
+
+form textarea { /* Got help from https://www.w3schools.com/Css/css_form.asp */
+  display: block;
+  width: 100%;
+  height: 6rem;
+  padding: 0.4rem 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border: 2px solid #212121;
+  /* border-radius: 0px; */
+  background-color: rgba(87, 119, 192, 1);
+  transition: background-color 0.5s ease-out;
+  resize: none;
+}
+
+form textarea:active,
+form textarea:hover,
+form textarea:focus {
+    background-color: white;
+    transition: background-color 0.5s ease-out;
+}
+
+form textarea::placeholder {
+  color: #212121;
 }
