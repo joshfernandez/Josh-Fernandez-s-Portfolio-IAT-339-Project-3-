@@ -97,89 +97,230 @@
 
         <!-- BODY: PORTFOLIO CONTENT copied from Andrew Hawryshkewich's Style Guide template -->
 
-        <!-- INTERACTIVE ELEMENTS SECTION // -->
-        <section id="interactive-elements">
+        <div class="grid-row">
+          <!-- INTERACTIVE ELEMENTS SECTION // -->
+          <section id="interactive-elements">
 
-          <h2>Interactive Elements</h2>
+            <h2>Interactive Elements</h2>
 
-          <!-- Default Button styling section -->
-          <section>
+            <div class="grid-col-4of8">
+              <!-- Default Button styling section -->
+              <section>
 
-            <h3>Navigation Button</h3>
+                <h3>Navigation Button</h3>
 
-            <h4>CSS selector:</h4>
-            <p>.button-nav</p>
+                <h4>CSS selector:</h4>
+                <p>.nav-item</p>
 
-            <h4>Sample code:</h4>
-            <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+                <h4>Sample code:</h4>
+                <code>
+                  &lt;a href="#" class="nav-item"&gt;<br />
+                    &emsp;Default Navigation Button<br />
+                  &lt;/a&gt;<br />
+                </code>
 
-            <h4>Rendered element:</h4>
-            <a class="button" href="#">Default Button</a>
+                <h4>Rendered element:</h4>
+                <a href="#" class="nav-item">
+                  Default Navigation Button
+                </a>
+
+              </section>
+            </div>
+
+            <div class="grid-col-4of8">
+              <section>
+                <h3>In-text link</h3>
+
+                <h4>CSS selector:</h4>
+                <p>a</p>
+
+                <h4>Sample code:</h4>
+                <code>
+                  &lt;a href="#"&gt;Default Link&lt;/a&gt;
+                </code>
+
+                <h4>Rendered element:</h4>
+                <a href="#">Default Link</a>
+
+              </section>
+            </div>
+
+            <div class="grid-col-4of8">
+              <section>
+                <h3>Submit/Reset Buttons</h3>
+
+                <h4>CSS selector:</h4>
+                <p>form, .button, button</p>
+
+                <h4>Sample code:</h4>
+                <code>
+                  &lt;form method="post" action="#" id="contact"&gt;<br />
+                    &emsp;&lt;input type="submit" class="button" value="Submit"&gt;<br />
+                    &emsp;&lt;button class="button"&gt;Reset&lt;/button&gt;<br />
+                  &lt;/form&gt;
+                </code>
+
+                <h4>Rendered element:</h4>
+                <form method="post" action="#" id="contact">
+                  <input type="submit" class="button" value="Submit">
+                  <button class="button">Reset</button>
+                </form>
+
+              </section>
+            </div>
+
+            <div class="grid-col-4of8">
+              <section>
+                <h3>Text Input Field</h3>
+
+                <h4>CSS selector:</h4>
+                <p>form, .form-search</p>
+
+                <h4>Sample code:</h4>
+                <code>
+                  &lt;form method="post" action="#" id="contact"&gt;<br />
+                    &emsp;&lt;label for="form-search"&gt;Search:&lt;/label&gt;<br />
+                    &emsp;&lt;input type="text" id="form-search" placeholder="Search the RDL website"&gt;<br />
+                  &lt;/form&gt;
+                </code>
+
+                <h4>Rendered element:</h4>
+                <form method="post" action="#" id="search-initial">
+                  <label hidden for="form-search">Search:</label>
+                  <input type="text" id="form-search" placeholder="Search">
+                </form>
+
+              </section>
+            </div>
 
           </section>
+          <!-- // INTERACTIVE ELEMENTS SECTION -->
+        </div>
 
-          <section>
-            <h3>In-text link</h3>
+
+        <div class="grid-row">
+          <!-- TEXT ELEMENTS SECTION // -->
+          <section id="text-elements">
+
+            <h2>Text Elements</h2>
+
+            <section>
+              <h3>Headings</h3>
+
+              <h4>CSS selector:</h4>
+              <p>h1, h2, h3, h4</p>
+
+              <h4>Sample code:</h4>
+              <code>
+                &lt;h1&gt;Level one heading&lt;/h1&gt;<br />
+                &lt;h2&gt;Level two heading&lt;/h2&gt;<br />
+                &lt;h3&gt;Level three heading&lt;/h3&gt;<br />
+                &lt;h4&gt;Level four heading&lt;/h4&gt;<br />
+              </code>
+
+              <h4>Rendered element:</h4>
+              <h1>Level one heading</h1>
+              <h2>Level two heading</h2>
+              <h3>Level three heading</h3>
+              <h4>Level four heading</h4>
+
+            </section>
+
+            <section>
+              <h3>Paragraphs</h3>
+
+              <h4>CSS selector:</h4>
+              <p>p</p>
+
+              <h4>Sample code:</h4>
+              <code>
+                &lt;p&gt;<br />
+                  &emsp;The Richmond Dodgeball League was founded in the Fall of 2010 as an extension of the Vancouver Dodgeball League. What started as an 8 team league has blossomed into an organization that now hosts 30 teams and over 250 players.<br />
+                &lt;/p&gt;
+              </code>
+
+              <h4>Rendered element:</h4>
+              <p>
+                The Richmond Dodgeball League was founded in the Fall of 2010 as an extension of the Vancouver Dodgeball League. What started as an 8 team league has blossomed into an organization that now hosts 30 teams and over 250 players.
+              </p>
+
+            </section>
+
+            <section>
+
+              <h3>Bulleted Lists</h3>
+
+              <h4>CSS selector:</h4>
+              <p>ul</p>
+
+              <h4>Sample code:</h4>
+              <code>
+                &lt;ul&gt;<br />
+                  &emsp;&lt;li&gt;One bullet&lt;/li&gt;<br />
+                  &emsp;&lt;li&gt;Two bullets&lt;/li&gt;<br />
+                  &emsp;&lt;li&gt;Three bullets&lt;/li&gt;<br />
+                &lt;/ul&gt;
+              </code>
+
+              <h4>Rendered element:</h4>
+              <ul>
+                <li>One bullet</li>
+                <li>Two bullets</li>
+                <li>Three bullets</li>
+              </ul>
+
+            </section>
+
+            <section>
+
+              <h3>Numbered Lists</h3>
+
+              <h4>CSS selector:</h4>
+              <p>ol</p>
+
+              <h4>Sample code:</h4>
+              <code>
+                &lt;ol&gt;<br />
+                  &emsp;&lt;li&gt;One bullet&lt;/li&gt;<br />
+                  &emsp;&lt;li&gt;Two bullets&lt;/li&gt;<br />
+                  &emsp;&lt;li&gt;Three bullets&lt;/li&gt;<br />
+                &lt;/ol&gt;
+              </code>
+
+              <h4>Rendered element:</h4>
+              <ol>
+                <li>One bullet</li>
+                <li>Two bullets</li>
+                <li>Three bullets</li>
+              </ol>
+              
+            </section>
+
           </section>
+          <!-- // TEXT ELEMENTS SECTION -->
+        </div>
 
-          <section>
-            <h3>Submit/Reset Buttons</h3>
+        <div class="grid-row">
+          <!-- COMBINED ELEMENTS SECTION // -->
+          <section id="combined-elements">
+
+            <h2>Combined Elements</h2>
+
+            <section>
+              <h3>Main Navigation</h3>
+            </section>
+
+            <section>
+              <h3>Grid Structure</h3>
+            </section>
+
+            <section>
+              <h3>Colour Swatches</h3>
+            </section>
+
           </section>
-
-          <section>
-            <h3>Text Input Field</h3>
-          </section>
-
-        </section>
-        <!-- // INTERACTIVE ELEMENTS SECTION -->
-
-
-
-        <!-- TEXT ELEMENTS SECTION // -->
-        <section id="text-elements">
-
-          <h2>Text Elements</h2>
-
-          <section>
-            <h3>Headings</h3>
-          </section>
-
-          <section>
-            <h3>Paragraphs</h3>
-          </section>
-
-          <section>
-            <h3>Bulleted Lists</h3>
-          </section>
-
-          <section>
-            <h3>Numbered Lists</h3>
-          </section>
-
-        </section>
-        <!-- // TEXT ELEMENTS SECTION -->
-
-
-
-        <!-- COMBINED ELEMENTS SECTION // -->
-        <section id="combined-elements">
-
-          <h2>Combined Elements</h2>
-
-          <section>
-            <h3>Main Navigation</h3>
-          </section>
-
-          <section>
-            <h3>Grid Structure</h3>
-          </section>
-
-          <section>
-            <h3>Colour Swatches</h3>
-          </section>
-
-        </section>
-        <!-- // COMBINED ELEMENTS SECTION -->
+          <!-- // COMBINED ELEMENTS SECTION -->
+        </div>
 
       </div>
 
