@@ -50,6 +50,7 @@ ol, ul {
 }
 
 ul {
+  /* Got help from: https://www.w3schools.com/css/css_list.asp */
   list-style-type: square;
 }
 
