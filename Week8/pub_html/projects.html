@@ -34,54 +34,204 @@
 
   <body>
 
-    <!-- HEADER -->
+    <div class="grid-row">
 
-    <header>
+      <div class="grid-col-2of8">
 
-      <h1>The Josh Fernandez Portfolio</h1>
+        <!-- HEADER -->
 
-      <nav>
+        <header>
 
-        <a href="index.html" class="nav-item">
-          Home
-        </a>
+          <h1>
+            <a href="index.html">
+              The Josh Fernandez Portfolio
+            </a>
+          </h1>
 
-        <a href="about.html" class="nav-item">
-          About Josh
-        </a>
+          <nav>
 
-        <a href="projects.html" class="nav-item">
-          Josh's Projects
-        </a>
+            <a href="index.html" class="nav-item">
+              Home
+            </a>
 
-        <a href="contact.html" class="nav-item">
-          Contact Josh
-        </a>
+            <a href="about.html" class="nav-item">
+              About Josh
+            </a>
 
-      </nav>
+            <a href="projects.html" class="nav-item">
+              Josh's Projects
+            </a>
 
-    </header>
+            <a href="contact.html" class="nav-item">
+              Contact Josh
+            </a>
 
-    <!-- BODY -->
+          </nav>
 
-    <!-- FOOTER -->
+        </header>
 
-    <footer>
-
-      <div id="footer-links">
-        <a href="https://www.linkedin.com/in/josh-fernandez/" target="_blank">Josh's Linked-In</a>
-        <a href="styleguide.html">Style Guide</a>
-        <a href="citations.html">Citations</a>
-        <a href="https://github.com/joshfernandez/iat339_P03/" target="_blank">Git Repository</a>
-        <a href="http://www.sfu.ca/~jafernan/iat102portfolio/" target="_blank">Josh's Previous Portfolio</a>
       </div>
 
-      <!-- Got help from: https://www.plagiarismtoday.com/2011/11/08/how-to-write-a-copyright-notice/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+PlagiarismToday+%28Plagiarism+Today%29 -->
-      <div id="copyright">
-        &copy; 2018 Josh Fernandez. All Rights Reserved.
+      <div class="grid-col-6of8">
+
+        <!-- BODY -->
+
+        <h2>Social Networking Interaction System</h2>
+
+        <ul>
+          <li><strong>Languages Used:</strong> C++</li>
+          <li><strong>Software and Frameworks Used:</strong> Microsoft Azure, JSON, UnitTest++, Git</li>
+          <li><strong>Skills Acquired:</strong> Server-Client Understanding and Interaction, Team Collaboration, Pair Programming, Authentication, Agile Development, Testing, Quality Assurance</li>
+          <li><strong>Course Learned:</strong> Introduction to Software Engineering</li>
+        </ul>
+
+        <p>
+          This is a program that uses Microsoft Azure's storage tables to create a Facebook-based interaction system between different clients. This was a semester-long project I developed in a 4-member team for my Introduction to Software Engineering class. I led and administered the team, wrote functions and code snippets to add features to the server, and wrote unit tests to strengthen the functionalities of the client.
+        </p>
+
+        <section>
+
+          <h3>Iteration 1: The Basics</h3>
+
+          <p>
+            The first iteration exposed my team members and me with the framework of Azure's tables. I learned how to create, update, and delete a JSON entity in a key-value storage table.
+          </p>
+
+          <p>
+            I also learned the uses and importance of the GET, PUT, POST, and DELETE functions.
+          </p>
+
+          <p>
+            Lastly, I was exposed to creating low-level unit tests through the UnitTest++ framework to search for bugs or abnormalities with our server code. It was my first time experiencing software quality assurance.
+          </p>
+
+          <code>
+            cout << "============ New GET - FIRST TEST ===============\n";<br />
+            <br />
+            // First check - Get all entries with the property "Food" in an empty table<br />
+            string property_name {"Food"};<br />
+            string property_value {"*"};<br />
+            pair<status_code,value> result {<br />
+              &emsp;do_request (methods::GET,<br />
+                &emsp;&emsp;string(GetFixture::addr) + read_entity_admin + "/" + string(GetFixture::table),<br />
+                &emsp;&emsp;value::object(vector<pair<string,value>>{make_pair(property_name,<br /> &emsp;&emsp;value::string(property_value))}))<br />
+            };<br />
+            <br />
+            CHECK_EQUAL(status_codes::OK, result.first);<br />
+            CHECK(result.second.is_array());<br />
+            CHECK_EQUAL(0, result.second.as_array().size());<br />
+            cout << "Result of first check: " << result.second.serialize() << endl;<br />
+            <br />
+            cout << endl;<br />
+          </code>
+
+        </section>
+
+        <section>
+
+          <h3>Iteration 2: The Authentication</h3>
+
+          <p>
+            The second iteration introduced my team members and me to the processes and implementation of authorization and authentication. I was in-charge of acquiring and checking the validity of a 185-bit string security token.
+          </p>
+
+          <p>
+            During this iteration, I was also overwhelmed by the confusions and complications of using Git on the terminal.
+          </p>
+
+          <code>
+            pair<status_code,value> add_auth {<br />
+              &emsp;do_request (methods::PUT,<br />
+              &emsp;addr + update_entity_admin + "/" + auth_table + "/" + auth_table_partition + "/" + userid,<br />
+              &emsp;value::object (vector<pair<string,value>>{make_pair("Password", value::string(user_pwd)),<br />
+              &emsp;make_pair("DataPartition", value::string(partition)),<br />
+              &emsp;make_pair("DataRow", value::string(row))}))<br />
+            };<br />
+            <br />
+            cerr << "user auth table insertion result " << add_auth.first << endl;<br />
+            if (add_auth.first != status_codes::OK) {<br />
+              &emsp;throw std::exception();<br />
+            }<br />
+          </code>
+
+        </section>
+
+        <section>
+
+          <h3>Iteration 3: The Social Networking Features</h3>
+
+          <p>
+            This last iteration allowed my team members and me the opportunity to create features for a social networking user session. During this iteration, I've written both server and client code for signing on, signing off, reading the contents of a user's friend list, and pushing the user's updated status to his or her friends.
+          </p>
+
+          <p>
+            It was also during this iteration where I had to delegate tasks to my members because the semester was closing and we were busy with finishing other assignments.
+          </p>
+
+          <code>
+            // Check if the user has an active session.<br />
+            std::unordered_map<string, tuple<string, string, string>>::iterator active_user = active_users.find(username);<br />
+            <br />
+            if(active_user == active_users.end())<br />
+            {<br />
+              &emsp;cout << "The user never had an active session.\n";<br />
+              &emsp;message.reply(status_codes::Forbidden);<br />
+              &emsp;return;<br />
+            }<br />
+            <br />
+            tuple<string, string, string> user_properties = get_user(username);<br />
+            cout << "\tUser token: " << get<0>(user_properties) << endl;<br />
+            cout << "\tUser partition: " << get<1>(user_properties) << endl;<br />
+            cout << "\tUser row: " << get<2>(user_properties) << endl;<br />
+            <br />
+            string user_token = get<0>(user_properties);<br />
+            string user_partition = get<1>(user_properties);<br />
+            string user_row = get<2>(user_properties);<br />
+          </code>
+
+        </section>
+
+        <section>
+
+          <h3>Reflection</h3>
+
+          <p>
+            The project turned out well, although our tests did not cover all cases for functionality and correctness. This meant that some of our server code was either wrong or incomplete. If there was one thing I wanted to improve for this project, it was in being clear with how to use Git.
+          </p>
+
+        </section>
+
       </div>
 
-    </footer>
+    </div>
+
+    <div class="grid-row">
+
+      <div class="grid-col-8of8">
+
+        <!-- FOOTER -->
+
+        <footer>
+
+          <div id="footer-links">
+            <a href="https://www.linkedin.com/in/josh-fernandez/" target="_blank">Josh's Linked-In</a>
+            <a href="styleguide.html">Style Guide</a>
+            <a href="citations.html">Citations</a>
+            <a href="https://github.com/joshfernandez/iat339_P03/" target="_blank">Git Repository</a>
+            <a href="http://www.sfu.ca/~jafernan/iat102portfolio/" target="_blank">Josh's Previous Portfolio</a>
+          </div>
+
+          <!-- Got help from: https://www.plagiarismtoday.com/2011/11/08/how-to-write-a-copyright-notice/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+PlagiarismToday+%28Plagiarism+Today%29 -->
+          <div id="copyright">
+            &copy; 2018 Josh Fernandez. All Rights Reserved.
+          </div>
+
+        </footer>
+
+      </div>
+
+    </div>
+
 
 
     <!-- [if lt IE 9]><script src="js/html5shiv.js"></script><![endif] -->

@@ -29,7 +29,7 @@ body {
 }
 
 section {
-  /* margin:  */
+  margin-bottom: 1rem;
 }
 
 /* TEXT */
@@ -42,11 +42,19 @@ p, ol, ul {
 
 p {
   line-height: 1.5rem;
-  /* margin:  */
+  margin: 1rem 0;
+}
+
+ol, ul {
+  margin: 1rem 0;
+}
+
+ul {
+  list-style-type: square;
 }
 
 ol li, ul li {
-  /* margin:  */
+  margin: 0.5rem 0;
 }
 
 
@@ -58,6 +66,10 @@ header {
 
 
 /* NAVIGATION */
+
+nav {
+  margin-bottom: 1rem;
+}
 
 .nav-item {
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
@@ -82,6 +94,10 @@ footer a, footer p {
   color: white;
 }
 
+footer div {
+  margin: 0.25rem 0;
+}
+
 
 /* HEADINGS */
 
@@ -94,27 +110,27 @@ h1, h2, h3, h4 {
 /* Site Title */
 h1 {
   font-size: 2.5rem;
-  /* margin:  */
+  margin: 0 1rem;
 }
 
 /* Page Title */
 h2 {
-  font-size: 1.5rem;
-  /* margin:  */
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Section Title */
 h3 {
   font-size: 1.25rem;
   padding-bottom: 0.25rem;
-  border-bottom: 1px solid rgba(18, 64, 171, 1);
+  border-bottom: 2px solid rgba(18, 64, 171, 1);
   /* margin:  */
 }
 
 /* Sub-Section Title */
 h4 {
   font-size: 1rem;
-  /* margin:  */
+  margin: 0.75rem 0 0.25rem 0;
 }
 
 
@@ -158,6 +174,25 @@ a:active, a:hover, a:focus{
   transition: color 0.5s ease-out;
 }
 
+.button {
+  display: inline-block;
+  background-color: rgba(18, 64, 171, 1);
+  color: white;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.6rem;
+  margin: 0.25rem 0.125rem;;
+  transition: background-color 0.5s ease-out;
+}
+
+.button:active, .button:hover, .button:focus {
+  background-color: rgba(87, 119, 192, 1);
+  transition: background-color 0.4s ease-out;
+}
+
 
 /* FORMS */
 /*
@@ -165,8 +200,8 @@ a:active, a:hover, a:focus{
 */
 
 form input {
-  color: black;
-  background-color: rgba(87, 119, 192, 1);
+  color: white;
+  background-color: rgba(18, 64, 171, 1);
 
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
   font-size: 1rem;
@@ -188,7 +223,7 @@ form input[type=text]{
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     font-size: 1rem;
-    background-color: rgba(87, 119, 192, 1);
+    background-color: #E0E0E0;
     transition: background-color 0.5s ease-out;
 }
 
@@ -197,6 +232,7 @@ form input[type=text]:hover,
 form input[type=text]:focus {
     background-color: white;
     transition: background-color 0.5s ease-out;
+    color: #212121;
 }
 
 form input[type=text]::placeholder {
@@ -215,7 +251,7 @@ form textarea { /* Got help from https://www.w3schools.com/Css/css_form.asp */
   box-sizing: border-box;
   border: 2px solid #212121;
   /* border-radius: 0px; */
-  background-color: rgba(87, 119, 192, 1);
+  background-color: #E0E0E0;
   transition: background-color 0.5s ease-out;
   resize: none;
 }
@@ -229,4 +265,16 @@ form textarea:focus {
 
 form textarea::placeholder {
   color: #212121;
+}
+
+
+/* CODE */
+
+code {
+  background-color: #EEE;
+  font-size: 0.8rem;
+  display: block;
+  padding: 1rem 1.5rem;
+  line-height: 1.25rem;
+  margin-bottom: 2rem;
 }
