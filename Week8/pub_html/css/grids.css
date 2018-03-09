@@ -93,6 +93,7 @@ section {
 
 [class^="grid-col-6of8"] {
 	flex-basis: 75%;
+  padding: 1rem; /* Make this more formal. */
 }
 
 [class^="grid-col-5of8"] {
@@ -154,7 +155,7 @@ section {
 		flex-basis: 100%;
 	}
 
-	[class^="grid-col-2of8"] {
+	[class^="grid-col-2of8"], [class^="grid-col-6of8"] {
 		flex-basis: 50%;
 	}
 
