@@ -42,7 +42,7 @@ p, ol, ul {
 
 p {
   line-height: 1.5rem;
-  /* margin:  */
+  margin: 0.5rem 0;
 }
 
 ol li, ul li {
