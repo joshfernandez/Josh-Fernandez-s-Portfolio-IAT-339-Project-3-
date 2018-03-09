@@ -105,6 +105,26 @@
             Lastly, I was exposed to creating low-level unit tests through the UnitTest++ framework to search for bugs or abnormalities with our server code. It was my first time experiencing software quality assurance.
           </p>
 
+          <code>
+            cout << "============ New GET - FIRST TEST ===============\n";<br />
+            <br />
+            // First check - Get all entries with the property "Food" in an empty table<br />
+            string property_name {"Food"};<br />
+            string property_value {"*"};<br />
+            pair<status_code,value> result {<br />
+              &emsp;do_request (methods::GET,<br />
+                &emsp;&emsp;string(GetFixture::addr) + read_entity_admin + "/" + string(GetFixture::table),<br />
+                &emsp;&emsp;value::object(vector<pair<string,value>>{make_pair(property_name,<br /> &emsp;&emsp;value::string(property_value))}))<br />
+            };<br />
+            <br />
+            CHECK_EQUAL(status_codes::OK, result.first);<br />
+            CHECK(result.second.is_array());<br />
+            CHECK_EQUAL(0, result.second.as_array().size());<br />
+            cout << "Result of first check: " << result.second.serialize() << endl;<br />
+            <br />
+            cout << endl;<br />
+          </code>
+
         </section>
 
         <section>
@@ -119,6 +139,21 @@
             During this iteration, I was also overwhelmed by the confusions and complications of using Git on the terminal.
           </p>
 
+          <code>
+            pair<status_code,value> add_auth {<br />
+              &emsp;do_request (methods::PUT,<br />
+              &emsp;addr + update_entity_admin + "/" + auth_table + "/" + auth_table_partition + "/" + userid,<br />
+              &emsp;value::object (vector<pair<string,value>>{make_pair("Password", value::string(user_pwd)),<br />
+              &emsp;make_pair("DataPartition", value::string(partition)),<br />
+              &emsp;make_pair("DataRow", value::string(row))}))<br />
+            };<br />
+            <br />
+            cerr << "user auth table insertion result " << add_auth.first << endl;<br />
+            if (add_auth.first != status_codes::OK) {<br />
+              &emsp;throw std::exception();<br />
+            }<br />
+          </code>
+
         </section>
 
         <section>
@@ -132,6 +167,27 @@
           <p>
             It was also during this iteration where I had to delegate tasks to my members because the semester was closing and we were busy with finishing other assignments.
           </p>
+
+          <code>
+            // Check if the user has an active session.<br />
+            std::unordered_map<string, tuple<string, string, string>>::iterator active_user = active_users.find(username);<br />
+            <br />
+            if(active_user == active_users.end())<br />
+            {<br />
+              &emsp;cout << "The user never had an active session.\n";<br />
+              &emsp;message.reply(status_codes::Forbidden);<br />
+              &emsp;return;<br />
+            }<br />
+            <br />
+            tuple<string, string, string> user_properties = get_user(username);<br />
+            cout << "\tUser token: " << get<0>(user_properties) << endl;<br />
+            cout << "\tUser partition: " << get<1>(user_properties) << endl;<br />
+            cout << "\tUser row: " << get<2>(user_properties) << endl;<br />
+            <br />
+            string user_token = get<0>(user_properties);<br />
+            string user_partition = get<1>(user_properties);<br />
+            string user_row = get<2>(user_properties);<br />
+          </code>
 
         </section>
 
