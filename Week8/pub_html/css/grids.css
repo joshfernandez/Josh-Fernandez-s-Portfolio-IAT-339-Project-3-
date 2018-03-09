@@ -11,6 +11,7 @@
   Other references will be noted at appropriate sections of this file.
 */
 
+
 /* GENERAL */
 
 *, *::after, *::before { /* All browsers need to have box sizing */
@@ -33,12 +34,46 @@
 
 /* ELEMENT STYLE CHANGES */
 
+header {
+  background-color: rgba(8, 37, 104, 1);
+  color: white;
+  height: 100%; /* Change this. */
+  /* padding: 1rem 0 20rem 0; */
+}
+
+.nav-item {
+  display: inline-block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  color: white;
+  transition: background-color 0.5s ease-out;
+}
+
+.nav-item:hover, .nav-item:focus, .nav-item:active {
+  background-color: rgba(18, 64, 171, 1);
+  color: white;
+  transition: background-color 0.5s ease-out;
+}
+
 h1 {
-  /* margin:  */
+  padding: 1rem 0;
 }
 
 section {
   /* margin:  */
+}
+
+#footer-links a {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  color: white;
+  transition: background-color 0.5s ease-out;
+}
+
+#footer-links a:hover, #footer-links a:focus, #footer-links a:active {
+  background-color: #616161;
+  color: white;
+  transition: background-color 0.5s ease-out;
 }
 
 
