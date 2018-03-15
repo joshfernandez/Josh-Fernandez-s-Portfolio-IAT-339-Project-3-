@@ -1,0 +1,28 @@
+/*
+  IAT 339 with Prof. Andrew Hawryshkewich
+  D101 with Elgin-Skye McLaren
+  P03: Portfolio
+  Josh Fernandez
+
+  styleguide.css
+
+  Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
+  Some sections have been copied or inspired by Project 2: Richmond Dodgeball League website. Thank you to Priscilla Skylar-Lee and Heather Maskell.
+  Other references will be noted at appropriate sections of this file.
+*/
+
+
+section {
+  padding: 0.5rem 0;
+  /* display: block; */
+  /* padding: 1rem 3rem; */
+  /* border-bottom: #000 solid .25rem; */
+}
+
+section code {
+  background-color: #EEE;
+  display: block;
+  padding: 1rem 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}

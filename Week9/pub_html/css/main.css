@@ -1,0 +1,281 @@
+/*
+  IAT 339 with Prof. Andrew Hawryshkewich
+  D101 with Elgin-Skye McLaren
+  P03: Portfolio
+  Josh Fernandez
+
+  main.css
+
+  Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
+  Some sections have been copied or inspired by Project 2: Richmond Dodgeball League website. Thank you to Priscilla Skylar-Lee and Heather Maskell.
+  Other references will be noted at appropriate sections of this file.
+*/
+
+
+
+
+
+/*************
+* BASE RULES
+*************/
+
+
+/* GENERAL */
+
+body {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #212121;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+/* TEXT */
+
+p, ol, ul {
+  max-width: 40rem;
+  /* margin: 0 0 1rem 0; */
+  color: #212121;
+}
+
+p {
+  line-height: 1.5rem;
+  margin: 1rem 0;
+}
+
+ol, ul {
+  margin: 1rem 0;
+}
+
+ul {
+  /* Got help from: https://www.w3schools.com/css/css_list.asp */
+  list-style-type: square;
+}
+
+ol li, ul li {
+  margin: 0.5rem 0;
+}
+
+
+/* HEADER */
+
+header {
+  /* margin:  */
+}
+
+
+/* NAVIGATION */
+
+nav {
+  margin-bottom: 1rem;
+}
+
+.nav-item {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  color: rgba(18, 64, 171, 1);
+  text-decoration: none;
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: #212121;
+  padding: 1rem;
+  color: white;
+}
+
+footer a, footer p {
+  color: white;
+}
+
+footer div {
+  margin: 0.25rem 0;
+}
+
+
+/* HEADINGS */
+
+h1, h2, h3, h4 {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Site Title */
+h1 {
+  font-size: 2.5rem;
+  margin: 0 1rem;
+}
+
+/* Page Title */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Section Title */
+h3 {
+  font-size: 1.25rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid rgba(18, 64, 171, 1);
+  /* margin:  */
+}
+
+/* Sub-Section Title */
+h4 {
+  font-size: 1rem;
+  margin: 0.75rem 0 0.25rem 0;
+}
+
+
+
+
+
+/*************
+* MODULES
+*************/
+
+
+/* FIGURES AND IMAGES */
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+figure {
+  /* margin:  */
+}
+
+figcaption {
+  font-style: italic;
+  /* margin:  */
+}
+
+
+/* LINKS */
+
+a {
+  font-weight: bold;
+  color: rgba(18, 64, 171, 1);
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+}
+
+a:active, a:hover, a:focus{
+  color: rgba(87, 119, 192, 1);
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+}
+
+.button {
+  display: inline-block;
+  background-color: rgba(18, 64, 171, 1);
+  color: white;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.6rem;
+  margin: 0.25rem 0.125rem;;
+  transition: background-color 0.5s ease-out;
+}
+
+.button:active, .button:hover, .button:focus {
+  background-color: rgba(87, 119, 192, 1);
+  transition: background-color 0.4s ease-out;
+}
+
+
+/* FORMS */
+/*
+  Got help from this website to learn about form formatting: https://www.w3schools.com/css/css_form.asp
+*/
+
+form input {
+  color: white;
+  background-color: rgba(18, 64, 171, 1);
+
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-size: 1rem;
+
+  border: none;
+  padding: 0.4rem 0.5rem;
+
+  background-repeat: no-repeat;
+  display: inline-block;
+
+  transition: background-color 0.5s ease-out;
+}
+
+form input[type=text]{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #212121;
+    /* border-radius: 0px; */
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: #E0E0E0;
+    transition: background-color 0.5s ease-out;
+}
+
+form input[type=text]:active,
+form input[type=text]:hover,
+form input[type=text]:focus {
+    background-color: white;
+    transition: background-color 0.5s ease-out;
+    color: #212121;
+}
+
+form input[type=text]::placeholder {
+  color: #212121;
+}
+
+form textarea { /* Got help from https://www.w3schools.com/Css/css_form.asp */
+  display: block;
+  width: 100%;
+  height: 6rem;
+  padding: 0.4rem 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border: 2px solid #212121;
+  /* border-radius: 0px; */
+  background-color: #E0E0E0;
+  transition: background-color 0.5s ease-out;
+  resize: none;
+}
+
+form textarea:active,
+form textarea:hover,
+form textarea:focus {
+    background-color: white;
+    transition: background-color 0.5s ease-out;
+}
+
+form textarea::placeholder {
+  color: #212121;
+}
+
+
+/* CODE */
+
+code {
+  background-color: #EEE;
+  font-size: 0.8rem;
+  display: block;
+  padding: 1rem 1.5rem;
+  line-height: 1.25rem;
+  margin-bottom: 2rem;
+}
