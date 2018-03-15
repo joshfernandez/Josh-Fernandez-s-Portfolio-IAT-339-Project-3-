@@ -52,6 +52,7 @@ p {
 
 ol, ul {
   margin: 1rem 0;
+  margin-left: -1rem;
 }
 
 ul {

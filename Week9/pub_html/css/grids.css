@@ -173,3 +173,80 @@ section {
 	}
 
 }
+
+/* FOR THE PROJECT EXPLANATIONS */
+
+@media (min-width: 40rem) {
+
+	[class^="grid-col-project-main-explanation"] {
+		flex-basis: 50%;
+	}
+
+	[class^="grid-col-project-main-points"] {
+		flex-basis: 50%;
+	}
+
+	[class^="grid-col-project-main-points"] ul {
+		margin-left: 0;
+	}
+
+}
+
+@media (min-width: 46rem) {
+
+	[class^="grid-col-project-main-"] {
+		flex-basis: 100%;
+	}
+
+	[class^="grid-col-project-main-points"] ul {
+		margin-left: -1rem;
+	}
+
+}
+
+@media (min-width: 60rem) {
+
+	[class^="grid-col-project-main-explanation"] {
+		flex-basis: 50%;
+	}
+
+	[class^="grid-col-project-main-points"] {
+		flex-basis: 50%;
+	}
+
+	[class^="grid-col-project-main-points"] ul {
+		margin-left: 0;
+	}
+
+}
+
+@media (min-width: 72rem) {
+
+	[class^="grid-col-project-main-explanation"] {
+		flex-basis: 55%;
+	}
+
+	[class^="grid-col-project-main-points"] {
+		flex-basis: 45%;
+	}
+
+}
+
+
+/* FOR THE PROJECT ITERATIONS */
+
+@media (min-width: 60rem) {
+
+	[class^="grid-col-project-iteration-explanation"] {
+		flex-basis: 33.33%;
+	}
+
+	[class^="grid-col-project-iteration-code"] {
+		flex-basis: 66.67%;
+	}
+
+	[class^="grid-col-project-iteration-code"] code {
+		margin: 1rem 0 0 1rem;
+	}
+
+}
