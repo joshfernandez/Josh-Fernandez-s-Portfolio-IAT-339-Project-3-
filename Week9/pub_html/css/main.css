@@ -170,7 +170,6 @@ figcaption {
 
 a {
   font-weight: bold;
-  display: inline-block;
   color: rgba(18, 64, 171, 1);
   text-decoration: none;
   transition: color 0.5s ease-out;
