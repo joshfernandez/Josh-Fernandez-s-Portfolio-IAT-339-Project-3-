@@ -82,6 +82,13 @@ section {
 }
 
 
+/* COLUMN WIDTHS - OFFICIAL */
+
+[class^="grid-col-body"] {
+	padding: 1rem;
+}
+
+
 /* COLUMN WIDTHS - DIVISIONS OF 8 */
 
 [class^="grid-col-8of8"] {
@@ -120,77 +127,49 @@ section {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 140rem) {
+@media (min-width: 0rem) {
 
-	[class^="grid-col-navitem"] {
+	[class^="grid-col-"] {
+		flex-basis: 100%;
+	}
+
+}
+
+
+/* FOR THE HEADER, BODY, AND FOOTER */
+
+@media (min-width: 46rem) {
+
+	[class^="grid-col-header"] {
 		flex-basis: 33.33%;
 	}
 
+	[class^="grid-col-body"] {
+		flex-basis: 66.67%;
+	}
+
 }
 
-@media (max-width: 108rem) {
+@media (min-width: 62rem) {
 
-	[class^="grid-col-1of8"], [class^="grid-col-3of8"],
-	[class^="grid-col-5of8"], [class^="grid-col-7of8"] {
+	[class^="grid-col-header"] {
 		flex-basis: 25%;
 	}
 
-}
-
-@media (max-width: 90rem) {
-
-	[class^="grid-col-navitem"] {
-		flex-basis: 50%;
+	[class^="grid-col-body"] {
+		flex-basis: 75%;
 	}
 
 }
 
-@media (max-width: 70rem) {
+@media (min-width: 80rem) {
 
-  [class^="grid-col-1of8"], [class^="grid-col-3of8"],
-	[class^="grid-col-5of8"], [class^="grid-col-7of8"] {
-		flex-basis: 50%;
+	[class^="grid-col-header"] {
+		flex-basis: 20%;
 	}
 
-	[class^="grid-col-4of8"] {
-		flex-basis: 100%;
-	}
-
-	[class^="grid-col-2of8"], [class^="grid-col-6of8"] {
-		flex-basis: 50%;
-	}
-
-}
-
-@media (max-width: 64rem) {
-
-	[class^="grid-col-header-title"], [class^="grid-col-header-navbar"],
-	[class^="grid-col-navitem"] {
-		flex-basis: 100%;
-	}
-
-}
-
-@media (max-width: 50rem) {
-
-	[class^="grid-col-"] {
-		flex-basis: 100%;
-	}
-
-	[class^="grid-col-socialmedia"], [class^="grid-col-schedule"] {
-		flex-basis: 50%;
-	}
-
-}
-
-@media (max-width: 44rem) {
-
-	[class^="grid-col-"] {
-		flex-basis: 100%;
-	}
-
-	[class^="grid-col-schedule"] {
-		flex-basis: 50%;
+	[class^="grid-col-body"] {
+		flex-basis: 80%;
 	}
 
 }
