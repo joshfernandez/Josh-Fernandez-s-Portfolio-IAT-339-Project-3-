@@ -23,9 +23,9 @@
 /* GENERAL */
 
 /* FOR DEBUGGING PURPOSES - Thanks to the Web Basics workout of Enki */
-/* * {
+* {
 	background-color: rgba(0, 0, 0, 0.15);
-} */
+}
 
 body {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -170,6 +170,7 @@ figcaption {
 
 a {
   font-weight: bold;
+  display: inline-block;
   color: rgba(18, 64, 171, 1);
   text-decoration: none;
   transition: color 0.5s ease-out;
