@@ -250,3 +250,50 @@ section {
 	}
 
 }
+
+
+/* FOR THE STYLEGUIDE SECTIONS */
+
+@media (min-width: 40rem) {
+
+	[class^="grid-col-styleguide-section"] {
+		flex-basis: 50%;
+	}
+
+	[class^="grid-col-styleguide-section"] section {
+		margin: 0 1rem 2rem 0;
+	}
+
+}
+
+@media (min-width: 46rem) {
+
+	[class^="grid-col-styleguide-section"] {
+		flex-basis: 100%;
+	}
+
+	[class^="grid-col-styleguide-section"] section {
+		margin: 1rem 0;
+	}
+
+}
+
+@media (min-width: 62rem) {
+
+	[class^="grid-col-styleguide-section"] {
+		flex-basis: 50%;
+	}
+
+	[class^="grid-col-styleguide-section"] section {
+		margin: 0 1rem 2rem 0;
+	}
+
+}
+
+@media (min-width: 100rem) {
+
+	[class^="grid-col-styleguide-section"] {
+		flex-basis: 25%;
+	}
+
+}

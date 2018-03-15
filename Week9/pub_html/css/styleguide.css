@@ -26,3 +26,7 @@ section code {
   line-height: 1.5rem;
   margin-bottom: 2rem;
 }
+
+section p {
+  margin: 0;
+}
