@@ -80,14 +80,14 @@
 
         <!-- BODY -->
 
-        <h2>Social Networking Interaction System</h2>
+        <h2>Richmond Dodgeball League Website</h2>
 
         <div class="grid-row">
 
           <div class="grid-col-project-main-explanation">
 
             <p>
-              This is a program that uses Microsoft Azure's storage tables to create a Facebook-based interaction system between different clients. This was a semester-long project I developed in a 4-member team for my Introduction to Software Engineering class. I led and administered the team, wrote functions and code snippets to add features to the server, and wrote unit tests to strengthen the functionalities of the client.
+              This is a website that uses the understanding, mastery, and full exposure to HTML and CSS to create a business, service-listing site for a dodgeball association. This was a month-long project I developed in a 3-member team for my Web Design and Development class. I wrote the structure and foundation of the code, collaborated with my teammates to solve design and responsiveness issues, and through critically about the usefulness and maintenance of the site.
             </p>
 
           </div>
@@ -95,10 +95,11 @@
           <div class="grid-col-project-main-points">
 
             <ul>
-              <li><strong>Languages Used:</strong> C++</li>
-              <li><strong>Software and Frameworks Used:</strong> Microsoft Azure, JSON, UnitTest++, Git</li>
-              <li><strong>Skills Acquired:</strong> Server-Client Understanding and Interaction, Team Collaboration, Pair Programming, Authentication, Agile Development, Testing, Quality Assurance</li>
-              <li><strong>Course Learned:</strong> Introduction to Software Engineering</li>
+              <li><strong>Teammates Involved:</strong> Priscilla Skylar-Lee and Heather Maskell</li>
+              <li><strong>Languages Used:</strong> HTML and CSS</li>
+              <li><strong>Software and Frameworks Used:</strong> Atom, GitHub, GitKraken</li>
+              <li><strong>Skills Acquired:</strong> Company Website Development, Team Collaboration, Style Guide Creation, Responsive Design, Adaptiveness and Accessibility</li>
+              <li><strong>Course Learned:</strong> Web Design and Development</li>
             </ul>
 
           </div>
@@ -107,47 +108,41 @@
 
         <section>
 
-          <h3>Iteration 1: The Basics</h3>
+          <h3>Iteration 1: The Style Guide, Site Map, and Introduction to GitKraken</h3>
 
           <div class="grid-row">
 
             <div class="grid-col-project-iteration-explanation">
 
               <p>
-                The first iteration exposed my team members and me with the framework of Azure's tables. I learned how to create, update, and delete a JSON entity in a key-value storage table.
+                For the first iteration, my teammates and I built the foundations of the site by creating a style guide and its sitemap.
               </p>
 
               <p>
-                I also learned the uses and importance of the GET, PUT, POST, and DELETE functions.
+                The sitemap demonstrated the structure of each of the webpages.
               </p>
 
               <p>
-                Lastly, I was exposed to creating low-level unit tests through the UnitTest++ framework to search for bugs or abnormalities with our server code. It was my first time experiencing software quality assurance.
+                The style guide described and explained the uses and interactions for each of the elements.
+              </p>
+
+              <p>
+                It was also my first time using GitKraken. As expected, I found difficulties and confusion with using it, particularly with merging branches, maintaining a proper Git workflow by only achieving one goal at a time, and - more importantly - paying attention to what my other members are doing.
               </p>
 
             </div>
 
             <div class="grid-col-project-iteration-code">
 
-              <code>
-                cout << "============ New GET - FIRST TEST ===============\n";<br />
-                <br />
-                // First check - Get all entries with the property "Food" in an empty table<br />
-                string property_name {"Food"};<br />
-                string property_value {"*"};<br />
-                pair<status_code,value> result {<br />
-                  &emsp;do_request (methods::GET,<br />
-                    &emsp;&emsp;string(GetFixture::addr) + read_entity_admin + "/" + string(GetFixture::table),<br />
-                    &emsp;&emsp;value::object(vector<pair<string,value>>{make_pair(property_name,<br /> &emsp;&emsp;value::string(property_value))}))<br />
-                };<br />
-                <br />
-                CHECK_EQUAL(status_codes::OK, result.first);<br />
-                CHECK(result.second.is_array());<br />
-                CHECK_EQUAL(0, result.second.as_array().size());<br />
-                cout << "Result of first check: " << result.second.serialize() << endl;<br />
-                <br />
-                cout << endl;<br />
-              </code>
+              <figure>
+
+                <img src="img/rdl_styleguide2.png" alt="The Initial Style Guide">
+
+                <figcaption>
+                  The Initial Richmond Dodgeball League Style Guide
+                </figcaption>
+
+              </figure>
 
             </div>
 
@@ -157,38 +152,33 @@
 
         <section>
 
-          <h3>Iteration 2: The Authentication</h3>
+          <h3>Iteration 2: The Initial Site Design</h3>
 
           <div class="grid-row">
 
             <div class="grid-col-project-iteration-explanation">
 
               <p>
-                The second iteration introduced my team members and me to the processes and implementation of authorization and authentication. I was in-charge of acquiring and checking the validity of a 185-bit string security token.
+                The second iteration allowed my team members and me to decide a consistent site structure, declare basic CSS styling and responsiveness for the site, and build the initial site design.
               </p>
 
               <p>
-                During this iteration, I was also overwhelmed by the confusions and complications of using Git on the terminal.
+                It was also at this iteration when my other teammates wanted to include higher-level features, such as a Google Map locator and the hamburger menu. Although these were necessary features to add to the site, the code became disorganized and unbearable to work with, especially when using a version control tool like Git.
               </p>
 
             </div>
 
             <div class="grid-col-project-iteration-code">
 
-              <code>
-                pair<status_code,value> add_auth {<br />
-                  &emsp;do_request (methods::PUT,<br />
-                  &emsp;addr + update_entity_admin + "/" + auth_table + "/" + auth_table_partition + "/" + userid,<br />
-                  &emsp;value::object (vector<pair<string,value>>{make_pair("Password", value::string(user_pwd)),<br />
-                  &emsp;make_pair("DataPartition", value::string(partition)),<br />
-                  &emsp;make_pair("DataRow", value::string(row))}))<br />
-                };<br />
-                <br />
-                cerr << "user auth table insertion result " << add_auth.first << endl;<br />
-                if (add_auth.first != status_codes::OK) {<br />
-                  &emsp;throw std::exception();<br />
-                }<br />
-              </code>
+              <figure>
+
+                <img src="img/rdl_homepage.png" alt="The Initial Webpage Template">
+
+                <figcaption>
+                  The Initial Richmond Dodgeball League Webpage Template
+                </figcaption>
+
+              </figure>
 
             </div>
 
@@ -198,44 +188,69 @@
 
         <section>
 
-          <h3>Iteration 3: The Social Networking Features</h3>
+          <h3>Iteration 3: Content and Full Responsiveness</h3>
 
           <div class="grid-row">
 
             <div class="grid-col-project-iteration-explanation">
 
               <p>
-                This last iteration allowed my team members and me the opportunity to create features for a social networking user session. During this iteration, I've written both server and client code for signing on, signing off, reading the contents of a user's friend list, and pushing the user's updated status to his or her friends.
+                The third iteration forced my teammates and myself to complete the site with content and full responsive design. Luckily, because this site was meant to be an updated version to the existing Richmond Dodgeball League site, Priscilla administered the site content.
               </p>
 
               <p>
-                It was also during this iteration where I had to delegate tasks to my members because the semester was closing and we were busy with finishing other assignments.
+                On the other hand, my teammates and I were experiencing difficulties with the grid structures and media queries used for to make the site responsive - including the connection between the navigation and hamburger menus, the layout of the "Events and Scheduling" buttons, and the general spacing of each of the components.
               </p>
 
             </div>
 
             <div class="grid-col-project-iteration-code">
 
-              <code>
-                // Check if the user has an active session.<br />
-                std::unordered_map<string, tuple<string, string, string>>::iterator active_user = active_users.find(username);<br />
-                <br />
-                if(active_user == active_users.end())<br />
-                {<br />
-                  &emsp;cout << "The user never had an active session.\n";<br />
-                  &emsp;message.reply(status_codes::Forbidden);<br />
-                  &emsp;return;<br />
-                }<br />
-                <br />
-                tuple<string, string, string> user_properties = get_user(username);<br />
-                cout << "\tUser token: " << get<0>(user_properties) << endl;<br />
-                cout << "\tUser partition: " << get<1>(user_properties) << endl;<br />
-                cout << "\tUser row: " << get<2>(user_properties) << endl;<br />
-                <br />
-                string user_token = get<0>(user_properties);<br />
-                string user_partition = get<1>(user_properties);<br />
-                string user_row = get<2>(user_properties);<br />
-              </code>
+              <figure>
+
+                <img src="img/rdl_navigation_problem.png" alt="Problems with Responsiveness">
+
+                <figcaption>
+                  Encountering problems with responsiveness in the navigation bar
+                </figcaption>
+
+              </figure>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <section>
+
+          <h3>Iteration 4: Polishing, Validation, and The Final Site Design</h3>
+
+          <div class="grid-row">
+
+            <div class="grid-col-project-iteration-explanation">
+
+              <p>
+                For the fourth and final iteration, my teammates and I pushed to complete the site in its usefulness, effectiveness, and overall aesthetic.
+              </p>
+
+              <p>
+                I was in-charge of finishing the style guide.
+              </p>
+
+            </div>
+
+            <div class="grid-col-project-iteration-code">
+
+              <figure>
+
+                <img src="img/rdl_styleguide_websitegrid.png" alt="Final Website Grid">
+
+                <figcaption>
+                  Final Richmond Dodgeball League Website Grid
+                </figcaption>
+
+              </figure>
 
             </div>
 
@@ -248,7 +263,7 @@
           <h3>Reflection</h3>
 
           <p>
-            The project turned out well, although our tests did not cover all cases for functionality and correctness. This meant that some of our server code was either wrong or incomplete. If there was one thing I wanted to improve for this project, it was in being clear with how to use Git.
+            Our website fulfilled its objectives, however it is still not ready for publication. Many of our critiques have positive reviews on the website. It is not yet ready for publication because it still needs higher functionality - like a back-end system to keep track of players - to complete the website. If there was one thing I learned, it is difficult to manage the CSS rules of many HTML files.
           </p>
 
         </section>
