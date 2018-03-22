@@ -31,6 +31,7 @@ section p {
   margin: 0;
 }
 
+
 /* NAVIGATION FOR STYLEGUIDE */
 
 #nav-styleguide {
@@ -55,6 +56,7 @@ section p {
   color: white;
   transition: background-color 0.5s ease-out;
 }
+
 
 /* MEDIA QUERIES FOR NAVIGATION STYLEGUIDE */
 
@@ -87,5 +89,58 @@ section p {
 	.nav-item-styleguide {
 		width: 100%; /* Please fix this. */
 	}
+
+}
+
+
+/* COLOUR PALETTE ELEMENTS */
+
+#colours code {
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem 0 1rem 0;
+}
+
+.swatch {
+  height:10rem;
+  width:100%;
+  border: 2px solid #212121;
+  display: block;
+  -webkit-transition: background-color 0.5s; /* Safari */
+  transition: background-color 0.5s;
+}
+
+#swatch-black {
+  background-color: #212121;
+}
+
+#swatch-black:hover {
+  background-color: #4C4C4C;
+}
+
+#swatch-white {
+  background-color: #FFFFFF;
+}
+
+#swatch-white:hover {
+  background-color: #E8E8E8;
+}
+
+#swatch-blue {
+  background-color: rgba(18, 64, 171, 1);
+}
+
+#swatch-blue:hover {
+  background-color: rgba(87, 119, 192, 1);
+}
+
+@media(min-width: 20rem) {
+
+  .grid-col-colour-desc, .grid-col-colour-swatch {
+    flex-basis: 50%;
+  }
+
+  #colours [class^="grid-col-"] {
+  	padding: 0 0.25rem;
+  }
 
 }
