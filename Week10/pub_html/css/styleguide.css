@@ -30,3 +30,62 @@ section code {
 section p {
   margin: 0;
 }
+
+/* NAVIGATION FOR STYLEGUIDE */
+
+#nav-styleguide {
+  margin-bottom: 1rem;
+}
+
+.nav-item-styleguide {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  color: white;
+  background-color: rgba(8, 37, 104, 1);
+  transition: background-color 0.5s ease-out;
+}
+
+.nav-item-styleguide:hover, .nav-item-styleguide:focus, .nav-item-styleguide:active {
+  background-color: rgba(18, 64, 171, 1);
+  color: white;
+  transition: background-color 0.5s ease-out;
+}
+
+/* MEDIA QUERIES FOR NAVIGATION STYLEGUIDE */
+
+@media (min-width: 32rem) {
+
+	.nav-item-styleguide {
+		width: 49.5%; /* Please fix this. */
+	}
+
+}
+
+@media (min-width: 40rem) {
+
+	.nav-item-styleguide {
+		width: 100%; /* Please fix this. */
+	}
+
+}
+
+@media (min-width: 47rem) {
+
+	.nav-item-styleguide {
+		width: 49.5%; /* Please fix this. */
+	}
+
+}
+
+@media (min-width: 62rem) {
+
+	.nav-item-styleguide {
+		width: 100%; /* Please fix this. */
+	}
+
+}
