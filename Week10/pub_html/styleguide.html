@@ -1,0 +1,408 @@
+<!--
+  IAT 339 with Prof. Andrew Hawryshkewich
+  D101 with Elgin-Skye McLaren
+  P03: Portfolio
+  Josh Fernandez
+
+  styleguide.html
+
+  Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
+  Some sections have been copied or inspired by Project 2: Richmond Dodgeball League website. Thank you to Priscilla Skylar-Lee and Heather Maskell.
+  Other references will be noted at appropriate sections of this file.
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Style Guide - The Josh Fernandez Portfolio</title>
+
+    <!-- Links to CSS files -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/grids.css">
+    <link rel="stylesheet" href="css/styleguide.css">
+
+    <!-- Import from Google Fonts: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400i,400,600,700">
+
+  </head>
+
+  <body>
+
+    <div class="grid-row">
+
+      <div class="grid-col-header">
+
+        <!-- HEADER -->
+
+        <header>
+
+          <h1>
+            <a href="index.html">
+              The Josh Fernandez Portfolio
+            </a>
+          </h1>
+
+          <nav>
+
+            <a href="index.html" class="nav-item">
+              Home
+            </a>
+
+            <a href="about.html" class="nav-item">
+              About Josh
+            </a>
+
+            <a href="project1.html" class="nav-item">
+              Social Networking Project
+            </a>
+
+            <a href="project2.html" class="nav-item">
+              Website Project
+            </a>
+
+            <a href="contact.html" class="nav-item">
+              Contact Josh
+            </a>
+
+          </nav>
+
+        </header>
+
+      </div>
+
+      <div class="grid-col-body">
+
+        <!-- BODY: PORTFOLIO HEADER -->
+
+        <h2>The Portfolio's Style Guide</h2>
+
+        <div class="nav-portfolio">
+
+          <a href="#interactive-elements" class="nav-item-portfolio">
+            Interactive Elements
+          </a>
+
+          <a href="#text-elements" class="nav-item-portfolio">
+            Text Elements
+          </a>
+
+          <a href="#combined-elements" class="nav-item-portfolio">
+            Combined Elements
+          </a>
+
+        </div>
+
+        <!-- BODY: PORTFOLIO CONTENT copied from Andrew Hawryshkewich's Style Guide template -->
+
+          <!-- INTERACTIVE ELEMENTS SECTION // -->
+          <section id="interactive-elements">
+
+            <h2>Interactive Elements</h2>
+
+            <div class="grid-row">
+
+              <!-- Default Button styling section -->
+              <div class="grid-col-styleguide-section">
+
+                <section>
+
+                  <h3>Navigation Button</h3>
+
+                  <h4>CSS selector:</h4>
+                  <p>.nav-item</p>
+
+                  <h4>Sample code:</h4>
+                  <code>
+                    &lt;a href="#" class="nav-item"&gt;<br />
+                      &emsp;Default Navigation Button<br />
+                    &lt;/a&gt;<br />
+                  </code>
+
+                  <h4>Rendered element:</h4>
+                  <a href="#" class="nav-item">
+                    Default Navigation Button
+                  </a>
+
+                </section>
+
+              </div>
+
+              <div class="grid-col-styleguide-section">
+
+                <section>
+
+                  <h3>In-text link</h3>
+
+                  <h4>CSS selector:</h4>
+                  <p>a</p>
+
+                  <h4>Sample code:</h4>
+                  <code>
+                    &lt;a href="#"&gt;Default Link&lt;/a&gt;
+                  </code>
+
+                  <h4>Rendered element:</h4>
+                  <a href="#">Default Link</a>
+
+                </section>
+
+              </div>
+
+              <div class="grid-col-styleguide-section">
+
+                <section>
+
+                  <h3>Submit/Reset Buttons</h3>
+
+                  <h4>CSS selector:</h4>
+                  <p>form, .button, button</p>
+
+                  <h4>Sample code:</h4>
+                  <code>
+                    &lt;form method="post" action="#" id="contact"&gt;<br />
+                      &emsp;&lt;input type="submit" class="button" value="Submit"&gt;<br />
+                      &emsp;&lt;button class="button"&gt;Reset&lt;/button&gt;<br />
+                    &lt;/form&gt;
+                  </code>
+
+                  <h4>Rendered element:</h4>
+                  <form method="post" action="#" id="contact">
+                    <input type="submit" class="button" value="Submit">
+                    <button class="button">Reset</button>
+                  </form>
+
+                </section>
+
+              </div>
+
+              <div class="grid-col-styleguide-section">
+
+                <section>
+
+                  <h3>Text Input Field</h3>
+
+                  <h4>CSS selector:</h4>
+                  <p>form, .form-search</p>
+
+                  <h4>Sample code:</h4>
+                  <code>
+                    &lt;form method="post" action="#" id="contact"&gt;<br />
+                      &emsp;&lt;label for="form-search"&gt;Search:&lt;/label&gt;<br />
+                      &emsp;&lt;input type="text" id="form-search" placeholder="Search the RDL website"&gt;<br />
+                    &lt;/form&gt;
+                  </code>
+
+                  <h4>Rendered element:</h4>
+                  <form method="post" action="#" id="search-initial">
+                    <label hidden for="form-search">Search:</label>
+                    <input type="text" id="form-search" placeholder="Search">
+                  </form>
+
+                </section>
+
+              </div>
+
+            </div>
+
+          </section>
+          <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+          <!-- TEXT ELEMENTS SECTION // -->
+          <section id="text-elements">
+
+            <h2>Text Elements</h2>
+
+            <div class="grid-row">
+
+              <div class="grid-col-styleguide-section">
+
+                <section>
+
+                  <h3>Headings</h3>
+
+                  <h4>CSS selector:</h4>
+                  <p>h1, h2, h3, h4</p>
+
+                  <h4>Sample code:</h4>
+                  <code>
+                    &lt;h1&gt;Level one heading&lt;/h1&gt;<br />
+                    &lt;h2&gt;Level two heading&lt;/h2&gt;<br />
+                    &lt;h3&gt;Level three heading&lt;/h3&gt;<br />
+                    &lt;h4&gt;Level four heading&lt;/h4&gt;<br />
+                  </code>
+
+                  <h4>Rendered element:</h4>
+                  <h1>Level one heading</h1>
+                  <h2>Level two heading</h2>
+                  <h3>Level three heading</h3>
+                  <h4>Level four heading</h4>
+
+                </section>
+
+              </div>
+
+              <div class="grid-col-styleguide-section">
+
+                <section>
+
+                  <h3>Paragraphs</h3>
+
+                  <h4>CSS selector:</h4>
+                  <p>p</p>
+
+                  <h4>Sample code:</h4>
+                  <code>
+                    &lt;p&gt;<br />
+                      &emsp;Hello! I am Josh Fernandez - a fourth-year Software Systems student at Simon Fraser University, also pursuing a minor in Interactive Arts and Technology. I want to pursue a career in software engineering and front-end web development.<br />
+                    &lt;/p&gt;
+                  </code>
+
+                  <h4>Rendered element:</h4>
+                  <p>
+                    Hello! I am Josh Fernandez - a fourth-year Software Systems student at Simon Fraser University, also pursuing a minor in Interactive Arts and Technology. I want to pursue a career in software engineering and front-end web development.
+                  </p>
+
+                </section>
+
+              </div>
+
+              <div class="grid-col-styleguide-section">
+
+                <section>
+
+                  <h3>Bulleted Lists</h3>
+
+                  <h4>CSS selector:</h4>
+                  <p>ul</p>
+
+                  <h4>Sample code:</h4>
+                  <code>
+                    &lt;ul&gt;<br />
+                      &emsp;&lt;li&gt;One bullet&lt;/li&gt;<br />
+                      &emsp;&lt;li&gt;Two bullets&lt;/li&gt;<br />
+                      &emsp;&lt;li&gt;Three bullets&lt;/li&gt;<br />
+                    &lt;/ul&gt;
+                  </code>
+
+                  <h4>Rendered element:</h4>
+                  <ul>
+                    <li>One bullet</li>
+                    <li>Two bullets</li>
+                    <li>Three bullets</li>
+                  </ul>
+
+                </section>
+
+              </div>
+
+              <div class="grid-col-styleguide-section">
+
+                <section>
+
+                  <h3>Numbered Lists</h3>
+
+                  <h4>CSS selector:</h4>
+                  <p>ol</p>
+
+                  <h4>Sample code:</h4>
+                  <code>
+                    &lt;ol&gt;<br />
+                      &emsp;&lt;li&gt;One bullet&lt;/li&gt;<br />
+                      &emsp;&lt;li&gt;Two bullets&lt;/li&gt;<br />
+                      &emsp;&lt;li&gt;Three bullets&lt;/li&gt;<br />
+                    &lt;/ol&gt;
+                  </code>
+
+                  <h4>Rendered element:</h4>
+                  <ol>
+                    <li>One bullet</li>
+                    <li>Two bullets</li>
+                    <li>Three bullets</li>
+                  </ol>
+
+                </section>
+
+              </div>
+
+            </div>
+
+          </section>
+          <!-- // TEXT ELEMENTS SECTION -->
+
+          <!-- COMBINED ELEMENTS SECTION // -->
+          <section id="combined-elements">
+
+            <h2>Combined Elements</h2>
+
+            <div class="grid-row">
+
+              <div class="grid-col-styleguide-section">
+
+                <section>
+                  <h3>Main Navigation</h3>
+                </section>
+
+              </div>
+
+              <div class="grid-col-styleguide-section">
+
+                <section>
+                  <h3>Colour Swatches</h3>
+                </section>
+
+              </div>
+
+              <div class="grid-col-styleguide-section">
+
+                <section>
+                  <h3>Grid Structure</h3>
+                </section>
+
+              </div>
+
+            </div>
+
+          </section>
+          <!-- // COMBINED ELEMENTS SECTION -->
+
+      </div>
+
+    </div>
+
+    <div class="grid-row">
+
+      <div class="grid-col-footer">
+
+        <!-- FOOTER -->
+
+        <footer>
+
+          <div id="footer-links">
+            <a href="https://www.linkedin.com/in/josh-fernandez/" target="_blank">Josh's Linked-In</a>
+            <a href="styleguide.html">Style Guide</a>
+            <a href="citations.html">Citations</a>
+            <a href="https://github.com/joshfernandez/iat339_P03/" target="_blank">Git Repository</a>
+            <a href="http://www.sfu.ca/~jafernan/iat102portfolio/" target="_blank">Josh's Previous Portfolio</a>
+          </div>
+
+          <!-- Got help from: https://www.plagiarismtoday.com/2011/11/08/how-to-write-a-copyright-notice/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+PlagiarismToday+%28Plagiarism+Today%29 -->
+          <div id="copyright">
+            &copy; 2018 Josh Fernandez. All Rights Reserved.
+          </div>
+
+        </footer>
+
+      </div>
+
+    </div>
+    <!-- [if lt IE 9]><script src="js/html5shiv.js"></script><![endif] -->
+  </body>
+
+</html>
