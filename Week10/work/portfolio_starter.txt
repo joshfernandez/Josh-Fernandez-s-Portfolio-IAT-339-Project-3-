@@ -1,0 +1,52 @@
+Who do you want to work for? 
+- Microsoft 
+- Intel 
+- Telus 
+ 
+What kinds of work might you be interested in doing? 
+- Software Engineer and Developer 
+- Web Designer, Back-end and Front-end 
+- UX/UI Design 
+- Programmer 
+- Bioinformatician 
+- Computer Science/Mathematics Tutor 
+- Interactive Media Developer 
+- SFU Research in Software Systems or Computer Science 
+ 
+What positions might interest you? 
+- Junior Software Developer 
+- Quality Assurance
+- Front-End Web Developer
+ 
+-----------------
+ 
+Find three potential employers in your field of interest.
+ 
+What skills are needed for the position?
+What qualifications are needed for the position?
+What kinds of terms do your employers use to describe themselves?
+What about the company interests you most?
+ 
+1. Microsoft: Senior Software Engineer in OneNote (https://careers.microsoft.com/jobdetails.aspx?ss=&pg=0&so=&rw=6&jid=289515&jlang=EN&pp=SS)
+a. Skills: creative, collaborative, contribution to code, and design
+b. Qualifications: C++, C#, JavaScript, Git, Problem Solving, Iterative Process, Advanced Design and Development Skills, Azure App Development
+c. Terms: "Revolutionze the learning experience for billions of people around the world", "transition to a cloud and mobile future", "Microsoft OneNote Online Team focuse on creating experiences"
+d. Their advocacy for education
+ 
+2. Intel: Embedded Software Engineer Intern (http://jobs.intel.com/ShowJob/Id/1516677/Embedded-Software-Engineer-Intern/)
+a. Skills: C, C++, debugging, problem-solving
+b. Qualifications: Linux, Git, programming and analytical skills, interest/experience in developing and debugging with embedded software
+c. Terms: "embedded software for the latest smart eye-wear calibrating", "new areas of computing, including wearable technology"
+d. Their on-going revolution in advancing hardware
+ 
+3. OpenRoad: Junior Front-End Web Developer (https://ca.indeed.com/viewjob?jk=9c0b3b40b67029a1&tk=1c7i8hqt5bt56c1r&from=serp&vjs=3)
+a. Skills: smart, enthusiastic, and passionate, highly interactive, web application development
+b. Qualifications: JavaScript fundamentals, professional project experience, HTML5, CSS3, Git, typography, prototyping, WordPress, Bootstrap/Foundation, agile methodologies, etc.
+c. Terms: "competitive wages", "flexible working environment", "high quality solutions"
+d. They are realistic and I know them well.
+ 
+---------------------
+ 
+Who is the audience for your portfolio? Young (20s - 30s) software engineers of big, well-known companies
+What do they need to know in visiting your site? Software/coding/project experiences, interest in innovation and advancement, being well-rounded/approachable/having a sense of empathy
+What will help you stand out against other potential applicants? Being well-rounded, major in Software Systems with a minor in IAT, experiences in web development and embedded systems
