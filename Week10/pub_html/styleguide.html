@@ -346,23 +346,149 @@
               <div class="grid-col-styleguide-section">
 
                 <section>
+
                   <h3>Main Navigation</h3>
+
+                  <h4>CSS selector:</h4>
+                  <p>nav, .nav-item</p>
+
+                  <h4>Sample code:</h4>
+                  <code>
+                    &lt;nav&gt;<br />
+                      &emsp;&lt;a href="index.html" class="nav-item"&gt;Home&lt;/a&gt;<br />
+                      &emsp;&lt;a href="about.html" class="nav-item"&gt;About Josh&lt;/a&gt;<br />
+                      &emsp;&lt;a href="project1.html" class="nav-item"&gt;Social Networking Project&lt;/a&gt;<br />
+                      &emsp;&lt;a href="project2.html" class="nav-item"&gt;Website Project&lt;/a&gt;<br />
+                      &emsp;&lt;a href="contact.html" class="nav-item"&gt;Contact Josh&lt;/a&gt;<br />
+                    &lt;/nav&gt;
+                  </code>
+
+                  <h4>Rendered element:</h4>
+                  <div id="nav-styleguide">
+                    <a href="index.html" class="nav-item-styleguide">Home</a>
+                    <a href="about.html" class="nav-item-styleguide">About Josh</a>
+                    <a href="project1.html" class="nav-item-styleguide">Social Networking Project</a>
+                    <a href="project2.html" class="nav-item-styleguide">Website Project</a>
+                    <a href="contact.html" class="nav-item-styleguide">Contact Josh</a>
+                  </div>
+
                 </section>
 
               </div>
 
               <div class="grid-col-styleguide-section">
 
-                <section>
+                <section id="colours">
+
                   <h3>Colour Swatches</h3>
+
+                  <div class="grid-row">
+
+                    <div class="grid-col-4of8">
+                      <section class="colour-blue-info">
+
+                        <h4>Blue Swatch</h4>
+
+                        <div class="grid-row">
+
+                          <div class="grid-col-colour-desc">
+                            Default State: <code>#1240AB;</code>
+                            Active, Focus, and Hover States: <code>#5777C0;</code>
+                          </div>
+                          <div class="grid-col-colour-swatch">
+                            <div class="swatch" id="swatch-blue"></div>
+                          </div>
+
+                        </div>
+
+                      </section>
+                    </div>
+
+                    <div class="grid-col-4of8">
+                      <section class="colour-black-info">
+
+                        <h4>Black Swatch</h4>
+
+                        <div class="grid-row">
+
+                          <div class="grid-col-colour-desc">
+                            Default State: <code>#212121;</code>
+                            Active, Focus, and Hover States: <code>#4C4C4C;</code>
+                          </div>
+                          <div class="grid-col-colour-swatch">
+                            <div class="swatch" id="swatch-black"></div>
+                          </div>
+
+                        </div>
+
+                      </section>
+                    </div>
+
+                    <div class="grid-col-4of8">
+                      <section class="colour-white-info">
+
+                        <h4>White Swatch</h4>
+
+                        <div class="grid-row">
+
+                          <div class="grid-col-colour-desc">
+                            Default State: <code>#FFFFFF;</code>
+                            Active, Focus, and Hover States: <code>#E8E8E8;</code>
+                          </div>
+                          <div class="grid-col-colour-swatch">
+                            <div class="swatch" id="swatch-white"></div>
+                          </div>
+
+                        </div>
+
+                      </section>
+
+                    </div>
+
+                  </div>
+
                 </section>
 
               </div>
 
-              <div class="grid-col-styleguide-section">
+
+
+            </div>
+
+          </section>
+          <!-- // COMBINED ELEMENTS SECTION -->
+
+          <section id="grid-structure">
+
+            <h2>Grid Structure</h2>
+
+            <div class="grid-row">
+
+              <div class="grid-col-styleguide-section-large">
 
                 <section>
+
                   <h3>Grid Structure</h3>
+
+                    <div class="wrapper">
+
+                      <div class="grid-row">
+                        <div class="grid-col-structure-header">
+                          <div class="wrapper-header">Header and Navigation</div>
+                        </div>
+                        <div class="grid-col-structure-body">
+                          <div class="wrapper-body">Body and Content</div>
+                        </div>
+                      </div>
+
+                      <div class="grid-row">
+                        <div class="grid-col-structure-footer">
+                          <div class="wrapper-footer">Footer, Social Media Links, and Copyright Info</div>
+                        </div>
+                      </div>
+
+                    </div>
+
                 </section>
 
               </div>
@@ -370,7 +496,6 @@
             </div>
 
           </section>
-          <!-- // COMBINED ELEMENTS SECTION -->
 
       </div>
 

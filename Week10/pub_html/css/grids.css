@@ -389,6 +389,14 @@ h1 a {
 
 /* FOR THE STYLEGUIDE SECTIONS */
 
+@media (min-width: 0rem) {
+
+	[class^="grid-col-styleguide-section-large"] {
+		flex-basis: 100%;
+	}
+
+}
+
 @media (min-width: 40rem) {
 
 	[class^="grid-col-styleguide-section"] {
