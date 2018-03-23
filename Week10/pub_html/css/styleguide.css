@@ -32,6 +32,49 @@ section p {
 }
 
 
+/* PORTFOLIO'S SUB-NAVIGATION */
+
+.nav-item-portfolio {
+  display: inline-block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin: 0.25rem 0;
+  color: white;
+  background-color: rgba(18, 64, 171, 1);
+  transition: background-color 0.5s ease-out;
+}
+
+.nav-item-portfolio:hover, .nav-item-portfolio:focus, .nav-item-portfolio:active {
+  background-color: rgba(87, 119, 192, 1);
+  color: white;
+  transition: background-color 0.5s ease-out;
+}
+
+@media (min-width: 40rem) {
+
+	.nav-item-portfolio {
+		width: 30%; /* Please fix this. */
+	}
+
+}
+
+@media (min-width: 47rem) {
+
+	.nav-item-portfolio {
+		width: 100%; /* Please fix this. */
+	}
+
+}
+
+@media (min-width: 60rem) {
+
+	.nav-item-portfolio {
+		width: 30%;
+	}
+
+}
+
+
 /* NAVIGATION FOR STYLEGUIDE */
 
 #nav-styleguide {
