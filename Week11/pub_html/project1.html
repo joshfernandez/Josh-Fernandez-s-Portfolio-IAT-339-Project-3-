@@ -131,23 +131,23 @@
             <div class="grid-col-project-iteration-code">
 
               <code>
-                cout << "============ New GET - FIRST TEST ===============\n";<br />
+                cout &lt;&lt; "============ New GET - FIRST TEST ===============\n";<br />
                 <br />
                 // First check - Get all entries with the property "Food" in an empty table<br />
                 string property_name {"Food"};<br />
                 string property_value {"*"};<br />
-                pair<status_code,value> result {<br />
+                pair&lt;status_code,value&gt; result {<br />
                   &emsp;do_request (methods::GET,<br />
                     &emsp;&emsp;string(GetFixture::addr) + read_entity_admin + "/" + string(GetFixture::table),<br />
-                    &emsp;&emsp;value::object(vector<pair<string,value>>{make_pair(property_name,<br /> &emsp;&emsp;value::string(property_value))}))<br />
+                    &emsp;&emsp;value::object(vector&lt;pair&lt;string,value&gt;&gt;{make_pair(property_name,<br /> &emsp;&emsp;value::string(property_value))}))<br />
                 };<br />
                 <br />
                 CHECK_EQUAL(status_codes::OK, result.first);<br />
                 CHECK(result.second.is_array());<br />
                 CHECK_EQUAL(0, result.second.as_array().size());<br />
-                cout << "Result of first check: " << result.second.serialize() << endl;<br />
+                cout &lt;&lt; "Result of first check: " &lt;&lt; result.second.serialize() &lt;&lt; endl;<br />
                 <br />
-                cout << endl;<br />
+                cout &lt;&lt; endl;<br />
               </code>
 
             </div>
@@ -177,15 +177,15 @@
             <div class="grid-col-project-iteration-code">
 
               <code>
-                pair<status_code,value> add_auth {<br />
+                pair&lt;status_code,value&gt; add_auth {<br />
                   &emsp;do_request (methods::PUT,<br />
                   &emsp;addr + update_entity_admin + "/" + auth_table + "/" + auth_table_partition + "/" + userid,<br />
-                  &emsp;value::object (vector<pair<string,value>>{make_pair("Password", value::string(user_pwd)),<br />
+                  &emsp;value::object (vector&lt;pair&lt;string,value&gt;&gt;{make_pair("Password", value::string(user_pwd)),<br />
                   &emsp;make_pair("DataPartition", value::string(partition)),<br />
                   &emsp;make_pair("DataRow", value::string(row))}))<br />
                 };<br />
                 <br />
-                cerr << "user auth table insertion result " << add_auth.first << endl;<br />
+                cerr &lt;&lt; "user auth table insertion result " &lt;&lt; add_auth.first &lt;&lt; endl;<br />
                 if (add_auth.first != status_codes::OK) {<br />
                   &emsp;throw std::exception();<br />
                 }<br />
@@ -219,23 +219,23 @@
 
               <code>
                 // Check if the user has an active session.<br />
-                std::unordered_map<string, tuple<string, string, string>>::iterator active_user = active_users.find(username);<br />
+                std::unordered_map&lt;string, tuple&lt;string, string, string&gt;&gt;::iterator active_user = active_users.find(username);<br />
                 <br />
                 if(active_user == active_users.end())<br />
                 {<br />
-                  &emsp;cout << "The user never had an active session.\n";<br />
+                  &emsp;cout &lt;&lt; "The user never had an active session.\n";<br />
                   &emsp;message.reply(status_codes::Forbidden);<br />
                   &emsp;return;<br />
                 }<br />
                 <br />
-                tuple<string, string, string> user_properties = get_user(username);<br />
-                cout << "\tUser token: " << get<0>(user_properties) << endl;<br />
-                cout << "\tUser partition: " << get<1>(user_properties) << endl;<br />
-                cout << "\tUser row: " << get<2>(user_properties) << endl;<br />
+                tuple&lt;string, string, string&gt; user_properties = get_user(username);<br />
+                cout &lt;&lt; "\tUser token: " &lt;&lt; get&lt;0&gt;(user_properties) &lt;&lt; endl;<br />
+                cout &lt;&lt; "\tUser partition: " &lt;&lt; get&lt;1&gt;(user_properties) &lt;&lt; endl;<br />
+                cout &lt;&lt; "\tUser row: " &lt;&lt; get&lt;2&gt;(user_properties) &lt;&lt; endl;<br />
                 <br />
-                string user_token = get<0>(user_properties);<br />
-                string user_partition = get<1>(user_properties);<br />
-                string user_row = get<2>(user_properties);<br />
+                string user_token = get&lt;0&gt;(user_properties);<br />
+                string user_partition = get&lt;1&gt;(user_properties);<br />
+                string user_row = get&lt;2&gt;(user_properties);<br />
               </code>
 
             </div>
