@@ -1,0 +1,333 @@
+/*
+  IAT 339 with Prof. Andrew Hawryshkewich
+  D101 with Elgin-Skye McLaren
+  P03: Portfolio
+  Josh Fernandez
+
+  styleguide.css
+
+  Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
+  Some sections have been copied or inspired by Project 2: Richmond Dodgeball League website. Thank you to Priscilla Skylar-Lee and Heather Maskell.
+  Other references will be noted at appropriate sections of this file.
+*/
+
+
+section {
+  padding: 0.5rem 0;
+  /* display: block; */
+  /* padding: 1rem 3rem; */
+  /* border-bottom: #000 solid .25rem; */
+}
+
+section code {
+  background-color: #EEE;
+  display: block;
+  padding: 1rem 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+section p {
+  margin: 0;
+}
+
+
+/* PORTFOLIO'S SUB-NAVIGATION */
+
+.nav-item-portfolio {
+  display: inline-block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin: 0.25rem 0;
+  color: white;
+  background-color: rgba(18, 64, 171, 1);
+  transition: background-color 0.5s ease-out;
+}
+
+.nav-item-portfolio:hover, .nav-item-portfolio:focus, .nav-item-portfolio:active {
+  background-color: rgba(87, 119, 192, 1);
+  color: white;
+  transition: background-color 0.5s ease-out;
+}
+
+@media (min-width: 40rem) {
+
+	.nav-item-portfolio {
+		width: 30%; /* Please fix this. */
+	}
+
+}
+
+@media (min-width: 47rem) {
+
+	.nav-item-portfolio {
+		width: 100%; /* Please fix this. */
+	}
+
+}
+
+@media (min-width: 60rem) {
+
+	.nav-item-portfolio {
+		width: 30%;
+	}
+
+}
+
+
+/* NAVIGATION FOR STYLEGUIDE */
+
+#nav-styleguide {
+  margin-bottom: 1rem;
+}
+
+.nav-item-styleguide {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  color: white;
+  background-color: rgba(8, 37, 104, 1);
+  transition: background-color 0.5s ease-out;
+}
+
+.nav-item-styleguide:hover, .nav-item-styleguide:focus, .nav-item-styleguide:active {
+  background-color: rgba(18, 64, 171, 1);
+  color: white;
+  transition: background-color 0.5s ease-out;
+}
+
+
+/* MEDIA QUERIES FOR NAVIGATION STYLEGUIDE */
+
+@media (min-width: 32rem) {
+
+	.nav-item-styleguide {
+		width: 49.5%; /* Please fix this. */
+	}
+
+}
+
+@media (min-width: 40rem) {
+
+	.nav-item-styleguide {
+		width: 100%; /* Please fix this. */
+	}
+
+}
+
+@media (min-width: 47rem) {
+
+	.nav-item-styleguide {
+		width: 49.5%; /* Please fix this. */
+	}
+
+}
+
+@media (min-width: 62rem) {
+
+	.nav-item-styleguide {
+		width: 100%; /* Please fix this. */
+	}
+
+}
+
+
+/* COLOUR PALETTE ELEMENTS */
+
+#colours code {
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem 0 1rem 0;
+}
+
+.swatch {
+  height:10rem;
+  width:100%;
+  border: 2px solid #212121;
+  display: block;
+  -webkit-transition: background-color 0.5s; /* Safari */
+  transition: background-color 0.5s;
+}
+
+#swatch-black {
+  background-color: #212121;
+}
+
+#swatch-black:hover {
+  background-color: #4C4C4C;
+}
+
+#swatch-white {
+  background-color: #FFFFFF;
+}
+
+#swatch-white:hover {
+  background-color: #E8E8E8;
+}
+
+#swatch-blue {
+  background-color: rgba(18, 64, 171, 1);
+}
+
+#swatch-blue:hover {
+  background-color: rgba(87, 119, 192, 1);
+}
+
+@media(min-width: 20rem) {
+
+  .grid-col-colour-desc, .grid-col-colour-swatch {
+    flex-basis: 50%;
+  }
+
+  #colours [class^="grid-col-"] {
+  	padding: 0 0.25rem;
+  }
+
+}
+
+
+/* WEBSITE GRID STRUCTURE */
+
+.wrapper {
+  display: block;
+  margin: 1rem;
+}
+
+[class^="wrapper-"] {
+  display: block;
+  color: #FFF;
+  text-align: center;
+}
+
+.wrapper-header {
+  background-color: rgba(8, 37, 104, 1);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.wrapper-body {
+  background-color: rgba(18, 64, 171, 1);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.wrapper-footer {
+  background-color: #212121;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media(min-width: 28rem) {
+
+  .grid-col-structure-header {
+    flex-basis: 40%;
+  }
+
+  .grid-col-structure-body {
+    flex-basis: 60%;
+  }
+
+  .wrapper-header {
+    padding: 5rem 0;
+  }
+
+}
+
+@media (min-width: 40rem) {
+
+  .grid-col-structure-header {
+    flex-basis: 100%;
+  }
+
+  .grid-col-structure-body {
+    flex-basis: 100%;
+  }
+
+  .wrapper-header {
+    padding: 1.5rem 0;
+  }
+
+}
+
+@media(min-width: 47rem) {
+
+  .grid-col-structure-header {
+    flex-basis: 40%;
+  }
+
+  .grid-col-structure-body {
+    flex-basis: 60%;
+  }
+
+  .wrapper-header {
+    padding: 5rem 0;
+  }
+
+}
+
+@media(min-width: 62rem) {
+
+  .grid-col-structure-header {
+    flex-basis: 100%;
+  }
+
+  .grid-col-structure-body {
+    flex-basis: 100%;
+  }
+
+  .wrapper-header {
+    padding: 1.5rem 0;
+  }
+
+}
+
+@media(min-width: 76rem) {
+
+  .grid-col-structure-header {
+    flex-basis: 40%;
+  }
+
+  .grid-col-structure-body {
+    flex-basis: 60%;
+  }
+
+  .wrapper-header {
+    padding: 5rem 0;
+  }
+
+}
+
+@media(min-width: 100rem) {
+
+  .grid-col-structure-header {
+    flex-basis: 100%;
+  }
+
+  .grid-col-structure-body {
+    flex-basis: 100%;
+  }
+
+  .wrapper-header {
+    padding: 1.5rem 0;
+  }
+
+}
+
+@media(min-width: 135rem) {
+
+  .grid-col-structure-header {
+    flex-basis: 40%;
+  }
+
+  .grid-col-structure-body {
+    flex-basis: 60%;
+  }
+
+  .wrapper-header {
+    padding: 5rem 0;
+  }
+
+}
