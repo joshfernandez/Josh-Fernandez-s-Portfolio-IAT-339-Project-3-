@@ -35,7 +35,7 @@ body {
 }
 
 section {
-  width: 100%;
+  /* width: 100%; */
   margin-bottom: 1rem;
 }
 
@@ -86,7 +86,7 @@ nav {
   font-size: 1rem;
   display: inline-block;
   padding: 0.5rem 0.75rem;
-  color: rgba(18, 64, 171, 1);
+  color: rgba(18, 64, 171, 1); /* Paletton Blue */
   text-decoration: none;
 }
 
@@ -133,7 +133,7 @@ h2 {
 h3 {
   font-size: 1.25rem;
   padding-bottom: 0.25rem;
-  border-bottom: 2px solid rgba(18, 64, 171, 1);
+  border-bottom: 2px solid rgba(87, 119, 192, 1); /* Paletton Blue Light */
   /* margin:  */
 }
 
@@ -173,20 +173,20 @@ figcaption {
 
 a {
   font-weight: bold;
-  color: rgba(18, 64, 171, 1);
+  color: rgba(18, 64, 171, 1); /* Paletton Blue */
   text-decoration: none;
   transition: color 0.5s ease-out;
 }
 
 a:active, a:hover, a:focus{
-  color: rgba(87, 119, 192, 1);
+  color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
   text-decoration: none;
   transition: color 0.5s ease-out;
 }
 
 .button {
   display: inline-block;
-  background-color: rgba(18, 64, 171, 1);
+  background-color: rgba(18, 64, 171, 1); /* Paletton Blue */
   color: white;
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
   font-size: 1rem;
@@ -200,7 +200,7 @@ a:active, a:hover, a:focus{
 }
 
 .button:active, .button:hover, .button:focus {
-  background-color: rgba(87, 119, 192, 1);
+  background-color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
   transition: background-color 0.4s ease-out;
 }
 
@@ -212,7 +212,7 @@ a:active, a:hover, a:focus{
 
 form input {
   color: #757575;
-  background-color: rgba(18, 64, 171, 1);
+  background-color: #263238; /* Google Color Blue Grey 900 */
 
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
   font-size: 1rem;

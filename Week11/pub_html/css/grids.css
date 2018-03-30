@@ -56,7 +56,7 @@
 /* ELEMENT STYLE CHANGES */
 
 header {
-  background-color: rgba(8, 37, 104, 1);
+  background-color: rgba(8, 37, 104, 1); /* Paletton Blue */
   color: white;
   height: 100%; /* Change this. */
   /* padding: 1rem 0 20rem 0; */
@@ -66,19 +66,51 @@ footer {
 	height: 7rem;
 }
 
-.nav-item {
+[class^="nav-item"] {
   display: inline-block;
   width: 100%;
   padding: 0.75rem 1rem;
   color: white;
-  background-color: rgba(8, 37, 104, 1);
+  background-color: rgba(18, 64, 171, 1); /* Paletton Blue */
   transition: background-color 0.5s ease-out;
 }
 
-.nav-item:hover, .nav-item:focus, .nav-item:active {
-  background-color: rgba(18, 64, 171, 1);
+[class^="nav-item"]:hover, [class^="nav-item"]:focus, [class^="nav-item"]:active {
+  background-color: rgba(87, 119, 192, 1); /* Google Color Blue Grey 900 Light */
   color: white;
   transition: background-color 0.5s ease-out;
+}
+
+.nav-item-index {
+	background-color: rgba(18, 64, 171, 1); /* Paletton Blue */
+}
+
+.nav-item-index:hover, .nav-item-index:focus, .nav-item-index:active {
+	background-color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
+}
+
+.nav-item-project1 {
+	background-color: rgba(255, 116, 0, 1); /* Paletton Orange */
+}
+
+.nav-item-project1:hover, .nav-item-project1:focus, .nav-item-project1:active {
+	background-color: rgba(255, 170, 99, 1); /* Paletton Orange Light */
+}
+
+.nav-item-project2 {
+	background-color: rgba(0, 153, 153, 1); /* Paletton Blue-Green */
+}
+
+.nav-item-project2:hover, .nav-item-project2:focus, .nav-item-project2:active {
+	background-color: rgba(70, 178, 178, 1); /* Paletton Blue-Green Light */
+}
+
+.nav-item-about {
+	background-color: rgba(255, 170, 0, 1); /* Paletton Yellow */
+}
+
+.nav-item-about:hover, .nav-item-about:focus, .nav-item-about:active {
+	background-color: rgba(255, 203, 99, 1); /* Paletton Yellow Light */
 }
 
 h1 {
@@ -107,6 +139,10 @@ h1 a {
 
 [class^="grid-col-body"] {
 	padding: 1rem;
+}
+
+[class^="grid-col-styleguide-section"] section {
+	width: auto;
 }
 
 
@@ -155,7 +191,7 @@ h1 a {
 	}
 
 	/* HEADER LINKS */
-	.nav-item {
+	[class^="nav-item"] {
 		width: 100%;
 	}
 
@@ -228,16 +264,16 @@ h1 a {
 
 @media (min-width: 30rem) {
 
-	.nav-item {
+	[class^="nav-item"] {
 		padding: 0.75rem 1rem;
-		width: 47%; /* Please fix this. */
+		width: 49.5%; /* Please fix this. */
 	}
 
 }
 
 @media (min-width: 43rem) {
 
-	.nav-item {
+	[class^="nav-item"] {
 		width: auto;
 	}
 
@@ -245,7 +281,7 @@ h1 a {
 
 @media (min-width: 47rem) {
 
-	.nav-item {
+	[class^="nav-item"] {
 		/* padding: 0.75rem 1rem; */
 		width: 100%; /* Please fix this. */
 	}
