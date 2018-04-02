@@ -33,7 +33,7 @@
 }
 
 body {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "IBM Plex Sans", Helvetica, sans-serif;
   font-size: 1rem;
   color: #212121;
   height: 100%;
@@ -86,7 +86,7 @@ nav {
 }
 
 .nav-item {
-  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-family: "IBM Plex Sans", Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1rem;
   display: inline-block;
@@ -117,7 +117,7 @@ footer div {
 /* HEADINGS */
 
 h1, h2, h3, h4 {
-  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-family: "Rajdhani", Helvetica, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0.5rem 0;
@@ -125,17 +125,18 @@ h1, h2, h3, h4 {
 
 /* Site Title */
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  line-height: 4rem;
 }
 
 /* Page Title */
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 /* Section Title */
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   padding-bottom: 0.25rem;
   border-bottom: 2px solid rgba(87, 119, 192, 1); /* Paletton Blue Light */
   /* margin:  */
@@ -143,7 +144,7 @@ h3 {
 
 /* Sub-Section Title */
 h4 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 0;
 }
@@ -192,7 +193,7 @@ button, .button {
   display: inline-block;
   background-color: rgba(18, 64, 171, 1); /* Paletton Blue */
   color: white;
-  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-family: "IBM Plex Sans", Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
@@ -219,7 +220,7 @@ form input {
   color: #757575;
   background-color: #E0E0E0; /* Google Color Grey 300 */
 
-  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-family: "IBM Plex Sans", Helvetica, sans-serif;
   font-size: 1rem;
 
   border: none;
