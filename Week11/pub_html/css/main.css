@@ -29,7 +29,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400i,400,600,700|Miriam+Libre:400,700|Overpass+Mono:400,700");
 
-*, *::after, *::before { /* All browsers need to have box sizing */
+*, *::after, *::before {
 	margin: 0;
 	padding: 0;
 }
@@ -75,10 +75,6 @@ ol li, ul li {
 
 
 /* HEADER */
-
-header {
-  /* margin:  */
-}
 
 
 /* NAVIGATION */
