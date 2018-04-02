@@ -27,6 +27,8 @@
 	background-color: rgba(0, 0, 0, 0.15);
 } */
 
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400i,400,600,700|Miriam+Libre:400,700|Overpass+Mono:400,700");
+
 *, *::after, *::before { /* All browsers need to have box sizing */
 	margin: 0;
 	padding: 0;
@@ -117,7 +119,7 @@ footer div {
 /* HEADINGS */
 
 h1, h2, h3, h4 {
-  font-family: "Rajdhani", Helvetica, sans-serif;
+  font-family: "Miriam Libre", Helvetica, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0.5rem 0;
@@ -145,6 +147,7 @@ h3 {
 /* Sub-Section Title */
 h4 {
   font-size: 1.5rem;
+  font-weight: normal;
   margin-top: 1rem;
   margin-bottom: 0;
 }
