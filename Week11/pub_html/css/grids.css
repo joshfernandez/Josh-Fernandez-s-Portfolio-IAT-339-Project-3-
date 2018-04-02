@@ -409,7 +409,7 @@ nav {
 
 @media (max-width: 70rem) {
 
-	body {
+	body, form input, form input[type=text], form textarea {
 		font-size: 1rem;
 	}
 
@@ -434,11 +434,15 @@ nav {
 		font-size: 1.25rem;
 	}
 
+	code {
+		font-size: 0.8rem;
+	}
+
 }
 
 @media (max-width: 62rem) {
 
-	body {
+	body, form input, form input[type=text], form textarea {
 		font-size: 0.9rem;
 	}
 
@@ -468,10 +472,15 @@ nav {
 		font-size: 1rem;
 	}
 
+	code {
+		font-size: 0.75rem;
+		line-height: 1.25rem;
+	}
+
 }
 
 
-/* FOR THE ABOUT PAGE */
+/* FOR THE ABOUT SECTION */
 
 @media (min-width: 35rem) {
 
@@ -538,8 +547,73 @@ nav {
 }
 
 
+/* FOR THE CONTACT FORM */
+
+@media (min-width: 0rem) {
+
+	[class^="grid-col-contact-form"] {
+		flex-basis: 100%;
+	}
+
+}
+
+@media (min-width: 26rem) {
+
+	[class^="grid-col-contact-form-1of2"] {
+		flex-basis: 50%;
+	}
+
+	[class^="grid-col-contact-form-1of2"]:nth-child(1) {
+		padding-right: 0.5rem;
+	}
+
+}
+
+@media (min-width: 86rem) {
+
+	[class^="grid-col-contact-form-1of2"] {
+		flex-basis: 33.33%;
+	}
+
+	[class^="grid-col-contact-form-2of2"] {
+		flex-basis: 66.67%;
+	}
+
+}
+
+@media (min-width: 108rem) {
+
+	[class^="grid-col-contact-form-1of2"] {
+		flex-basis: 25%;
+	}
+
+	[class^="grid-col-contact-form-2of2"] {
+		flex-basis: 50%;
+	}
+
+}
+
+
 
 /* FOR THE PROJECT EXPLANATIONS */
+
+@media (min-width: 0rem) {
+
+	[class^="grid-col-project"] p,
+	[class^="grid-col-project"] ol,
+	[class^="grid-col-project"] ul, {
+		margin: 0.75rem 0;
+	}
+
+	.section-project {
+		margin-bottom: 2.5rem;
+	}
+
+	[class^="grid-col-project-iteration-explanation"] p:nth-child(1) {
+		margin-top: 1rem;
+	}
+
+}
 
 @media (min-width: 40rem) {
 
@@ -583,6 +657,10 @@ nav {
 		margin-left: 0;
 	}
 
+	.section-project {
+		margin-bottom: 4rem;
+	}
+
 }
 
 @media (min-width: 72rem) {
@@ -611,7 +689,7 @@ nav {
 	}
 
 	[class^="grid-col-project-iteration-code"] code {
-		margin: 1rem 0 0 1rem;
+		margin: 1.25rem 0 0 1rem;
 	}
 
 	[class^="grid-col-project-iteration-code"] figure {

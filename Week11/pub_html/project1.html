@@ -87,179 +87,183 @@
 
           <!-- BODY -->
 
-          <h2>Social Networking Interaction System</h2>
+          <section class="section-project">
 
-          <div class="grid-row">
+            <h2>Social Networking Interaction System</h2>
 
-            <div class="grid-col-project-main-explanation">
+            <div class="grid-row">
 
-              <p>
-                This is a program that uses Microsoft Azure's storage tables to create a Facebook-based interaction system between different clients. This was a semester-long project I developed in a 4-member team for my Introduction to Software Engineering class. I led and administered the team, wrote functions and code snippets to add features to the server, and wrote unit tests to strengthen the functionalities of the client.
-              </p>
+              <div class="grid-col-project-main-explanation">
+
+                <p>
+                  This is a program that uses Microsoft Azure's storage tables to create a Facebook-based interaction system between different clients. This was a semester-long project I developed in a 4-member team for my Introduction to Software Engineering class. I led and administered the team, wrote functions and code snippets to add features to the server, and wrote unit tests to strengthen the functionalities of the client.
+                </p>
+
+              </div>
+
+              <div class="grid-col-project-main-points">
+
+                <ul>
+                  <li><strong>Teammates Involved:</strong> Andrew Song, Angelina Singh, and Lawrence Yu</li>
+                  <li><strong>Languages Used:</strong> C++</li>
+                  <li><strong>Software and Frameworks Used:</strong> Microsoft Azure, JSON, UnitTest++, Git</li>
+                  <li><strong>Skills Acquired:</strong> Server-Client Understanding and Interaction, Team Collaboration, Pair Programming, Authentication, Agile Development, Testing, Quality Assurance</li>
+                  <li><strong>Course Learned:</strong> Introduction to Software Engineering</li>
+                </ul>
+
+              </div>
 
             </div>
 
-            <div class="grid-col-project-main-points">
+          </section>
 
-              <ul>
-                <li><strong>Teammates Involved:</strong> Andrew Song, Angelina Singh, and Lawrence Yu</li>
-                <li><strong>Languages Used:</strong> C++</li>
-                <li><strong>Software and Frameworks Used:</strong> Microsoft Azure, JSON, UnitTest++, Git</li>
-                <li><strong>Skills Acquired:</strong> Server-Client Understanding and Interaction, Team Collaboration, Pair Programming, Authentication, Agile Development, Testing, Quality Assurance</li>
-                <li><strong>Course Learned:</strong> Introduction to Software Engineering</li>
-              </ul>
+          <section class="section-project">
+
+            <h3>Iteration 1: The Basics</h3>
+
+            <div class="grid-row">
+
+              <div class="grid-col-project-iteration-explanation">
+
+                <p>
+                  The first iteration exposed my team members and me with the framework of Azure's tables. I learned how to create, update, and delete a JSON entity in a key-value storage table.
+                </p>
+
+                <p>
+                  I also learned the uses and importance of the GET, PUT, POST, and DELETE functions.
+                </p>
+
+                <p>
+                  Lastly, I was exposed to creating low-level unit tests through the UnitTest++ framework to search for bugs or abnormalities with our server code. It was my first time experiencing software quality assurance.
+                </p>
+
+              </div>
+
+              <div class="grid-col-project-iteration-code">
+
+                <code>
+                  cout &lt;&lt; "============ New GET - FIRST TEST ===============\n";<br />
+                  <br />
+                  // First check - Get all entries with the property "Food" in an empty table<br />
+                  string property_name {"Food"};<br />
+                  string property_value {"*"};<br />
+                  pair&lt;status_code,value&gt; result {<br />
+                    &emsp;do_request (methods::GET,<br />
+                      &emsp;&emsp;string(GetFixture::addr) + read_entity_admin + "/" + string(GetFixture::table),<br />
+                      &emsp;&emsp;value::object(vector&lt;pair&lt;string,value&gt;&gt;{make_pair(property_name,<br /> &emsp;&emsp;value::string(property_value))}))<br />
+                  };<br />
+                  <br />
+                  CHECK_EQUAL(status_codes::OK, result.first);<br />
+                  CHECK(result.second.is_array());<br />
+                  CHECK_EQUAL(0, result.second.as_array().size());<br />
+                  cout &lt;&lt; "Result of first check: " &lt;&lt; result.second.serialize() &lt;&lt; endl;<br />
+                  <br />
+                  cout &lt;&lt; endl;<br />
+                </code>
+
+              </div>
 
             </div>
 
-            <section>
+          </section>
 
-              <h3>Iteration 1: The Basics</h3>
+          <section class="section-project">
 
-              <div class="grid-row">
+            <h3>Iteration 2: The Authentication</h3>
 
-                <div class="grid-col-project-iteration-explanation">
+            <div class="grid-row">
 
-                  <p>
-                    The first iteration exposed my team members and me with the framework of Azure's tables. I learned how to create, update, and delete a JSON entity in a key-value storage table.
-                  </p>
+              <div class="grid-col-project-iteration-explanation">
 
-                  <p>
-                    I also learned the uses and importance of the GET, PUT, POST, and DELETE functions.
-                  </p>
+                <p>
+                  The second iteration introduced my team members and me to the processes and implementation of authorization and authentication. I was in-charge of acquiring and checking the validity of a 185-bit string security token.
+                </p>
 
-                  <p>
-                    Lastly, I was exposed to creating low-level unit tests through the UnitTest++ framework to search for bugs or abnormalities with our server code. It was my first time experiencing software quality assurance.
-                  </p>
-
-                </div>
-
-                <div class="grid-col-project-iteration-code">
-
-                  <code>
-                    cout &lt;&lt; "============ New GET - FIRST TEST ===============\n";<br />
-                    <br />
-                    // First check - Get all entries with the property "Food" in an empty table<br />
-                    string property_name {"Food"};<br />
-                    string property_value {"*"};<br />
-                    pair&lt;status_code,value&gt; result {<br />
-                      &emsp;do_request (methods::GET,<br />
-                        &emsp;&emsp;string(GetFixture::addr) + read_entity_admin + "/" + string(GetFixture::table),<br />
-                        &emsp;&emsp;value::object(vector&lt;pair&lt;string,value&gt;&gt;{make_pair(property_name,<br /> &emsp;&emsp;value::string(property_value))}))<br />
-                    };<br />
-                    <br />
-                    CHECK_EQUAL(status_codes::OK, result.first);<br />
-                    CHECK(result.second.is_array());<br />
-                    CHECK_EQUAL(0, result.second.as_array().size());<br />
-                    cout &lt;&lt; "Result of first check: " &lt;&lt; result.second.serialize() &lt;&lt; endl;<br />
-                    <br />
-                    cout &lt;&lt; endl;<br />
-                  </code>
-
-                </div>
+                <p>
+                  During this iteration, I was also overwhelmed by the confusions and complications of using Git on the terminal.
+                </p>
 
               </div>
 
-            </section>
+              <div class="grid-col-project-iteration-code">
 
-            <section>
-
-              <h3>Iteration 2: The Authentication</h3>
-
-              <div class="grid-row">
-
-                <div class="grid-col-project-iteration-explanation">
-
-                  <p>
-                    The second iteration introduced my team members and me to the processes and implementation of authorization and authentication. I was in-charge of acquiring and checking the validity of a 185-bit string security token.
-                  </p>
-
-                  <p>
-                    During this iteration, I was also overwhelmed by the confusions and complications of using Git on the terminal.
-                  </p>
-
-                </div>
-
-                <div class="grid-col-project-iteration-code">
-
-                  <code>
-                    pair&lt;status_code,value&gt; add_auth {<br />
-                      &emsp;do_request (methods::PUT,<br />
-                      &emsp;addr + update_entity_admin + "/" + auth_table + "/" + auth_table_partition + "/" + userid,<br />
-                      &emsp;value::object (vector&lt;pair&lt;string,value&gt;&gt;{make_pair("Password", value::string(user_pwd)),<br />
-                      &emsp;make_pair("DataPartition", value::string(partition)),<br />
-                      &emsp;make_pair("DataRow", value::string(row))}))<br />
-                    };<br />
-                    <br />
-                    cerr &lt;&lt; "user auth table insertion result " &lt;&lt; add_auth.first &lt;&lt; endl;<br />
-                    if (add_auth.first != status_codes::OK) {<br />
-                      &emsp;throw std::exception();<br />
-                    }<br />
-                  </code>
-
-                </div>
+                <code>
+                  pair&lt;status_code,value&gt; add_auth {<br />
+                    &emsp;do_request (methods::PUT,<br />
+                    &emsp;addr + update_entity_admin + "/" + auth_table + "/" + auth_table_partition + "/" + userid,<br />
+                    &emsp;value::object (vector&lt;pair&lt;string,value&gt;&gt;{make_pair("Password", value::string(user_pwd)),<br />
+                    &emsp;make_pair("DataPartition", value::string(partition)),<br />
+                    &emsp;make_pair("DataRow", value::string(row))}))<br />
+                  };<br />
+                  <br />
+                  cerr &lt;&lt; "user auth table insertion result " &lt;&lt; add_auth.first &lt;&lt; endl;<br />
+                  if (add_auth.first != status_codes::OK) {<br />
+                    &emsp;throw std::exception();<br />
+                  }<br />
+                </code>
 
               </div>
 
-            </section>
+            </div>
 
-            <section>
+          </section>
 
-              <h3>Iteration 3: The Social Networking Features</h3>
+          <section class="section-project">
 
-              <div class="grid-row">
+            <h3>Iteration 3: The Social Networking Features</h3>
 
-                <div class="grid-col-project-iteration-explanation">
+            <div class="grid-row">
 
-                  <p>
-                    This last iteration allowed my team members and me the opportunity to create features for a social networking user session. During this iteration, I've written both server and client code for signing on, signing off, reading the contents of a user's friend list, and pushing the user's updated status to his or her friends.
-                  </p>
+              <div class="grid-col-project-iteration-explanation">
 
-                  <p>
-                    It was also during this iteration where I had to delegate tasks to my members because the semester was closing and we were busy with finishing other assignments.
-                  </p>
+                <p>
+                  This last iteration allowed my team members and me the opportunity to create features for a social networking user session. During this iteration, I've written both server and client code for signing on, signing off, reading the contents of a user's friend list, and pushing the user's updated status to his or her friends.
+                </p>
 
-                </div>
-
-                <div class="grid-col-project-iteration-code">
-
-                  <code>
-                    // Check if the user has an active session.<br />
-                    std::unordered_map&lt;string, tuple&lt;string, string, string&gt;&gt;::iterator active_user = active_users.find(username);<br />
-                    <br />
-                    if(active_user == active_users.end())<br />
-                    {<br />
-                      &emsp;cout &lt;&lt; "The user never had an active session.\n";<br />
-                      &emsp;message.reply(status_codes::Forbidden);<br />
-                      &emsp;return;<br />
-                    }<br />
-                    <br />
-                    tuple&lt;string, string, string&gt; user_properties = get_user(username);<br />
-                    cout &lt;&lt; "\tUser token: " &lt;&lt; get&lt;0&gt;(user_properties) &lt;&lt; endl;<br />
-                    cout &lt;&lt; "\tUser partition: " &lt;&lt; get&lt;1&gt;(user_properties) &lt;&lt; endl;<br />
-                    cout &lt;&lt; "\tUser row: " &lt;&lt; get&lt;2&gt;(user_properties) &lt;&lt; endl;<br />
-                    <br />
-                    string user_token = get&lt;0&gt;(user_properties);<br />
-                    string user_partition = get&lt;1&gt;(user_properties);<br />
-                    string user_row = get&lt;2&gt;(user_properties);<br />
-                  </code>
-
-                </div>
+                <p>
+                  It was also during this iteration where I had to delegate tasks to my members because the semester was closing and we were busy with finishing other assignments.
+                </p>
 
               </div>
 
-            </section>
+              <div class="grid-col-project-iteration-code">
 
-            <section>
+                <code>
+                  // Check if the user has an active session.<br />
+                  std::unordered_map&lt;string, tuple&lt;string, string, string&gt;&gt;::iterator active_user = active_users.find(username);<br />
+                  <br />
+                  if(active_user == active_users.end())<br />
+                  {<br />
+                    &emsp;cout &lt;&lt; "The user never had an active session.\n";<br />
+                    &emsp;message.reply(status_codes::Forbidden);<br />
+                    &emsp;return;<br />
+                  }<br />
+                  <br />
+                  tuple&lt;string, string, string&gt; user_properties = get_user(username);<br />
+                  cout &lt;&lt; "\tUser token: " &lt;&lt; get&lt;0&gt;(user_properties) &lt;&lt; endl;<br />
+                  cout &lt;&lt; "\tUser partition: " &lt;&lt; get&lt;1&gt;(user_properties) &lt;&lt; endl;<br />
+                  cout &lt;&lt; "\tUser row: " &lt;&lt; get&lt;2&gt;(user_properties) &lt;&lt; endl;<br />
+                  <br />
+                  string user_token = get&lt;0&gt;(user_properties);<br />
+                  string user_partition = get&lt;1&gt;(user_properties);<br />
+                  string user_row = get&lt;2&gt;(user_properties);<br />
+                </code>
 
-              <h3>Reflection</h3>
+              </div>
 
-              <p>
-                The project turned out well, although our tests did not cover all cases for functionality and correctness. This meant that some of our server code was either wrong or incomplete. If there was one thing I wanted to improve for this project, it was in being clear with how to use Git.
-              </p>
+            </div>
 
-            </section>
+          </section>
 
-          </div>
+          <section class="section-project">
+
+            <h3>Reflection</h3>
+
+            <p>
+              The project turned out well, although our tests did not cover all cases for functionality and correctness. This meant that some of our server code was either wrong or incomplete. If there was one thing I wanted to improve for this project, it was in being clear with how to use Git.
+            </p>
+
+          </section>
 
         </div>
 
