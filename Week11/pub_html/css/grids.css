@@ -49,10 +49,15 @@
 	height: 7rem;
 }
 
+/* OTHER MAIN GRID PROPERTIES */
 
 .grid-col-header {
 	margin: 0;
 	padding: 0;
+}
+
+.grid-col-footer-link {
+	width: initial;
 }
 
 
@@ -96,6 +101,14 @@ h1 a:hover, h1 a:focus, h1 a:active {
 	color: white;
 	background-color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
 	transition: background-color 0.5s ease-out;
+}
+
+h2 {
+	margin-bottom: 1rem;
+}
+
+.section-project h2 {
+	margin-bottom: 0.5rem;
 }
 
 nav {
@@ -232,6 +245,13 @@ nav {
 		flex-basis: 100%;
 	}
 
+	/* FLEX DIRECTION */
+	.grid-row-main,
+	.grid-row-header-body,
+	.grid-row-footer {
+		flex-direction: column;
+	}
+
 	/* HEADER LINKS */
 	.grid-col-nav-item {
 		flex-basis: 100%;
@@ -269,6 +289,18 @@ nav {
 
 }
 
+@media (max-width: 20rem) {
+
+	[class^="nav-item"] {
+		padding-right: 0;
+	}
+
+	code {
+		word-break: break-all;
+	}
+
+}
+
 
 /* FOR THE HEADER, BODY, AND FOOTER */
 
@@ -289,6 +321,13 @@ nav {
 
 	[class^="grid-col-body"] {
 		flex-basis: 66.67%;
+	}
+
+	/* FLEX DIRECTION */
+	.grid-row-main,
+	.grid-row-header-body,
+	.grid-row-footer {
+		flex-direction: row;
 	}
 
 }
@@ -317,7 +356,7 @@ nav {
 
 }
 
-@media (min-width: 26rem) {
+@media (min-width: 27rem) {
 
 	.grid-col-nav-item {
 		flex-basis: 50%;
@@ -325,9 +364,10 @@ nav {
 
 }
 
-@media (min-width: 42rem) {
+@media (min-width: 43rem) {
 
 	.grid-col-nav-item {
+		width: initial;
 		flex-basis: auto;
 		margin-right: 0.5rem;
 	}
@@ -431,7 +471,8 @@ nav {
 
 @media (max-width: 70rem) {
 
-	body, form input, form input[type=text], form textarea {
+	body, button, .button, .nav-item,
+	form input, form input[type=text], form textarea {
 		font-size: 1rem;
 	}
 
@@ -468,7 +509,7 @@ nav {
 
 @media (max-width: 62rem) {
 
-	body, form input, form input[type=text], form textarea {
+	body, button, .button, .nav-item, form input, form input[type=text], form textarea {
 		font-size: 0.9rem;
 	}
 
@@ -596,7 +637,11 @@ nav {
 	}
 
 	[class^="grid-col-contact-form-1of2"]:nth-child(1) {
-		padding-right: 0.5rem;
+		padding-right: 0.25rem;
+	}
+
+	[class^="grid-col-contact-form-1of2"]:nth-child(2) {
+		padding-left: 0.25rem;
 	}
 
 }
@@ -633,7 +678,7 @@ nav {
 
 	[class^="grid-col-project"] p,
 	[class^="grid-col-project"] ol,
-	[class^="grid-col-project"] ul, {
+	[class^="grid-col-project"] ul {
 		margin: 0.75rem 0;
 	}
 
