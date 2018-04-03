@@ -150,11 +150,11 @@
                   pair&lt;status_code,value&gt; result {<br />
                     &emsp;do_request (methods::GET,<br />
                       &emsp;&emsp;string(GetFixture::addr) + read_entity_admin + "/" + string(GetFixture::table),<br />
-                      &emsp;&emsp;value::object( vector&lt;pair&lt;string,value&gt;&gt;  {make_pair(property_name,<br /> &emsp;&emsp;value::string(property_value))}))<br />
+                      &emsp;&emsp;value::object( vector&lt;pair&lt;string,value&gt;&gt;  {make_pair(property_name,<br /> &emsp;&emsp;value::string (property_value) )}))<br />
                   };<br />
                   <br />
-                  CHECK_EQUAL(status_codes::OK, result.first);<br />
-                  CHECK(result.second.is_array());<br />
+                  CHECK_EQUAL( status_codes::OK, result.first );<br />
+                  CHECK( result.second.is_array() );<br />
                   CHECK_EQUAL(0, result.second.as_array().size());<br />
                   cout &lt;&lt; "Result of first check: " &lt;&lt; result.second.serialize() &lt;&lt; endl;<br />
                   <br />
@@ -235,7 +235,7 @@
                   if(active_user == active_users.end())<br />
                   {<br />
                     &emsp;cout &lt;&lt; "The user never had an active session.\n";<br />
-                    &emsp;message.reply(status_codes::Forbidden);<br />
+                    &emsp;message.reply( status_codes::Forbidden );<br />
                     &emsp;return;<br />
                   }<br />
                   <br />
