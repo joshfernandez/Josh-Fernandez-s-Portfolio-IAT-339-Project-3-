@@ -455,6 +455,10 @@ nav {
 		font-size: 1.25rem;
 	}
 
+	h5 {
+		font-size: 1rem;
+	}
+
 	code {
 		font-size: 0.8rem;
 	}
@@ -487,10 +491,16 @@ nav {
 
 	h3 {
 		font-size: 1.25rem;
+		padding-bottom: 0.15rem;
 	}
 
 	h4 {
-		font-size: 1rem;
+		font-size: 1.1rem;
+		padding-bottom: 0.05rem;
+	}
+
+	h5 {
+		font-size: 0.9rem;
 	}
 
 	code {

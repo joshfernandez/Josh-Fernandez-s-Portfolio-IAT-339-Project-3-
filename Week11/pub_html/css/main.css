@@ -114,7 +114,7 @@ footer div {
 
 /* HEADINGS */
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: "Miriam Libre", Helvetica, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -142,7 +142,16 @@ h3 {
 
 /* Sub-Section Title */
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  padding-bottom: 0.1rem;
+  border-bottom: 2px solid rgba(255, 116, 0, 1); /* Paletton Orange */
+}
+
+/* Snippet Title (for Style Guide) */
+h5 {
+  font-size: 1rem;
   font-weight: normal;
   margin-top: 1rem;
   margin-bottom: 0;

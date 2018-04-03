@@ -92,17 +92,27 @@
 
           <div class="nav-portfolio">
 
-            <a href="#interactive-elements" class="nav-item-portfolio">
-              Interactive Elements
-            </a>
+            <div class="grid-row">
 
-            <a href="#text-elements" class="nav-item-portfolio">
-              Text Elements
-            </a>
+              <div class="grid-col-nav-sub-item">
+                <a href="#interactive-elements" class="nav-item-portfolio">
+                  Interactive Elements
+                </a>
+              </div>
 
-            <a href="#combined-elements" class="nav-item-portfolio">
-              Combined Elements
-            </a>
+              <div class="grid-col-nav-sub-item">
+                <a href="#text-elements" class="nav-item-portfolio">
+                  Text Elements
+                </a>
+              </div>
+
+              <div class="grid-col-nav-sub-item">
+                <a href="#combined-elements" class="nav-item-portfolio">
+                  Combined Elements
+                </a>
+              </div>
+
+            </div>
 
           </div>
 
@@ -111,7 +121,7 @@
             <!-- INTERACTIVE ELEMENTS SECTION // -->
             <section id="interactive-elements">
 
-              <h2>Interactive Elements</h2>
+              <h3>Interactive Elements</h3>
 
               <div class="grid-row">
 
@@ -120,19 +130,19 @@
 
                   <section>
 
-                    <h3>Navigation Button</h3>
+                    <h4>Navigation Button</h4>
 
-                    <h4>CSS selector:</h4>
+                    <h5>CSS selector:</h5>
                     <p>.nav-item</p>
 
-                    <h4>Sample code:</h4>
+                    <h5>Sample code:</h5>
                     <code>
                       &lt;a href="#" class="nav-item"&gt;<br />
                         &emsp;Default Navigation Button<br />
                       &lt;/a&gt;<br />
                     </code>
 
-                    <h4>Rendered element:</h4>
+                    <h5>Rendered element:</h5>
                     <a href="#" class="nav-item">
                       Default Navigation Button
                     </a>
@@ -145,17 +155,17 @@
 
                   <section>
 
-                    <h3>In-text link</h3>
+                    <h4>In-text link</h4>
 
-                    <h4>CSS selector:</h4>
+                    <h5>CSS selector:</h5>
                     <p>a</p>
 
-                    <h4>Sample code:</h4>
+                    <h5>Sample code:</h5>
                     <code>
                       &lt;a href="#"&gt;Default Link&lt;/a&gt;
                     </code>
 
-                    <h4>Rendered element:</h4>
+                    <h5>Rendered element:</h5>
                     <a href="#">Default Link</a>
 
                   </section>
@@ -166,12 +176,12 @@
 
                   <section>
 
-                    <h3>Submit/Reset Buttons</h3>
+                    <h4>Submit/Reset Buttons</h4>
 
-                    <h4>CSS selector:</h4>
+                    <h5>CSS selector:</h5>
                     <p>form, .button, button</p>
 
-                    <h4>Sample code:</h4>
+                    <h5>Sample code:</h5>
                     <code>
                       &lt;form method="post" action="#" id="contact"&gt;<br />
                         &emsp;&lt;input type="submit" class="button" value="Submit"&gt;<br />
@@ -179,7 +189,7 @@
                       &lt;/form&gt;
                     </code>
 
-                    <h4>Rendered element:</h4>
+                    <h5>Rendered element:</h5>
                     <form method="post" action="#" id="contact">
                       <input type="submit" class="button" value="Submit">
                       <button class="button">Reset</button>
@@ -193,12 +203,12 @@
 
                   <section>
 
-                    <h3>Text Input Field</h3>
+                    <h4>Text Input Field</h4>
 
-                    <h4>CSS selector:</h4>
+                    <h5>CSS selector:</h5>
                     <p>form, .form-search</p>
 
-                    <h4>Sample code:</h4>
+                    <h5>Sample code:</h5>
                     <code>
                       &lt;form method="post" action="#" id="contact"&gt;<br />
                         &emsp;&lt;label for="form-search"&gt;Search:&lt;/label&gt;<br />
@@ -206,7 +216,7 @@
                       &lt;/form&gt;
                     </code>
 
-                    <h4>Rendered element:</h4>
+                    <h5>Rendered element:</h5>
                     <form method="post" action="#" id="search-initial">
                       <label for="form-name">Name:</label>
                       <input type="text" id="form-name" placeholder="Enter your name here.">
@@ -225,7 +235,7 @@
             <!-- TEXT ELEMENTS SECTION // -->
             <section id="text-elements">
 
-              <h2>Text Elements</h2>
+              <h3>Text Elements</h3>
 
               <div class="grid-row">
 
@@ -233,12 +243,12 @@
 
                   <section>
 
-                    <h3>Headings</h3>
+                    <h4>Headings</h4>
 
-                    <h4>CSS selector:</h4>
+                    <h5>CSS selector:</h5>
                     <p>h1, h2, h3, h4</p>
 
-                    <h4>Sample code:</h4>
+                    <h5>Sample code:</h5>
                     <code>
                       &lt;h1&gt;Level one heading&lt;/h1&gt;<br />
                       &lt;h2&gt;Level two heading&lt;/h2&gt;<br />
@@ -246,7 +256,7 @@
                       &lt;h4&gt;Level four heading&lt;/h4&gt;<br />
                     </code>
 
-                    <h4>Rendered element:</h4>
+                    <h5>Rendered element:</h5>
                     <h1>Level one heading</h1>
                     <h2>Level two heading</h2>
                     <h3>Level three heading</h3>
@@ -260,19 +270,19 @@
 
                   <section>
 
-                    <h3>Paragraphs</h3>
+                    <h4>Paragraphs</h4>
 
-                    <h4>CSS selector:</h4>
+                    <h5>CSS selector:</h5>
                     <p>p</p>
 
-                    <h4>Sample code:</h4>
+                    <h5>Sample code:</h5>
                     <code>
                       &lt;p&gt;<br />
                         &emsp;Hello! I am Josh Fernandez - a fourth-year Software Systems student at Simon Fraser University, also pursuing a minor in Interactive Arts and Technology. I want to pursue a career in software engineering and front-end web development.<br />
                       &lt;/p&gt;
                     </code>
 
-                    <h4>Rendered element:</h4>
+                    <h5>Rendered element:</h5>
                     <p>
                       Hello! I am Josh Fernandez - a fourth-year Software Systems student at Simon Fraser University, also pursuing a minor in Interactive Arts and Technology. I want to pursue a career in software engineering and front-end web development.
                     </p>
@@ -285,12 +295,12 @@
 
                   <section>
 
-                    <h3>Bulleted Lists</h3>
+                    <h4>Bulleted Lists</h4>
 
-                    <h4>CSS selector:</h4>
+                    <h5>CSS selector:</h5>
                     <p>ul</p>
 
-                    <h4>Sample code:</h4>
+                    <h5>Sample code:</h5>
                     <code>
                       &lt;ul&gt;<br />
                         &emsp;&lt;li&gt;One bullet&lt;/li&gt;<br />
@@ -299,7 +309,7 @@
                       &lt;/ul&gt;
                     </code>
 
-                    <h4>Rendered element:</h4>
+                    <h5>Rendered element:</h5>
                     <ul>
                       <li>One bullet</li>
                       <li>Two bullets</li>
@@ -314,12 +324,12 @@
 
                   <section>
 
-                    <h3>Numbered Lists</h3>
+                    <h4>Numbered Lists</h4>
 
-                    <h4>CSS selector:</h4>
+                    <h5>CSS selector:</h5>
                     <p>ol</p>
 
-                    <h4>Sample code:</h4>
+                    <h5>Sample code:</h5>
                     <code>
                       &lt;ol&gt;<br />
                         &emsp;&lt;li&gt;One bullet&lt;/li&gt;<br />
@@ -328,7 +338,7 @@
                       &lt;/ol&gt;
                     </code>
 
-                    <h4>Rendered element:</h4>
+                    <h5>Rendered element:</h5>
                     <ol>
                       <li>One bullet</li>
                       <li>Two bullets</li>
@@ -347,7 +357,7 @@
             <!-- COMBINED ELEMENTS SECTION // -->
             <section id="combined-elements">
 
-              <h2>Combined Elements</h2>
+              <h3>Combined Elements</h3>
 
               <div class="grid-row">
 
@@ -355,12 +365,12 @@
 
                   <section>
 
-                    <h3>Main Navigation</h3>
+                    <h4>Main Navigation</h4>
 
-                    <h4>CSS selector:</h4>
+                    <h5>CSS selector:</h5>
                     <p>nav, .nav-item</p>
 
-                    <h4>Sample code:</h4>
+                    <h5>Sample code:</h5>
                     <code>
                       &lt;nav&gt;<br />
                         &emsp;&lt;a href="index.html" class="nav-item"&gt;Home&lt;/a&gt;<br />
@@ -371,7 +381,7 @@
                       &lt;/nav&gt;
                     </code>
 
-                    <h4>Rendered element:</h4>
+                    <h5>Rendered element:</h5>
                     <div id="nav-styleguide">
                       <a href="index.html" class="nav-item-index">Home</a>
                       <a href="project1.html" class="nav-item-project1">Social Networking Project</a>
@@ -387,14 +397,14 @@
 
                   <section id="colours">
 
-                    <h3>Colour Swatches</h3>
+                    <h4>Colour Swatches</h4>
 
                     <div class="grid-row">
 
                       <div class="grid-col-4of8">
                         <section class="colour-blue-info">
 
-                          <h4>Blue Swatch</h4>
+                          <h5>Blue Swatch</h5>
 
                           <div class="grid-row">
 
@@ -414,7 +424,7 @@
                       <div class="grid-col-4of8">
                         <section class="colour-black-info">
 
-                          <h4>Black Swatch</h4>
+                          <h5>Black Swatch</h5>
 
                           <div class="grid-row">
 
@@ -434,7 +444,7 @@
                       <div class="grid-col-4of8">
                         <section class="colour-white-info">
 
-                          <h4>White Swatch</h4>
+                          <h5>White Swatch</h5>
 
                           <div class="grid-row">
 
@@ -467,7 +477,7 @@
 
             <section id="grid-structure">
 
-              <h2>Grid Structure</h2>
+              <h3>Grid Structure</h3>
 
               <div class="grid-row">
 
@@ -475,7 +485,7 @@
 
                   <section>
 
-                    <h3>Grid Structure</h3>
+                    <h4>Grid Structure</h4>
 
                       <div class="wrapper">
 
