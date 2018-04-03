@@ -345,6 +345,7 @@ nav {
 @media (min-width: 43rem) {
 
 	.grid-col-nav-item {
+		width: initial;
 		flex-basis: auto;
 		margin-right: 0.5rem;
 	}
