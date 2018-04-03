@@ -237,6 +237,13 @@ nav {
 		flex-basis: 100%;
 	}
 
+	/* FLEX DIRECTION */
+	.grid-row-main,
+	.grid-row-header-body,
+	.grid-row-footer {
+		flex-direction: column;
+	}
+
 	/* HEADER LINKS */
 	.grid-col-nav-item {
 		flex-basis: 100%;
@@ -306,6 +313,13 @@ nav {
 
 	[class^="grid-col-body"] {
 		flex-basis: 66.67%;
+	}
+
+	/* FLEX DIRECTION */
+	.grid-row-main,
+	.grid-row-header-body,
+	.grid-row-footer {
+		flex-direction: row;
 	}
 
 }
