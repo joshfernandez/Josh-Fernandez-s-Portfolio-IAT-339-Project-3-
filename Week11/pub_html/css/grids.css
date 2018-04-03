@@ -317,7 +317,7 @@ nav {
 
 }
 
-@media (min-width: 26rem) {
+@media (min-width: 27rem) {
 
 	.grid-col-nav-item {
 		flex-basis: 50%;
@@ -325,7 +325,7 @@ nav {
 
 }
 
-@media (min-width: 42rem) {
+@media (min-width: 43rem) {
 
 	.grid-col-nav-item {
 		flex-basis: auto;
