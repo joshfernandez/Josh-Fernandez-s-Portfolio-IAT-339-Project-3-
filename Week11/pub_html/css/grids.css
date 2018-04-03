@@ -49,10 +49,15 @@
 	height: 7rem;
 }
 
+/* OTHER MAIN GRID PROPERTIES */
 
 .grid-col-header {
 	margin: 0;
 	padding: 0;
+}
+
+.grid-col-footer-link {
+	width: initial;
 }
 
 

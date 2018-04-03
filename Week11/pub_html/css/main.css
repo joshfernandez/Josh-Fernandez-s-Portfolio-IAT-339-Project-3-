@@ -32,6 +32,7 @@
 *, *::after, *::before {
 	margin: 0;
 	padding: 0;
+	width: 100%;
 }
 
 body {
@@ -208,6 +209,7 @@ a:active, a:hover, a:focus{
 }
 
 button, .button {
+	width: initial;
   display: inline-block;
   background-color: rgba(18, 64, 171, 1); /* Paletton Blue */
   color: white;
