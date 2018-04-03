@@ -27,8 +27,8 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/grids.css">
 
-    <!-- Import from Google Fonts: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400i,400,600,700">
+    <!-- Import from Google Fonts: Miriam Libre, IBM Plex Sans, and Overpass Mono -->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400i,400,600,700|Miriam+Libre:400,700|Overpass+Mono:400,700" rel="stylesheet">
 
   </head>
 
@@ -46,27 +46,36 @@
 
             <h1>
               <a href="index.html">
-                The Josh Fernandez Portfolio
+                <span class="h1-small">The Josh Fernandez</span>
+                Portfolio
               </a>
             </h1>
 
-            <nav>
+            <nav class="grid-row">
 
-              <a href="index.html" class="nav-item-index">
-                Home
-              </a>
+              <div class="grid-col-nav-item">
+                <a href="index.html" class="nav-item-index">
+                  Home
+                </a>
+              </div>
 
-              <a href="project1.html" class="nav-item-project1">
-                Social Networking Project
-              </a>
+              <div class="grid-col-nav-item">
+                <a href="project1.html" class="nav-item-project1">
+                  Social Networking Project
+                </a>
+              </div>
 
-              <a href="project2.html" class="nav-item-project2">
-                Website Project
-              </a>
+              <div class="grid-col-nav-item">
+                <a href="project2.html" class="nav-item-project2">
+                  Website Project
+                </a>
+              </div>
 
-              <a href="about.html" class="nav-item-about">
-                About and Contact Josh
-              </a>
+              <div class="grid-col-nav-item">
+                <a href="about.html" class="nav-item-about">
+                  About and Contact Josh
+                </a>
+              </div>
 
             </nav>
 
@@ -93,11 +102,25 @@
           <footer>
 
             <div id="footer-links">
-              <a href="https://www.linkedin.com/in/josh-fernandez/" target="_blank">Josh's Linked-In</a>
-              <a href="styleguide.html">Style Guide</a>
-              <a href="citations.html">Citations</a>
-              <a href="https://github.com/joshfernandez/iat339_P03/" target="_blank">Git Repository</a>
-              <a href="http://www.sfu.ca/~jafernan/iat102portfolio/" target="_blank">Josh's Previous Portfolio</a>
+
+              <div class="grid-row">
+                <div class="grid-col-footer-link">
+                  <a href="https://www.linkedin.com/in/josh-fernandez/" target="_blank">Josh's Linked-In</a>
+                </div>
+                <div class="grid-col-footer-link">
+                  <a href="styleguide.html">Style Guide</a>
+                </div>
+                <div class="grid-col-footer-link">
+                  <a href="citations.html">Citations</a>
+                </div>
+                <div class="grid-col-footer-link">
+                  <a href="https://github.com/joshfernandez/iat339_P03/" target="_blank">Git Repository</a>
+                </div>
+                <div class="grid-col-footer-link">
+                  <a href="http://www.sfu.ca/~jafernan/iat102portfolio/" target="_blank">Josh's Previous Portfolio</a>
+                </div>
+              </div>
+
             </div>
 
             <!-- Got help from: https://www.plagiarismtoday.com/2011/11/08/how-to-write-a-copyright-notice/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+PlagiarismToday+%28Plagiarism+Today%29 -->
