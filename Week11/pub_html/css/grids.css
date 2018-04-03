@@ -633,7 +633,7 @@ nav {
 
 	[class^="grid-col-project"] p,
 	[class^="grid-col-project"] ol,
-	[class^="grid-col-project"] ul, {
+	[class^="grid-col-project"] ul {
 		margin: 0.75rem 0;
 	}
 
