@@ -103,6 +103,14 @@ h1 a:hover, h1 a:focus, h1 a:active {
 	transition: background-color 0.5s ease-out;
 }
 
+h2 {
+	margin-bottom: 1rem;
+}
+
+.section-project h2 {
+	margin-bottom: 0.5rem;
+}
+
 nav {
 	margin: 0;
 	margin-bottom: 0.5rem;
@@ -463,7 +471,8 @@ nav {
 
 @media (max-width: 70rem) {
 
-	body, form input, form input[type=text], form textarea {
+	body, button, .button, .nav-item,
+	form input, form input[type=text], form textarea {
 		font-size: 1rem;
 	}
 
@@ -500,7 +509,7 @@ nav {
 
 @media (max-width: 62rem) {
 
-	body, form input, form input[type=text], form textarea {
+	body, button, .button, .nav-item, form input, form input[type=text], form textarea {
 		font-size: 0.9rem;
 	}
 
@@ -628,7 +637,11 @@ nav {
 	}
 
 	[class^="grid-col-contact-form-1of2"]:nth-child(1) {
-		padding-right: 0.5rem;
+		padding-right: 0.25rem;
+	}
+
+	[class^="grid-col-contact-form-1of2"]:nth-child(2) {
+		padding-left: 0.25rem;
 	}
 
 }
