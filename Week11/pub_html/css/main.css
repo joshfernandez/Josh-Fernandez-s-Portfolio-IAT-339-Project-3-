@@ -158,11 +158,13 @@ h5 {
 }
 
 #index-label-1 {
-  color: rgba(255, 116, 0, 1); /* Paletton Orange */
+	text-decoration: underline solid rgba(255, 116, 0, 1); /* Paletton Orange */
+	-webkit-text-decoration: underline solid rgba(255, 116, 0, 1); /* Paletton Orange */
 }
 
 #index-label-2 {
-  color: rgba(0, 153, 153, 1); /* Paletton Blue-Green */
+	text-decoration: underline solid rgba(0, 153, 153, 1); /* Paletton Blue-Green */
+	-webkit-text-decoration: underline solid rgba(255, 116, 0, 1); /* Paletton Orange */
 }
 
 

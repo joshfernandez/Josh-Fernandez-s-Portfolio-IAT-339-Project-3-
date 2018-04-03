@@ -239,7 +239,7 @@ nav {
 
 	/* FOOTER LINKS */
 	.grid-col-footer-link {
-		padding: 0.15rem 0;
+		padding: 0.4rem 0;
 		flex-basis: 100%;
 	}
 
@@ -248,11 +248,11 @@ nav {
 	}
 
 	.grid-row-header-body {
-		padding-bottom: 14.5rem;
+		padding-bottom: 17.5rem;
 	}
 
 	.grid-row-footer, footer {
-		height: 14.5rem;
+		height: 17.5rem;
 	}
 
 }
@@ -350,11 +350,11 @@ nav {
 @media (max-width: 22.5rem) {
 
 	.grid-row-footer, footer {
-		height: 15.5rem;
+		height: 18.5rem;
 	}
 
 	.grid-row-header-body {
-		padding-bottom: 15.5rem;
+		padding-bottom: 18.5rem;
 	}
 
 }
@@ -366,11 +366,11 @@ nav {
 	}
 
 	.grid-row-footer, footer {
-		height: 10.5rem;
+		height: 12rem;
 	}
 
 	.grid-row-header-body {
-		padding-bottom: 10.5rem;
+		padding-bottom: 12rem;
 	}
 
 }
@@ -382,11 +382,11 @@ nav {
 	}
 
 	.grid-row-footer, footer {
-		height: 8.5rem;
+		height: 9.5rem;
 	}
 
 	.grid-row-header-body {
-		padding-bottom: 8.5rem;
+		padding-bottom: 9.5rem;
 	}
 
 }
@@ -412,6 +412,7 @@ nav {
 
 	.grid-col-footer-link {
 		flex-basis: auto;
+		padding: 0.15rem 0;
 		padding-right: 2.5rem;
 	}
 
