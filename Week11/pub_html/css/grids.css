@@ -1,14 +1,14 @@
 /*
-  IAT 339 with Prof. Andrew Hawryshkewich
-  D101 with Elgin-Skye McLaren
-  P03: Portfolio
-  Josh Fernandez
+	IAT 339 with Prof. Andrew Hawryshkewich
+	D101 with Elgin-Skye McLaren
+	P03: Portfolio
+	Josh Fernandez
 
-  grids.css
+	grids.css
 
-  Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
-  Some sections have been copied or inspired by Project 2: Richmond Dodgeball League website. Thank you to Priscilla Skylar-Lee and Heather Maskell.
-  Other references will be noted at appropriate sections of this file.
+	Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
+	Some sections have been copied or inspired by Project 2: Richmond Dodgeball League website. Thank you to Priscilla Skylar-Lee and Heather Maskell.
+	Other references will be noted at appropriate sections of this file.
 */
 
 
@@ -23,10 +23,6 @@
 [class^="grid-row"] {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-[class^="grid-col-"] {
-	/* padding: 0 0.25rem; */
 }
 
 
@@ -64,10 +60,9 @@
 /* ELEMENT STYLE CHANGES */
 
 header {
-  background-color: rgba(8, 37, 104, 1); /* Paletton Blue Dark */
-  color: white;
-  height: 100%; /* Change this. */
-  /* padding: 1rem 0 20rem 0; */
+	background-color: rgba(8, 37, 104, 1); /* Paletton Blue Dark */
+	color: white;
+	height: 100%;
 }
 
 footer {
@@ -88,13 +83,14 @@ h1, h2, h3, h4 {
 h1 a {
 	display: block;
 	width: 100%;
-  padding: 1rem;
+
+	padding: 1rem;
 	padding-left: 0.9rem;
 	padding-bottom: 0.25rem;
 
-  color: white;
-  background-color: rgba(8, 37, 104, 1); /* Paletton Blue Dark */
-  transition: background-color 0.5s ease-out;
+	color: white;
+	background-color: rgba(8, 37, 104, 1); /* Paletton Blue Dark */
+	transition: background-color 0.5s ease-out;
 }
 
 h1 a:hover, h1 a:focus, h1 a:active {
@@ -117,21 +113,21 @@ nav {
 }
 
 [class^="nav-item"] {
-  display: inline-block;
-  width: 100%;
-  padding: 0.75rem 1rem;
+	display: inline-block;
+	width: 100%;
+	padding: 0.75rem 1rem;
 	margin: 0;
-  color: white;
-  background-color: rgba(18, 64, 171, 1); /* Paletton Blue */
-  transition: background-color 0.5s ease-out;
+	color: white;
+	background-color: rgba(18, 64, 171, 1); /* Paletton Blue */
+	transition: background-color 0.5s ease-out;
 }
 
 [class^="nav-item"]:hover,
 [class^="nav-item"]:focus,
 [class^="nav-item"]:active {
-  background-color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
-  color: white;
-  transition: background-color 0.5s ease-out;
+	background-color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
+	color: white;
+	transition: background-color 0.5s ease-out;
 }
 
 .nav-item-index {
@@ -175,14 +171,14 @@ nav {
 }
 
 #footer-links a {
-  display: inline-block;
-  color: white;
-  transition: color 0.5s ease-out;
+	display: inline-block;
+	color: white;
+	transition: color 0.5s ease-out;
 }
 
 #footer-links a:hover, #footer-links a:focus, #footer-links a:active {
-  color: #9E9E9E;
-  transition: color 0.5s ease-out;
+	color: #9E9E9E;
+	transition: color 0.5s ease-out;
 }
 
 #contact {
@@ -198,42 +194,6 @@ nav {
 
 [class^="grid-col-styleguide-section"] section {
 	width: auto;
-}
-
-
-/* COLUMN WIDTHS - DIVISIONS OF 8 */
-
-[class^="grid-col-8of8"] {
-	flex-basis: 100%;
-}
-
-[class^="grid-col-7of8"] {
-	flex-basis: 87.5%;
-}
-
-[class^="grid-col-6of8"] {
-	flex-basis: 75%;
-  padding: 1rem; /* Make this more formal. */
-}
-
-[class^="grid-col-5of8"] {
-	flex-basis: 62.5%;
-}
-
-[class^="grid-col-4of8"] {
-	flex-basis: 50%;
-}
-
-[class^="grid-col-3of8"] {
-	flex-basis: 37.5%;
-}
-
-[class^="grid-col-2of8"] {
-	flex-basis: 25%;
-}
-
-[class^="grid-col-1of8"] {
-	flex-basis: 12.5%;
 }
 
 
@@ -264,7 +224,7 @@ nav {
 	}
 
 	section {
-	  margin-bottom: 2rem;
+		margin-bottom: 2rem;
 	}
 
 	.grid-row-header-body {
@@ -303,15 +263,6 @@ nav {
 
 
 /* FOR THE HEADER, BODY, AND FOOTER */
-
-/* @media (max-width: 47rem) {
-
-	[class^="grid-col-header"],
-	[class^="grid-col-body"] {
-		height: auto;
-	}
-
-} */
 
 @media (min-width: 47rem) {
 
@@ -381,6 +332,7 @@ nav {
 @media (min-width: 47rem) {
 
 	.grid-col-nav-item, .grid-col-nav-item:nth-child(1) {
+		width: 100%;
 		flex-basis: 100%;
 		margin: 0;
 	}
