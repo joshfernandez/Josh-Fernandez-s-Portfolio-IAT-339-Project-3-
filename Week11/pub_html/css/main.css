@@ -164,6 +164,14 @@ h5 {
 	-webkit-text-decoration: underline solid rgba(255, 116, 0, 1); /* Paletton Orange */
 }
 
+.bolded-text {
+	font-weight: normal;
+		/*
+        Obtained the help from Elgin to realize that bolded text should not formally be represented by the <strong> tag inside the HTML page, but rather by a <span> class inside the CSS page.
+        Apparently, because bolded text is a type of style, it should be accomodated in the CSS file, not the HTML file.
+      	*/
+}
+
 
 
 
