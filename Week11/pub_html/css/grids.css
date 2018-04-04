@@ -171,6 +171,7 @@ nav {
 }
 
 #footer-links a {
+	width: initial;
 	display: inline-block;
 	color: white;
 	transition: color 0.5s ease-out;
