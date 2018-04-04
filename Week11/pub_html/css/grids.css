@@ -462,7 +462,8 @@ nav {
 
 @media (max-width: 62rem) {
 
-	body, button, .button, .nav-item, form input, form input[type=text], form textarea {
+	body, button, .button, .nav-item,
+	form input, form input[type=text], form textarea {
 		font-size: 0.9rem;
 	}
 
@@ -791,6 +792,125 @@ nav {
 
 	[class^="grid-col-styleguide-section-large"] {
 		flex-basis: 100%;
+	}
+
+}
+
+/*
+	OTHER GRID COMPONENTS - Previous and Next Links
+	Code was copied from my IAT 235 Extreme Cold Website Project
+*/
+
+#previous-and-next-links {
+	position: relative;
+	height: 5rem;
+	max-width: 100%;
+}
+
+.previous-page-link, .next-page-link {
+	width: initial;
+	display: inline-block;
+	text-align: left;
+	max-width: 22rem;
+
+	color: white;
+	background-color: rgba(18, 64, 171, 1); /* Paletton Blue */
+	padding: 0.75rem 1.5rem;
+
+	font-size: inherit;
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+.previous-page-link {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.next-page-link {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+}
+
+.previous-page-link:hover, .previous-page-link:focus, .previous-page-link:active,
+.next-page-link:hover, .next-page-link:focus, .next-page-link:active {
+	color: white;
+	background-color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
+	text-decoration: none;
+	transition: background-color 0.5s ease-out;
+}
+
+/* FIX THIS! */
+/* #previous-and-next-links::before, #previous-and-next-links::after {
+	content: "";
+	display: block;
+	clear: both;
+} */
+
+@media (max-width: 70rem) {
+
+	.previous-page-link {
+		position: static;
+		width: 100%;
+	}
+
+	.next-page-link {
+		position: static;
+		width: 100%;
+	}
+
+	.previous-page-link, .next-page-link {
+		padding: 0.75rem 0.25rem;
+		margin: 0.25rem 0;
+		max-width: none;
+		text-align: center;
+	}
+
+}
+
+@media (max-width: 47rem) {
+
+	.previous-page-link {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+
+	.next-page-link {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+
+	.previous-page-link, .next-page-link {
+		padding: 0.75rem 1.5rem;
+		margin: 0;
+		max-width: 16rem;
+		text-align: left;
+	}
+
+}
+
+@media (max-width: 36rem) {
+
+	.previous-page-link {
+		position: static;
+		width: 100%;
+	}
+
+	.next-page-link {
+		position: static;
+		width: 100%;
+	}
+
+	.previous-page-link, .next-page-link {
+		padding: 0.75rem 0.25rem;
+		margin: 0.25rem 0;
+		max-width: none;
+		text-align: center;
 	}
 
 }
