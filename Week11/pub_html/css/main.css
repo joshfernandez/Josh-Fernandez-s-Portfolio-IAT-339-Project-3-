@@ -1,14 +1,14 @@
 /*
-  IAT 339 with Prof. Andrew Hawryshkewich
-  D101 with Elgin-Skye McLaren
-  P03: Portfolio
-  Josh Fernandez
+	IAT 339 with Prof. Andrew Hawryshkewich
+	D101 with Elgin-Skye McLaren
+	P03: Portfolio
+	Josh Fernandez
 
-  main.css
+	main.css
 
-  Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
-  Some sections have been copied or inspired by Project 2: Richmond Dodgeball League website. Thank you to Priscilla Skylar-Lee and Heather Maskell.
-  Other references will be noted at appropriate sections of this file.
+	Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
+	Some sections have been copied or inspired by Project 2: Richmond Dodgeball League website. Thank you to Priscilla Skylar-Lee and Heather Maskell.
+	Other references will be noted at appropriate sections of this file.
 */
 
 
@@ -27,7 +27,7 @@
 	background-color: rgba(0, 0, 0, 0.15);
 } */
 
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400i,400,600,700|Miriam+Libre:400,700|Overpass+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400i,400,600,700|Miriam+Libre:400,700|Overpass+Mono:400,700"); /* Importing all fonts in the main CSS file, in case of need */
 
 *, *::after, *::before {
 	margin: 0;
@@ -36,42 +36,40 @@
 }
 
 body {
-  font-family: "IBM Plex Sans", Helvetica, sans-serif;
-  font-size: 1rem;
-  color: #212121;
-  height: 100%;
-
-  /* margin: 1rem; */
+	font-family: "IBM Plex Sans", Helvetica, sans-serif;
+	font-size: 1rem;
+	color: #212121;
+	height: 100%;
 }
 
 section {
-  width: 100%;
-  margin: 0.5rem 0;
+	width: 100%;
+	margin: 0.5rem 0;
 }
 
 /* TEXT */
 
 p, ol, ul {
-  max-width: 40rem;
-  margin: 0.5rem 0;
-  color: #212121;
+	max-width: 40rem;
+	margin: 0.5rem 0;
+	color: #212121;
 }
 
 p {
-  line-height: 1.5rem;
+	line-height: 1.5rem;
 }
 
 ol, ul {
-  padding: 0 2.5rem;
+	padding: 0 2.5rem;
 }
 
 ul {
-  /* Got help from: https://www.w3schools.com/css/css_list.asp */
-  list-style-type: square;
+	/* Got help from: https://www.w3schools.com/css/css_list.asp */
+	list-style-type: square;
 }
 
 ol li, ul li {
-  margin: 0.5rem 0;
+	margin: 0.5rem 0;
 }
 
 
@@ -81,81 +79,79 @@ ol li, ul li {
 /* NAVIGATION */
 
 nav {
-  margin: 0.5rem 0;
+	margin: 0.5rem 0;
 }
 
 .nav-item {
-  font-family: "IBM Plex Sans", Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  display: inline-block;
-  padding: 0.5rem 0.75rem;
-  color: rgba(18, 64, 171, 1); /* Paletton Blue */
-  text-decoration: none;
+	font-family: "IBM Plex Sans", Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1rem;
+	display: inline-block;
+	padding: 0.5rem 0.75rem;
+	color: rgba(18, 64, 171, 1); /* Paletton Blue */
+	text-decoration: none;
 }
 
 
 /* FOOTER */
 
 footer {
-  background-color: #212121;
-  padding: 1rem 0;
-  /* bottom: 0; */
-  color: white;
+	background-color: #212121;
+	padding: 1rem 0;
+	color: white;
 }
 
 footer a, footer p {
-  color: white;
+	color: white;
 }
 
 footer div {
-  margin: 0.25rem 0;
+	margin: 0.25rem 0;
 }
 
 
 /* HEADINGS */
 
 h1, h2, h3, h4, h5 {
-  font-family: "Miriam Libre", Helvetica, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0.5rem 0;
+	font-family: "Miriam Libre", Helvetica, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0.5rem 0;
 }
 
 /* Site Title */
 h1 {
-  font-size: 3.5rem;
-  line-height: 4rem;
+	font-size: 3.5rem;
+	line-height: 4rem;
 }
 
 /* Page Title */
 h2 {
-  font-size: 2.5rem;
+	font-size: 2.5rem;
 }
 
 /* Section Title */
 h3 {
-  font-size: 1.75rem;
-  padding-bottom: 0.25rem;
-  border-bottom: 2px solid rgba(87, 119, 192, 1); /* Paletton Blue Light */
-  /* margin:  */
+	font-size: 1.75rem;
+	padding-bottom: 0.25rem;
+	border-bottom: 2px solid rgba(87, 119, 192, 1); /* Paletton Blue Light */
 }
 
 /* Sub-Section Title */
 h4 {
-  font-size: 1.25rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0;
-  padding-bottom: 0.1rem;
-  border-bottom: 2px solid rgba(255, 116, 0, 1); /* Paletton Orange */
+	font-size: 1.25rem;
+	margin-top: 1.5rem;
+	margin-bottom: 0;
+	padding-bottom: 0.1rem;
+	border-bottom: 2px solid rgba(255, 116, 0, 1); /* Paletton Orange */
 }
 
 /* Snippet Title (for Style Guide) */
 h5 {
-  font-size: 1rem;
-  font-weight: normal;
-  margin-top: 1rem;
-  margin-bottom: 0;
+	font-size: 1rem;
+	font-weight: normal;
+	margin-top: 1rem;
+	margin-bottom: 0;
 }
 
 #index-label-1 {
@@ -180,140 +176,146 @@ h5 {
 /* FIGURES AND IMAGES */
 
 img {
-  height: auto;
-  max-width: 100%;
+	height: auto;
+	max-width: 100%;
 }
 
 figure {
-  margin: 0;
+	margin: 0;
 }
 
 figcaption {
-  font-style: italic;
+	font-style: italic;
 }
 
 
 /* LINKS */
 
 a {
-  font-weight: bold;
-  color: rgba(18, 64, 171, 1); /* Paletton Blue */
-  text-decoration: none;
-  transition: color 0.5s ease-out;
+	font-weight: bold;
+	color: rgba(18, 64, 171, 1); /* Paletton Blue */
+	text-decoration: none;
+	transition: color 0.5s ease-out;
 }
 
 a:active, a:hover, a:focus{
-  color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
-  text-decoration: none;
-  transition: color 0.5s ease-out;
+	color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
+	text-decoration: none;
+	transition: color 0.5s ease-out;
 }
 
 button, .button {
 	width: initial;
-  display: inline-block;
-  background-color: rgba(18, 64, 171, 1); /* Paletton Blue */
-  color: white;
-  font-family: "IBM Plex Sans", Helvetica, sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0.5rem 0.6rem;
-  /* margin: 0.25rem 0.125rem; */
-  border: 0px;
-  transition: background-color 0.5s ease-out;
+	display: inline-block;
+	background-color: rgba(18, 64, 171, 1); /* Paletton Blue */
+	color: white;
+	font-family: "IBM Plex Sans", Helvetica, sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0.5rem 0.6rem;
+	border: 0px;
+	transition: background-color 0.5s ease-out;
 }
 
 button:active, button:hover, button:focus,
 .button:active, .button:hover, .button:focus {
-  background-color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
-  transition: background-color 0.4s ease-out;
+	background-color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
+	transition: background-color 0.4s ease-out;
 }
 
 
 /* FORMS */
 /*
-  Got help from this website to learn about form formatting: https://www.w3schools.com/css/css_form.asp
+	Got help from this website to learn about form formatting: https://www.w3schools.com/css/css_form.asp
 */
 
 form input {
-  color: #757575;
-  background-color: #E0E0E0; /* Google Color Grey 300 */
+	color: #757575;
+	background-color: #E0E0E0; /* Google Color Grey 300 */
 
-  font-family: "IBM Plex Sans", Helvetica, sans-serif;
-  font-size: 1rem;
+	font-family: "IBM Plex Sans", Helvetica, sans-serif;
+	font-size: 1rem;
 
-  border: none;
-  padding: 0.4rem 0.5rem;
+	border: none;
+	padding: 0.4rem 0.5rem;
 
-  background-repeat: no-repeat;
-  display: inline-block;
+	background-repeat: no-repeat;
+	display: inline-block;
 
-  transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
 }
 
 form input[type=text]{
-    width: 100%;
-    box-sizing: border-box;
-    border: 2px solid #212121;
-    /* border-radius: 0px; */
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    color: #212121;
-    background-color: #E0E0E0; /* Google Color Grey 300 */
-    transition: background-color 0.5s ease-out;
+	width: 100%;
+	box-sizing: border-box;
+	border: 2px solid #212121;
+
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+
+	font-size: 1rem;
+
+	color: #212121;
+	background-color: #E0E0E0; /* Google Color Grey 300 */
+	transition: background-color 0.5s ease-out;
 }
 
 form input[type=text]:active,
 form input[type=text]:hover,
 form input[type=text]:focus {
-    background-color: #F5F5F5; /* Google Color Grey 100 */
-    transition: background-color 0.5s ease-out;
-    color: #212121;
+	background-color: #F5F5F5; /* Google Color Grey 100 */
+	transition: background-color 0.5s ease-out;
+	color: #212121;
 }
 
 form input[type=text]::placeholder {
-  color: #212121;
+	color: #212121;
 }
 
 form textarea { /* Got help from https://www.w3schools.com/Css/css_form.asp */
-  display: block;
-  width: 100%;
-  height: 6rem;
-  padding: 0.4rem 0.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-  font: inherit;
-  font-size: 1rem;
-  box-sizing: border-box;
-  border: 2px solid #212121;
-  /* border-radius: 0px; */
-  background-color: #E0E0E0; /* Google Color Grey 300 */
-  transition: background-color 0.5s ease-out;
-  resize: none;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 6rem;
+	resize: none;
+
+	padding: 0.4rem 0.5rem;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	border: 2px solid #212121;
+
+	font: inherit;
+	font-size: 1rem;
+
+	background-color: #E0E0E0; /* Google Color Grey 300 */
+	transition: background-color 0.5s ease-out;
 }
 
 form textarea:active,
 form textarea:hover,
 form textarea:focus {
-    background-color: #F5F5F5; /* Google Color Grey 100 */
-    transition: background-color 0.5s ease-out;
+	background-color: #F5F5F5; /* Google Color Grey 100 */
+	transition: background-color 0.5s ease-out;
 }
 
 form textarea::placeholder {
-  color: #212121;
+	color: #212121;
 }
 
 
 /* CODE */
 
 code {
-  font-family: "Overpass Mono", monospace;
-  background-color: #E0E0E0; /* Google Color Grey 300 */
-  font-size: 0.85rem;
-  display: block;
-  padding: 1.5rem 1.5rem;
-  line-height: 1.35rem;
-  margin: 0.5rem 0;
+	display: block;
+	width: initial;
+
+	font-family: "Overpass Mono", monospace;
+	font-size: 0.85rem;
+	background-color: #E0E0E0; /* Google Color Grey 300 */
+
+	padding: 1.5rem 1.5rem;
+	margin: 0.5rem 0;
+	line-height: 1.35rem;
 }

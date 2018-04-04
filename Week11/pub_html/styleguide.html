@@ -16,6 +16,7 @@
 <html lang="en">
 
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -187,7 +188,7 @@
                     <code>
                       &lt;form method="post" action="#" id="contact"&gt;<br />
                         &emsp;&lt;input type="submit" class="button" value="Submit"&gt;<br />
-                        &emsp;&lt;button class="button"&gt;Reset&lt;/button&gt;<br />
+                        &emsp;&lt;button class="button"&gt; Reset &lt;/button&gt;<br />
                       &lt;/form&gt;
                     </code>
 
@@ -212,9 +213,10 @@
 
                     <h5>Sample code:</h5>
                     <code>
-                      &lt;form method="post" action="#" id="contact"&gt;<br />
-                        &emsp;&lt;label for="form-search"&gt;Search:&lt;/label&gt;<br />
-                        &emsp;&lt;input type="text" id="form-search" placeholder="Search the RDL website"&gt;<br />
+                      &lt;form method="post" action="#" id="search-initial"&gt;<br />
+                        &emsp;&lt;label for="form-name"&gt; Name: &lt;/label&gt;<br />
+                        &emsp;&lt;input type="text" id="form-name" placeholder="Enter your name here."&gt;<br />
+                        &emsp;&lt;input type="submit" class="button" value="Submit name"&gt;<br />
                       &lt;/form&gt;
                     </code>
 
@@ -248,7 +250,7 @@
                     <h4>Headings</h4>
 
                     <h5>CSS selector:</h5>
-                    <p>h1, h2, h3, h4</p>
+                    <p>h1, h2, h3, h4, h5</p>
 
                     <h5>Sample code:</h5>
                     <code>
@@ -256,6 +258,7 @@
                       &lt;h2&gt;Level two heading&lt;/h2&gt;<br />
                       &lt;h3&gt;Level three heading&lt;/h3&gt;<br />
                       &lt;h4&gt;Level four heading&lt;/h4&gt;<br />
+                      &lt;h5&gt;Level five heading&lt;/h5&gt;
                     </code>
 
                     <h5>Rendered element:</h5>
@@ -263,6 +266,7 @@
                     <h2>Level two heading</h2>
                     <h3>Level three heading</h3>
                     <h4>Level four heading</h4>
+                    <h5>Level five heading</h5>
 
                   </section>
 
@@ -403,7 +407,8 @@
 
                     <div class="grid-row">
 
-                      <div class="grid-col-4of8">
+                      <div class="grid-col-colour-main">
+
                         <section class="colour-blue-info">
 
                           <h5>Blue Swatch</h5>
@@ -421,9 +426,11 @@
                           </div>
 
                         </section>
+
                       </div>
 
-                      <div class="grid-col-4of8">
+                      <div class="grid-col-colour-main">
+
                         <section class="colour-black-info">
 
                           <h5>Black Swatch</h5>
@@ -441,9 +448,11 @@
                           </div>
 
                         </section>
+
                       </div>
 
-                      <div class="grid-col-4of8">
+                      <div class="grid-col-colour-main">
+
                         <section class="colour-white-info">
 
                           <h5>White Swatch</h5>
@@ -470,8 +479,6 @@
 
                 </div>
 
-
-
               </div>
 
             </section>
@@ -479,7 +486,7 @@
 
             <section id="grid-structure">
 
-              <h3>Grid Structure</h3>
+              <h3>Grid Structure and Site Map</h3>
 
               <div class="grid-row">
 
@@ -492,18 +499,23 @@
                       <div class="wrapper">
 
                         <div class="grid-row">
+
                           <div class="grid-col-structure-header">
                             <div class="wrapper-header">Header and Navigation</div>
                           </div>
+
                           <div class="grid-col-structure-body">
                             <div class="wrapper-body">Body and Content</div>
                           </div>
+
                         </div>
 
                         <div class="grid-row">
+
                           <div class="grid-col-structure-footer">
                             <div class="wrapper-footer">Footer, Social Media Links, and Copyright Info</div>
                           </div>
+
                         </div>
 
                       </div>
@@ -531,18 +543,23 @@
             <div id="footer-links">
 
               <div class="grid-row">
+
                 <div class="grid-col-footer-link">
                   <a href="https://www.linkedin.com/in/josh-fernandez/" target="_blank">Josh's Linked-In</a>
                 </div>
+
                 <div class="grid-col-footer-link">
                   <a href="styleguide.html">Style Guide</a>
                 </div>
+
                 <div class="grid-col-footer-link">
                   <a href="citations.html">Citations</a>
                 </div>
+
                 <div class="grid-col-footer-link">
                   <a href="https://github.com/joshfernandez/iat339_P03/" target="_blank">Git Repository</a>
                 </div>
+
                 <div class="grid-col-footer-link">
                   <a href="http://www.sfu.ca/~jafernan/iat102portfolio/" target="_blank">Josh's Previous Portfolio</a>
                 </div>
@@ -562,6 +579,7 @@
       </div>
 
     </div>
+
     <!-- [if lt IE 9]><script src="js/html5shiv.js"></script><![endif] -->
   </body>
 
