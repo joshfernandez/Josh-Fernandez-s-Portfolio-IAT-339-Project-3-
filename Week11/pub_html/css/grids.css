@@ -332,7 +332,7 @@ nav {
 
 }
 
-@media (min-width: 80rem) {
+@media (min-width: 82rem) {
 
 	[class^="grid-col-header"] {
 		flex-basis: 25%;
@@ -344,7 +344,7 @@ nav {
 
 }
 
-@media (min-width: 100rem) {
+@media (min-width: 102rem) {
 
 	[class^="grid-col-header"] {
 		flex-basis: 20%;

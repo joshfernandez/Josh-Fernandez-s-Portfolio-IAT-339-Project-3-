@@ -309,6 +309,7 @@ form textarea::placeholder {
 /* CODE */
 
 code {
+	width: initial;
   font-family: "Overpass Mono", monospace;
   background-color: #E0E0E0; /* Google Color Grey 300 */
   font-size: 0.85rem;
