@@ -894,57 +894,6 @@ nav {
 
 /* FOR THE ABOUT SECTION */
 
-@media (min-width: 35rem) {
-
-	[class^="grid-col-about-picture"] {
-		flex-basis: 40%;
-		padding-right: 1rem;
-	}
-
-	[class^="grid-col-about-information"] {
-		flex-basis: 60%;
-	}
-
-	[class^="grid-col-about-information"] p {
-		margin: 0 0 1rem 0;
-	}
-
-}
-
-@media (min-width: 47rem) {
-
-	[class^="grid-col-about-picture"] {
-		flex-basis: 100%;
-		padding-right: 0;
-	}
-
-	[class^="grid-col-about-information"] {
-		flex-basis: 100%;
-	}
-
-	[class^="grid-col-about-information"] p {
-		margin: 1rem 0;
-	}
-
-}
-
-@media (min-width: 62rem) {
-
-	[class^="grid-col-about-picture"] {
-		flex-basis: 50%;
-		padding-right: 1rem;
-	}
-
-	[class^="grid-col-about-information"] {
-		flex-basis: 50%;
-	}
-
-	[class^="grid-col-about-information"] p {
-		margin: 0 0 1rem 0;
-	}
-
-}
-
 @media (min-width: 80rem) {
 
 	[class^="grid-col-about-picture"] {
