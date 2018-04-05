@@ -456,7 +456,7 @@ nav {
 
 }
 
-@media (min-width: 43rem) {
+@media (min-width: 44rem) {
 
 	.grid-col-nav-item {
 		width: initial;
@@ -623,11 +623,15 @@ nav {
 
 	body, button, .button, .nav-item,
 	form input, form input[type=text], form textarea {
-		font-size: 0.9rem;
+		font-size: 0.95rem;
 	}
 
 	p {
-		line-height: 1.4rem;
+		line-height: 1.75rem;
+	}
+
+	ol, ul {
+		line-height: 1.6rem;
 	}
 
 	h1 {
@@ -660,7 +664,7 @@ nav {
 
 	code {
 		font-size: 0.75rem;
-		line-height: 1.25rem;
+		line-height: 1.3rem;
 	}
 
 	.index-project-button-github {
