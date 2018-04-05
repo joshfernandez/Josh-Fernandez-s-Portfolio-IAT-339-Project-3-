@@ -90,12 +90,30 @@ h1 a {
 
 	color: white;
 	background-color: rgba(8, 37, 104, 1); /* Paletton Blue Dark */
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
 	transition: background-color 0.5s ease-out;
 }
 
 h1 a:hover, h1 a:focus, h1 a:active {
 	color: white;
 	background-color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
 	transition: background-color 0.5s ease-out;
 }
 
@@ -119,6 +137,15 @@ nav {
 	margin: 0;
 	color: white;
 	background-color: rgba(18, 64, 171, 1); /* Paletton Blue */
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
 	transition: background-color 0.5s ease-out;
 }
 
@@ -127,6 +154,15 @@ nav {
 [class^="nav-item"]:active {
 	background-color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
 	color: white;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
 	transition: background-color 0.5s ease-out;
 }
 
@@ -174,11 +210,29 @@ nav {
 	width: initial;
 	display: inline-block;
 	color: white;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: color 0.5s ease-out; /* Opera */
+	-webkit-transition: color 0.5s ease-out; /* Google Chrome and Safari */
 	transition: color 0.5s ease-out;
 }
 
 #footer-links a:hover, #footer-links a:focus, #footer-links a:active {
 	color: #9E9E9E;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: color 0.5s ease-out; /* Opera */
+	-webkit-transition: color 0.5s ease-out; /* Google Chrome and Safari */
 	transition: color 0.5s ease-out;
 }
 
@@ -192,7 +246,16 @@ nav {
 	display: inline-block;
 	width: 100%;
 	background-color: white;
-	transition: background-color ease-out 0.5s;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
+	transition: background-color 0.5s ease-out;
 }
 
 [class^="index-project-button-"] h4 {
@@ -208,21 +271,38 @@ nav {
 	color: white;
 	background-color: rgba(18, 64, 171, 1); /* Paletton Blue */
 	border: none;
-	transition: background-color ease-out 0.5s;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
+	transition: background-color 0.5s ease-out;
 }
 
 [class^="index-project-button-"] h4 a:hover,
 [class^="index-project-button-"] h4 a:focus,
 [class^="index-project-button-"] h4 a:active {
 	background-color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
-	transition: background-color ease-out 0.5s;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
+	transition: background-color 0.5s ease-out;
 }
 
 [class^="index-project-button-"] [class^="index-project-description"] {
 	display: inline-block;
 	border: 2px solid rgba(87, 119, 192, 1); /* Paletton Blue Light */
 	padding: 0.25rem;
-	transition: background-color ease-out 0s;
 }
 
 [class^="index-project-button-"] p {
@@ -231,7 +311,15 @@ nav {
 }
 
 [class^="index-project-button-"] a {
-	transition: color ease-out 0.5s;
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: color 0.5s ease-out; /* Opera */
+	-webkit-transition: color 0.5s ease-out; /* Google Chrome and Safari */
+	transition: color 0.5s ease-out;
 }
 
 .index-project-button-social-networking h4 a {
@@ -257,7 +345,16 @@ nav {
 .index-project-button-social-networking a:focus,
 .index-project-button-social-networking a:active {
 	color: rgba(255, 170, 99, 1); /* Paletton Orange Light */
-	transition: color ease-out 0.5s;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: color 0.5s ease-out; /* Opera */
+	-webkit-transition: color 0.5s ease-out; /* Google Chrome and Safari */
+	transition: color 0.5s ease-out;
 }
 
 .index-project-button-website h4 a {
@@ -283,7 +380,16 @@ nav {
 .index-project-button-website a:focus,
 .index-project-button-website a:active {
 	color: rgba(70, 178, 178, 1); /* Paletton Blue-Green Light */
-	transition: color ease-out 0.5s;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: color 0.5s ease-out; /* Opera */
+	-webkit-transition: color 0.5s ease-out; /* Google Chrome and Safari */
+	transition: color 0.5s ease-out;
 }
 
 .index-project-button-github {
@@ -292,7 +398,16 @@ nav {
 	margin: 0.5rem 0;
 	background-color: #212121;
 	color: white;
-	transition: background-color ease-out 0.5s;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
+	transition: background-color 0.5s ease-out;
 
 	font-weight: normal;
 	text-transform: none;
@@ -303,7 +418,16 @@ nav {
 .index-project-button-github:focus,
 .index-project-button-github:active {
 	background-color: #9E9E9E;
-	transition: background-color ease-out 0.5s;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
+	transition: background-color 0.5s ease-out;
 }
 
 .index-project-button-github .normal-weighted-text {
@@ -1099,6 +1223,15 @@ nav {
 	color: white;
 	background-color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
 	text-decoration: none;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
 	transition: background-color 0.5s ease-out;
 }
 
@@ -1211,10 +1344,28 @@ nav {
 
 	font-size: inherit;
 	text-decoration: none;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: color 0.5s ease-out; /* Opera */
+	-webkit-transition: color 0.5s ease-out; /* Google Chrome and Safari */
 	transition: color 0.5s ease-out;
 }
 
 .return-to-top-link:hover, .return-to-top-link:focus, .return-to-top-link:active {
 	color: #9E9E9E;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: color 0.5s ease-out; /* Opera */
+	-webkit-transition: color 0.5s ease-out; /* Google Chrome and Safari */
 	transition: color 0.5s ease-out;
 }

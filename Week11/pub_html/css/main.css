@@ -207,12 +207,30 @@ a {
 	font-weight: bold;
 	color: rgba(18, 64, 171, 1); /* Paletton Blue */
 	text-decoration: none;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: color 0.5s ease-out; /* Opera */
+	-webkit-transition: color 0.5s ease-out; /* Google Chrome and Safari */
 	transition: color 0.5s ease-out;
 }
 
 a:active, a:hover, a:focus{
 	color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
 	text-decoration: none;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: color 0.5s ease-out; /* Opera */
+	-webkit-transition: color 0.5s ease-out; /* Google Chrome and Safari */
 	transition: color 0.5s ease-out;
 }
 
@@ -228,13 +246,31 @@ button, .button {
 	text-transform: uppercase;
 	padding: 0.5rem 0.6rem;
 	border: 0px;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
 	transition: background-color 0.5s ease-out;
 }
 
 button:active, button:hover, button:focus,
 .button:active, .button:hover, .button:focus {
 	background-color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
-	transition: background-color 0.4s ease-out;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
+	transition: background-color 0.5s ease-out;
 }
 
 
@@ -256,6 +292,14 @@ form input {
 	background-repeat: no-repeat;
 	display: inline-block;
 
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
 	transition: background-color 0.5s ease-out;
 }
 
@@ -271,6 +315,15 @@ form input[type=text]{
 
 	color: #212121;
 	background-color: #E0E0E0; /* Google Color Grey 300 */
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
 	transition: background-color 0.5s ease-out;
 }
 
@@ -278,8 +331,17 @@ form input[type=text]:active,
 form input[type=text]:hover,
 form input[type=text]:focus {
 	background-color: #F5F5F5; /* Google Color Grey 100 */
-	transition: background-color 0.5s ease-out;
 	color: #212121;
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
+	transition: background-color 0.5s ease-out;
 }
 
 form input[type=text]::placeholder {
@@ -302,6 +364,15 @@ form textarea { /* Got help from https://www.w3schools.com/Css/css_form.asp */
 	font-size: 1rem;
 
 	background-color: #E0E0E0; /* Google Color Grey 300 */
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
 	transition: background-color 0.5s ease-out;
 }
 
@@ -309,6 +380,15 @@ form textarea:active,
 form textarea:hover,
 form textarea:focus {
 	background-color: #F5F5F5; /* Google Color Grey 100 */
+
+	/*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
 	transition: background-color 0.5s ease-out;
 }
 
