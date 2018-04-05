@@ -304,15 +304,15 @@ nav {
 }
 
 .index-project-button-github .normal-weighted-text {
-	font-size: 1.5rem;
-	line-height: 2rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
 	color: white;
 }
 
 .index-project-button-github .bolded-text{
 	display: inline-block;
-	font-size: 2.5rem;
-	line-height: 3rem;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
 	color: white;
 }
 
@@ -603,20 +603,6 @@ nav {
 		font-size: 0.8rem;
 	}
 
-	.index-project-button-github {
-		height: 10rem;
-	}
-
-	.index-project-button-github .normal-weighted-text {
-		font-size: 1.25rem;
-		line-height: 1.75rem;
-	}
-
-	.index-project-button-github .bolded-text {
-		font-size: 2rem;
-		line-height: 2.5rem;
-	}
-
 }
 
 @media (max-width: 62rem) {
@@ -667,8 +653,14 @@ nav {
 		line-height: 1.3rem;
 	}
 
-	.index-project-button-github {
-		height: auto;
+	.index-project-button-github .normal-weighted-text {
+		font-size: 0.9rem;
+		line-height: 1.5rem;
+	}
+
+	.index-project-button-github .bolded-text {
+		font-size: 1.1rem;
+		line-height: 2rem;
 	}
 
 }
