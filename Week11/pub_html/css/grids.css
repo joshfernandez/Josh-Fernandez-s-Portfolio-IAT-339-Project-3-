@@ -287,33 +287,33 @@ nav {
 }
 
 .index-project-button-github {
-	display: inline-block;
 	padding: 0.5rem;
 	margin: 0.5rem 0;
-	height: 20rem;
 	background-color: #212121;
 	color: white;
+
+	font-weight: normal;
+	text-transform: none;
+	text-align: left;
 }
 
-.index-project-button-github p {
+.index-project-button-github:hover,
+.index-project-button-github:focus,
+.index-project-button-github:active {
+	background-color: #9E9E9E;
+}
+
+.index-project-button-github .normal-weighted-text {
 	font-size: 1.5rem;
 	line-height: 2rem;
 	color: white;
 }
 
-.index-project-button-github a {
+.index-project-button-github .bolded-text{
 	display: inline-block;
 	font-size: 2.5rem;
 	line-height: 3rem;
 	color: white;
-	transition: color ease-out 0.5s;
-}
-
-.index-project-button-github a:hover,
-.index-project-button-github a:focus,
-.index-project-button-github a:active {
-	color: #9E9E9E;
-	transition: color ease-out 0.5s;
 }
 
 /* CALLS TO ACTION */
@@ -607,12 +607,12 @@ nav {
 		height: 10rem;
 	}
 
-	.index-project-button-github p {
+	.index-project-button-github .normal-weighted-text {
 		font-size: 1.25rem;
 		line-height: 1.75rem;
 	}
 
-	.index-project-button-github a {
+	.index-project-button-github .bolded-text {
 		font-size: 2rem;
 		line-height: 2.5rem;
 	}
