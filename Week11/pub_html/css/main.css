@@ -165,11 +165,15 @@ h5 {
 }
 
 .bolded-text {
-	font-weight: normal;
+	font-weight: bold;
 		/*
         Obtained the help from Elgin to realize that bolded text should not formally be represented by the <strong> tag inside the HTML page, but rather by a <span> class inside the CSS page.
         Apparently, because bolded text is a type of style, it should be accomodated in the CSS file, not the HTML file.
       	*/
+}
+
+.normal-weighted-text {
+	font-weight: normal;
 }
 
 

@@ -186,6 +186,106 @@ nav {
 	margin-top: 1.5rem;
 }
 
+/* INDEX PANEL OF PROJECTS */
+
+[class^="index-project-button-"] {
+	display: inline-block;
+	width: 100%;
+	background-color: white;
+	transition: background-color ease-out 0.5s;
+}
+
+[class^="index-project-button-"] h4 {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+[class^="index-project-button-"] h4 a {
+	display: inline-block;
+	padding: 0.5rem;
+	padding-bottom: 0.25rem;
+	color: white;
+	background-color: rgba(18, 64, 171, 1); /* Paletton Blue */
+	border: none;
+	transition: background-color ease-out 0.5s;
+}
+
+[class^="index-project-button-"] h4 a:hover,
+[class^="index-project-button-"] h4 a:focus,
+[class^="index-project-button-"] h4 a:active {
+	background-color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
+	transition: background-color ease-out 0.5s;
+}
+
+[class^="index-project-button-"] [class^="index-project-description"] {
+	display: inline-block;
+	border: 2px solid rgba(87, 119, 192, 1); /* Paletton Blue Light */
+	padding: 0.25rem;
+	transition: background-color ease-out 0s;
+}
+
+[class^="index-project-button-"] p {
+	width: initial;
+	margin: 0.25rem;
+}
+
+[class^="index-project-button-"] a {
+	transition: color ease-out 0.5s;
+}
+
+.index-project-button-social-networking h4 a {
+	background-color: rgba(255, 116, 0, 1); /* Paletton Orange */
+}
+
+.index-project-button-social-networking h4 a:hover,
+.index-project-button-social-networking h4 a:focus,
+.index-project-button-social-networking h4 a:active {
+	color: white;
+	background-color: rgba(255, 170, 99, 1); /* Paletton Orange Light */
+}
+
+.index-project-button-social-networking .index-project-description {
+	border-color: rgba(255, 170, 99, 1); /* Paletton Orange Light */
+}
+
+.index-project-button-social-networking a {
+	color: rgba(255, 116, 0, 1); /* Paletton Orange */
+}
+
+.index-project-button-social-networking a:hover,
+.index-project-button-social-networking a:focus,
+.index-project-button-social-networking a:active {
+	color: rgba(255, 170, 99, 1); /* Paletton Orange Light */
+	transition: color ease-out 0.5s;
+}
+
+.index-project-button-website h4 a {
+	background-color: rgba(0, 153, 153, 1); /* Paletton Blue-Green */
+}
+
+.index-project-button-website h4 a:hover,
+.index-project-button-website h4 a:focus,
+.index-project-button-website h4 a:active {
+	color: white;
+	background-color: rgba(70, 178, 178, 1); /* Paletton Blue-Green Light */
+}
+
+.index-project-button-website .index-project-description {
+	border-color: rgba(70, 178, 178, 1); /* Paletton Blue-Green Light */
+}
+
+.index-project-button-website a {
+	color: rgba(0, 153, 153, 1); /* Paletton Blue-Green */
+}
+
+.index-project-button-website a:hover,
+.index-project-button-website a:focus,
+.index-project-button-website a:active {
+	color: rgba(70, 178, 178, 1); /* Paletton Blue-Green Light */
+	transition: color ease-out 0.5s;
+}
+
 
 /* COLUMN WIDTHS - OFFICIAL */
 
@@ -511,6 +611,57 @@ nav {
 	code {
 		font-size: 0.75rem;
 		line-height: 1.25rem;
+	}
+
+}
+
+
+/* FOR THE INDEX PANEL OF PROJECTS */
+
+@media (min-width: 0rem) {
+
+	[class^="grid-col-index-project"] {
+		padding: 0 0.25rem;
+	}
+
+	[class^="grid-col-index-project"] section {
+		margin: 0.25rem 0;
+	}
+
+	.index-project-button-social-networking {
+		margin-top: 1rem !important;
+	}
+
+}
+
+@media (min-width: 30rem) {
+
+	[class^="grid-col-index-project"] {
+		flex-basis: 50%;
+	}
+
+	[class^="grid-col-index-project"] section {
+		margin: 0.5rem 0;
+	}
+
+	.index-project-button-social-networking {
+		margin-top: 0.5rem !important;
+	}
+
+}
+
+@media (min-width: 82rem) {
+
+	[class^="grid-col-index-project"] {
+		flex-basis: 33.33%;
+	}
+
+}
+
+@media (min-width: 100rem) {
+
+	[class^="grid-col-index-project"] {
+		flex-basis: 25%;
 	}
 
 }
