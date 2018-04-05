@@ -89,6 +89,12 @@ nav {
 	display: inline-block;
 	padding: 0.5rem 0.75rem;
 	color: rgba(18, 64, 171, 1); /* Paletton Blue */
+
+	/*
+		Text Decoration Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/text-decoration/
+	*/
 	text-decoration: none;
 }
 
@@ -155,13 +161,28 @@ h5 {
 }
 
 #index-label-1 {
+	/*
+		Text Decoration Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/text-decoration/
+	*/
+	-webkit-text-decoration-color: rgba(255, 116, 0, 1); /* Safari */
+	-webkit-text-decoration-line: underline; /* Safari */
+	-webkit-text-decoration-style: solid; /* Safari */
+	text-decoration-color: rgba(255, 116, 0, 1); /* Mozilla Firefox */
+	text-decoration-line: underline; /* Mozilla Firefox */
+	text-decoration-style: solid; /* Mozilla Firefox */
 	text-decoration: underline solid rgba(255, 116, 0, 1); /* Paletton Orange */
-	-webkit-text-decoration: underline solid rgba(255, 116, 0, 1); /* Paletton Orange */
 }
 
 #index-label-2 {
+	-webkit-text-decoration-color: rgba(0, 153, 153, 1); /* Safari */
+	-webkit-text-decoration-line: underline; /* Safari */
+	-webkit-text-decoration-style: solid; /* Safari */
+	text-decoration-color: rgba(0, 153, 153, 1); /* Mozilla Firefox */
+	text-decoration-line: underline; /* Mozilla Firefox */
+	text-decoration-style: solid; /* Mozilla Firefox */
 	text-decoration: underline solid rgba(0, 153, 153, 1); /* Paletton Blue-Green */
-	-webkit-text-decoration: underline solid rgba(255, 116, 0, 1); /* Paletton Orange */
 }
 
 .bolded-text {
