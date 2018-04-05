@@ -43,13 +43,31 @@ section p {
   margin: 0.25rem 0;
   color: white;
   background-color: rgba(18, 64, 171, 1);
-  transition: background-color 0.5s ease-out;
+
+  /*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
+	transition: background-color 0.5s ease-out;
 }
 
 .nav-item-portfolio:hover, .nav-item-portfolio:focus, .nav-item-portfolio:active {
   background-color: rgba(87, 119, 192, 1);
   color: white;
-  transition: background-color 0.5s ease-out;
+
+  /*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
+	transition: background-color 0.5s ease-out;
 }
 
 @media (min-width: 40rem) {
@@ -123,13 +141,31 @@ section p {
   padding: 0.75rem 1rem;
   color: white;
   background-color: rgba(8, 37, 104, 1);
-  transition: background-color 0.5s ease-out;
+
+  /*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
+	transition: background-color 0.5s ease-out;
 }
 
 .nav-item-styleguide:hover, .nav-item-styleguide:focus, .nav-item-styleguide:active {
   background-color: rgba(18, 64, 171, 1);
   color: white;
-  transition: background-color 0.5s ease-out;
+
+  /*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
+	transition: background-color 0.5s ease-out;
 }
 
 
@@ -141,12 +177,20 @@ section p {
 }
 
 .swatch {
-  height:10rem;
-  width:100%;
+  height: 10rem;
+  width: 100%;
   border: 2px solid #212121;
   display: block;
-  -webkit-transition: background-color 0.5s; /* Safari */
-  transition: background-color 0.5s;
+
+  /*
+		Transition Citations:
+		https://stackoverflow.com/questions/18083056/css-what-are-moz-and-webkit
+		https://css-tricks.com/almanac/properties/t/transition/
+	*/
+	-moz-transition: background-color 0.5s ease-out; /* Mozilla Firefox */
+	-o-transition: background-color 0.5s ease-out; /* Opera */
+	-webkit-transition: background-color 0.5s ease-out; /* Google Chrome and Safari */
+	transition: background-color 0.5s ease-out;
 }
 
 #swatch-black {
@@ -166,11 +210,35 @@ section p {
 }
 
 #swatch-blue {
-  background-color: rgba(18, 64, 171, 1);
+  background-color: rgba(18, 64, 171, 1); /* Paletton Blue */
 }
 
 #swatch-blue:hover {
-  background-color: rgba(87, 119, 192, 1);
+  background-color: rgba(87, 119, 192, 1); /* Paletton Blue Light */
+}
+
+#swatch-orange {
+  background-color: rgba(255, 116, 0, 1); /* Paletton Orange */
+}
+
+#swatch-orange:hover {
+  background-color: rgba(255, 170, 99, 1); /* Paletton Orange Light */
+}
+
+#swatch-blue-green {
+  background-color: rgba(0, 153, 153, 1); /* Paletton Blue-Green */
+}
+
+#swatch-blue-green:hover {
+  background-color: rgba(70, 178, 178, 1); /* Paletton Blue-Green Light */
+}
+
+#swatch-yellow {
+  background-color: rgba(255, 170, 0, 1); /* Paletton Yellow */
+}
+
+#swatch-yellow:hover {
+  background-color: rgba(255, 203, 99, 1); /* Paletton Yellow Light */
 }
 
 @media(min-width: 20rem) {
