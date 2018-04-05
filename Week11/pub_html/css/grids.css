@@ -634,7 +634,43 @@ nav {
 
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 36rem) {
+
+	[class^="grid-col-index-project"] {
+		flex-basis: 50%;
+	}
+
+	[class^="grid-col-index-project"] section {
+		margin: 0.5rem 0;
+	}
+
+	.index-project-button-social-networking {
+		margin-top: 0.5rem !important;
+	}
+
+}
+
+@media (min-width: 47rem) {
+
+	[class^="grid-col-index-project"] {
+		flex-basis: 100%;
+	}
+
+	[class^="grid-col-index-project"] {
+		padding: 0 0.25rem;
+	}
+
+	[class^="grid-col-index-project"] section {
+		margin: 0.25rem 0;
+	}
+
+	.index-project-button-social-networking {
+		margin-top: 1rem !important;
+	}
+
+}
+
+@media (min-width: 56rem) {
 
 	[class^="grid-col-index-project"] {
 		flex-basis: 50%;
