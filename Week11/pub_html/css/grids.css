@@ -287,33 +287,41 @@ nav {
 }
 
 .index-project-button-github {
-	display: inline-block;
-	padding: 0.5rem;
+	padding: 0;
 	margin: 0.5rem 0;
-	height: 20rem;
-	background-color: #212121;
-	color: white;
-}
-
-.index-project-button-github p {
-	font-size: 1.5rem;
-	line-height: 2rem;
-	color: white;
 }
 
 .index-project-button-github a {
 	display: inline-block;
-	font-size: 2.5rem;
-	line-height: 3rem;
+	padding: 0.5rem;
+	margin: 0;
+	background-color: #212121;
 	color: white;
-	transition: color ease-out 0.5s;
+	transition: background-color ease-out 0.5s;
+
+	font-weight: normal;
+	text-transform: none;
+	text-align: left;
 }
 
 .index-project-button-github a:hover,
 .index-project-button-github a:focus,
 .index-project-button-github a:active {
-	color: #9E9E9E;
-	transition: color ease-out 0.5s;
+	background-color: #9E9E9E;
+	transition: background-color ease-out 0.5s;
+}
+
+.index-project-button-github .normal-weighted-text {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: white;
+}
+
+.index-project-button-github .bolded-text{
+	display: inline-block;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	color: white;
 }
 
 /* CALLS TO ACTION */
@@ -456,7 +464,7 @@ nav {
 
 }
 
-@media (min-width: 43rem) {
+@media (min-width: 44rem) {
 
 	.grid-col-nav-item {
 		width: initial;
@@ -603,31 +611,21 @@ nav {
 		font-size: 0.8rem;
 	}
 
-	.index-project-button-github {
-		height: 10rem;
-	}
-
-	.index-project-button-github p {
-		font-size: 1.25rem;
-		line-height: 1.75rem;
-	}
-
-	.index-project-button-github a {
-		font-size: 2rem;
-		line-height: 2.5rem;
-	}
-
 }
 
 @media (max-width: 62rem) {
 
 	body, button, .button, .nav-item,
 	form input, form input[type=text], form textarea {
-		font-size: 0.9rem;
+		font-size: 0.95rem;
 	}
 
 	p {
-		line-height: 1.4rem;
+		line-height: 1.75rem;
+	}
+
+	ol, ul {
+		line-height: 1.6rem;
 	}
 
 	h1 {
@@ -660,11 +658,17 @@ nav {
 
 	code {
 		font-size: 0.75rem;
-		line-height: 1.25rem;
+		line-height: 1.3rem;
 	}
 
-	.index-project-button-github {
-		height: auto;
+	.index-project-button-github .normal-weighted-text {
+		font-size: 0.9rem;
+		line-height: 1.5rem;
+	}
+
+	.index-project-button-github .bolded-text {
+		font-size: 1.1rem;
+		line-height: 2rem;
 	}
 
 }
