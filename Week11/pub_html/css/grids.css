@@ -1057,7 +1057,7 @@ nav {
 
 #previous-and-next-links {
 	position: relative;
-	height: 5rem;
+	height: 8rem;
 	max-width: 100%;
 }
 
@@ -1106,6 +1106,11 @@ nav {
 
 @media (max-width: 70rem) {
 
+	#previous-and-next-links {
+		height: auto;
+		padding-top: 2rem;
+	}
+
 	.previous-page-link {
 		position: static;
 		width: 100%;
@@ -1125,7 +1130,11 @@ nav {
 
 }
 
-@media (max-width: 47rem) {
+@media (max-width: 46.99rem) {
+
+	#previous-and-next-links {
+		height: 8rem;
+	}
 
 	.previous-page-link {
 		position: absolute;
@@ -1149,6 +1158,11 @@ nav {
 }
 
 @media (max-width: 36rem) {
+
+	#previous-and-next-links {
+		height: auto;
+		padding-top: 2rem;
+	}
 
 	.previous-page-link {
 		position: static;
