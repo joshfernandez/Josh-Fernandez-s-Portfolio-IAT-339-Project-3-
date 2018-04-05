@@ -240,6 +240,10 @@ nav {
 	margin-top: 1.5rem;
 }
 
+#list-of-core-skills {
+	margin-bottom: 1.5rem;
+}
+
 /* INDEX PANEL OF PROJECTS */
 
 [class^="index-project-button-"] {
