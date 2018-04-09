@@ -559,11 +559,13 @@ nav {
 		flex-direction: row;
 	}
 
+	/*
 	.grid-col-header,
 	.grid-col-body,
 	.grid-col-footer {
 		flex-basis: 100%;;
 	}
+	*/
 
 }
 
