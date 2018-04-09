@@ -1165,6 +1165,10 @@ nav {
 		flex-basis: 33.33%;
 	}
 
+	[class^="grid-col-citations-section"] ul {
+		padding: 0 2.5rem;
+	}
+
 }
 
 
