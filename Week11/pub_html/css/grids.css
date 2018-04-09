@@ -27,6 +27,7 @@
 
 
 /* FOR FOOTER TO SNAP TO BOTTOM */
+/* Citation: https://stackoverflow.com/questions/3525581/how-to-align-footer-div-to-the-bottom-of-the-page */
 
 .grid-row-main {
 	min-height: 100vh;
@@ -480,6 +481,12 @@ nav {
 		flex-direction: column;
 	}
 
+	.grid-col-header,
+	.grid-col-body,
+	.grid-col-footer {
+		flex-basis: auto;
+	}
+
 	/* HEADER LINKS */
 	.grid-col-nav-item {
 		flex-basis: 100%;
@@ -505,6 +512,10 @@ nav {
 
 	.grid-row-footer, footer {
 		height: 18.5rem;
+	}
+
+	ol, ul {
+		padding: 0 1rem;
 	}
 
 }
@@ -701,7 +712,8 @@ nav {
 @media (max-width: 70rem) {
 
 	body, button, .button, .nav-item,
-	form input, form input[type=text], form textarea {
+	form input, form input[type=text], form textarea,
+	figcaption {
 		font-size: 1rem;
 	}
 
@@ -739,7 +751,8 @@ nav {
 @media (max-width: 62rem) {
 
 	body, button, .button, .nav-item,
-	form input, form input[type=text], form textarea {
+	form input, form input[type=text], form textarea,
+	figcaption {
 		font-size: 0.95rem;
 	}
 
@@ -753,6 +766,10 @@ nav {
 
 	ol, ul {
 		line-height: 1.6rem;
+	}
+
+	figcaption {
+		line-height: 1.5rem;
 	}
 
 	[class^="index-project-button-"] p {
@@ -894,6 +911,14 @@ nav {
 
 /* FOR THE ABOUT SECTION */
 
+@media (min-width: 40rem) {
+
+	[class^="grid-col-about-information"] ul {
+		padding: 0 2.5rem;
+	}
+
+}
+
 @media (min-width: 80rem) {
 
 	[class^="grid-col-about-picture"] {
@@ -962,6 +987,11 @@ nav {
 
 /* FOR THE PROJECT EXPLANATIONS */
 
+[class^="grid-col-project-iteration-code"] figure {
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
 @media (min-width: 0rem) {
 
 	[class^="grid-col-project"] p,
@@ -992,6 +1022,7 @@ nav {
 
 	[class^="grid-col-project-main-points"] ul {
 		margin-left: 0;
+		padding: 0 2.5rem;
 	}
 
 }
@@ -1020,6 +1051,7 @@ nav {
 
 	[class^="grid-col-project-main-points"] ul {
 		margin-left: 0;
+		padding: 0 2.5rem;
 	}
 
 	.section-project {
@@ -1051,14 +1083,6 @@ nav {
 
 	[class^="grid-col-project-iteration-code"] {
 		flex-basis: 66.67%;
-	}
-
-	[class^="grid-col-project-iteration-code"] code {
-		margin: 1.25rem 0 0 1rem;
-	}
-
-	[class^="grid-col-project-iteration-code"] figure {
-		padding: 1rem;
 	}
 
 }
@@ -1131,6 +1155,23 @@ nav {
 	}
 
 }
+
+
+/* FOR THE CITATION SECTIONS */
+
+@media (min-width: 135rem) {
+
+	[class^="grid-col-citations-section"] {
+		padding: 0 0.5rem;
+		flex-basis: 33.33%;
+	}
+
+	[class^="grid-col-citations-section"] ul {
+		padding: 0 2.5rem;
+	}
+
+}
+
 
 /*
 	OTHER GRID COMPONENTS - Previous and Next Links
