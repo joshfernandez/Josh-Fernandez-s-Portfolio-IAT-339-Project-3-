@@ -160,25 +160,39 @@
 
               <div class="grid-col-project-iteration-code">
 
-                <code>
-                  cout &lt;&lt; "============ New GET - FIRST TEST ===============\n";<br />
-                  <br />
-                  // First check - Get all entries with the property "Food" in an empty table<br />
-                  string property_name {"Food"};<br />
-                  string property_value {"*"};<br />
-                  pair&lt;status_code,value&gt; result {<br />
-                    &emsp;do_request (methods::GET,<br />
-                      &emsp;&emsp;string(GetFixture::addr) + read_entity_admin + "/" + string(GetFixture::table),<br />
-                      &emsp;&emsp;value::object( vector&lt;pair&lt;string,value&gt;&gt;  {make_pair(property_name,<br /> &emsp;&emsp;value::string (property_value) )}))<br />
-                  };<br />
-                  <br />
-                  CHECK_EQUAL( status_codes::OK, result.first );<br />
-                  CHECK( result.second.is_array() );<br />
-                  CHECK_EQUAL(0, result.second.as_array().size());<br />
-                  cout &lt;&lt; "Result of first check: " &lt;&lt; result.second.serialize() &lt;&lt; endl;<br />
-                  <br />
-                  cout &lt;&lt; endl;<br />
-                </code>
+                <figure>
+
+                  <code>
+                    string property_name {"Food"};<br />
+                    string property_value {"*"};<br />
+                    <br />
+                    pair&lt;status_code,value&gt; result {<br />
+                      &emsp;do_request (methods::GET,<br />
+                        &emsp;&emsp;string(GetFixture::addr) + read_entity_admin + "/" + string(GetFixture::table),<br />
+                        &emsp;&emsp;value::object( vector&lt;pair&lt;string,value&gt;&gt;  {make_pair(property_name,<br /> &emsp;&emsp;value::string (property_value) )}))<br />
+                    };<br />
+                  </code>
+
+                  <figcaption>
+                    As a tester for this iteration, this is how I can "GET" all entries with the property "Food" in an empty table. The GET request is split into two sections: the HTTP web address where the table is stored, and the object we are trying to look for in the form of a JSON web object. Both properties are separated by a comma.
+                  </figcaption>
+
+                </figure>
+
+                <figure>
+
+                  <code>
+                    CHECK_EQUAL( status_codes::OK, result.first );<br />
+                    CHECK( result.second.is_array() );<br />
+                    CHECK_EQUAL(0, result.second.as_array().size());<br />
+                    cout &lt;&lt; "Result of first check: " &lt;&lt; result.second.serialize() &lt;&lt; endl;<br />
+                  </code>
+
+                  <figcaption>
+                    This is how I also checked to see if the actual object we got is equal to what was expected. This is necessary when creating tests using UnitTest++.
+                  </figcaption>
+
+                </figure>
 
               </div>
 
@@ -206,20 +220,38 @@
 
               <div class="grid-col-project-iteration-code">
 
-                <code>
-                  pair&lt;status_code,value&gt; add_auth {<br />
-                    &emsp;do_request (methods::PUT,<br />
-                    &emsp;addr + update_entity_admin + "/" + auth_table + "/" + auth_table_partition + "/" + userid,<br />
-                    &emsp;value::object (vector&lt;pair&lt;string,value&gt;&gt; {make_pair("Password", value::string(user_pwd)),<br />
-                    &emsp;make_pair("DataPartition", value::string(partition)),<br />
-                    &emsp;make_pair("DataRow", value::string(row))}))<br />
-                  };<br />
-                  <br />
-                  cerr &lt;&lt; "user auth table insertion result " &lt;&lt; add_auth.first &lt;&lt; endl;<br />
-                  if (add_auth.first != status_codes::OK) {<br />
-                    &emsp;throw std::exception();<br />
-                  }<br />
-                </code>
+                <figure>
+
+                  <code>
+                    pair&lt;status_code,value&gt; add_auth {<br />
+                      &emsp;do_request (methods::PUT,<br />
+                      &emsp;addr + update_entity_admin + "/" + auth_table + "/" + auth_table_partition + "/" + userid,<br />
+                      &emsp;value::object (vector&lt;pair&lt;string,value&gt;&gt; {make_pair("Password", value::string(user_pwd)),<br />
+                      &emsp;make_pair("DataPartition", value::string(partition)),<br />
+                      &emsp;make_pair("DataRow", value::string(row))}))<br />
+                    };<br />
+                  </code>
+
+                  <figcaption>
+                    As a tester for this iteration, this is how I added a new user with a username and password to the authorization table. Again, the PUT request is split into two sections: the HTTP web address where the table is stored, and the object we are adding in the form of a JSON web object. Both properties are separated by a comma.
+                  </figcaption>
+
+                </figure>
+
+                <figure>
+
+                  <code>
+                    cerr &lt;&lt; "user auth table insertion result " &lt;&lt; add_auth.first &lt;&lt; endl;<br />
+                    if (add_auth.first != status_codes::OK) {<br />
+                      &emsp;throw std::exception();<br />
+                    }
+                  </code>
+
+                  <figcaption>
+                    This is how I checked to see if we have successfully added the user to the authorization table.
+                  </figcaption>
+
+                </figure>
 
               </div>
 
@@ -247,26 +279,24 @@
 
               <div class="grid-col-project-iteration-code">
 
-                <code>
-                  // Check if the user has an active session.<br />
-                  std::unordered_map &lt;string,tuple &lt;string, string, string&gt;&gt; ::iterator active_user = active_users.find(username);<br />
-                  <br />
-                  if(active_user == active_users.end())<br />
-                  {<br />
-                    &emsp;cout &lt;&lt; "The user never had an active session.\n";<br />
-                    &emsp;message.reply( status_codes::Forbidden );<br />
-                    &emsp;return;<br />
-                  }<br />
-                  <br />
-                  tuple&lt;string, string, string&gt; user_properties = get_user(username);<br />
-                  cout &lt;&lt; "\tUser token: " &lt;&lt; get&lt;0&gt;(user_properties) &lt;&lt; endl;<br />
-                  cout &lt;&lt; "\tUser partition: " &lt;&lt; get&lt;1&gt;(user_properties) &lt;&lt; endl;<br />
-                  cout &lt;&lt; "\tUser row: " &lt;&lt; get&lt;2&gt;(user_properties) &lt;&lt; endl;<br />
-                  <br />
-                  string user_token = get&lt;0&gt;(user_properties);<br />
-                  string user_partition = get&lt;1&gt;(user_properties);<br />
-                  string user_row = get&lt;2&gt;(user_properties);<br />
-                </code>
+                <figure>
+
+                  <code>
+                    std::unordered_map &lt;string,tuple &lt;string, string, string&gt;&gt; ::iterator active_user = active_users.find(username);<br />
+                    <br />
+                    if(active_user == active_users.end())<br />
+                    {<br />
+                      &emsp;cout &lt;&lt; "The user never had an active session.\n";<br />
+                      &emsp;message.reply( status_codes::Forbidden );<br />
+                      &emsp;return;<br />
+                    }<br />
+                  </code>
+
+                  <figcaption>
+                    As the lead programmer for the social networking features, this is how I checked to see if we have an active user in the system. If the user does not exist, it prints an error on the terminal. Notice that finding the suggested user needs a search "::iterator" through the unordered map of all registered active users.
+                  </figcaption>
+
+                </figure>
 
               </div>
 
