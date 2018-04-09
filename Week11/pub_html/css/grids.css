@@ -910,6 +910,14 @@ nav {
 
 /* FOR THE ABOUT SECTION */
 
+@media (min-width: 40rem) {
+
+	[class^="grid-col-about-information"] ul {
+		padding: 0 2.5rem;
+	}
+
+}
+
 @media (min-width: 80rem) {
 
 	[class^="grid-col-about-picture"] {
