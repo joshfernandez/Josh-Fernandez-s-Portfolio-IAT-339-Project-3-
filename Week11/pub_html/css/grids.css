@@ -27,6 +27,7 @@
 
 
 /* FOR FOOTER TO SNAP TO BOTTOM */
+/* Citation: https://stackoverflow.com/questions/3525581/how-to-align-footer-div-to-the-bottom-of-the-page */
 
 .grid-row-main {
 	min-height: 100vh;
