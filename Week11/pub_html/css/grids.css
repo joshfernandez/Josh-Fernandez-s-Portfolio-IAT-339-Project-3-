@@ -480,6 +480,12 @@ nav {
 		flex-direction: column;
 	}
 
+	.grid-col-header,
+	.grid-col-body,
+	.grid-col-footer {
+		flex-basis: auto;
+	}
+
 	/* HEADER LINKS */
 	.grid-col-nav-item {
 		flex-basis: 100%;
@@ -551,6 +557,12 @@ nav {
 	.grid-row-header-body,
 	.grid-row-footer {
 		flex-direction: row;
+	}
+
+	.grid-col-header,
+	.grid-col-body,
+	.grid-col-footer {
+		flex-basis: 100%;;
 	}
 
 }
