@@ -1135,7 +1135,7 @@ nav {
 
 /* FOR THE CITATION SECTIONS */
 
-@media (min-width: 150rem) {
+@media (min-width: 135rem) {
 
 	[class^="grid-col-citations-section"] {
 		padding: 0 0.5rem;
