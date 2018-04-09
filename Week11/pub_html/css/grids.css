@@ -1132,6 +1132,19 @@ nav {
 
 }
 
+
+/* FOR THE CITATION SECTIONS */
+
+@media (min-width: 150rem) {
+
+	[class^="grid-col-citations-section"] {
+		padding: 0 0.5rem;
+		flex-basis: 33.33%;
+	}
+
+}
+
+
 /*
 	OTHER GRID COMPONENTS - Previous and Next Links
 	Code was copied from my IAT 235 Extreme Cold Website Project
